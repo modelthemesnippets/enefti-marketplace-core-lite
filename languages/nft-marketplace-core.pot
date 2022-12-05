@@ -1,0 +1,1920 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-19 17:39+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: admin/class-mt-knowledgebase-admin.php:108
+#: admin/class-mt-knowledgebase-admin.php:123
+msgid "Knowledge Base"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:124
+msgid "Knowledge"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:125
+msgid "MT Knowledge Base"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:126
+msgid "Add Knowledge"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:127
+msgid "Add New Knowledge"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:128
+#: admin/class-mt-knowledgebase-admin.php:245
+#: admin/class-mt-knowledgebase-admin.php:283
+msgid "Edit"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:129
+msgid "Edit Knowledge"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:130
+msgid "New Knowledge"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:131
+#: admin/class-mt-knowledgebase-admin.php:132
+msgid "View Knowledge"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:133
+#: public/elementor-widgets/knowledgebase-searchbar.php:53
+#: public/elementor-widgets/knowledgebase-searchbar.php:69
+msgid "Search Knowledge Base"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:134
+msgid "No Knowledge Found"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:135
+msgid "No Knowledge Found in Trash"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:136
+msgid "Parent Knowledge"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:149
+#: admin/class-mt-knowledgebase-admin.php:303
+msgctxt "Taxonomy General Name"
+msgid "Categories"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:150
+#: admin/class-mt-knowledgebase-admin.php:304
+msgctxt "Taxonomy Singular Name"
+msgid "Categories"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:151
+#: admin/class-mt-knowledgebase-admin.php:305
+#: public/class-mt-knowledgebase-public.php:1205
+msgid "Categories"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:152
+#: admin/class-mt-knowledgebase-admin.php:306
+msgid "All Items"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:153
+#: admin/class-mt-knowledgebase-admin.php:192
+#: admin/class-mt-knowledgebase-admin.php:307
+#: admin/class-mt-knowledgebase-admin.php:343
+msgid "Parent Item"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:154
+#: admin/class-mt-knowledgebase-admin.php:193
+#: admin/class-mt-knowledgebase-admin.php:308
+#: admin/class-mt-knowledgebase-admin.php:344
+msgid "Parent Item:"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:155
+#: admin/class-mt-knowledgebase-admin.php:194
+#: admin/class-mt-knowledgebase-admin.php:309
+#: admin/class-mt-knowledgebase-admin.php:345
+msgid "New Item Name"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:156
+#: admin/class-mt-knowledgebase-admin.php:195
+#: admin/class-mt-knowledgebase-admin.php:310
+#: admin/class-mt-knowledgebase-admin.php:346
+msgid "Add New Item"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:157
+#: admin/class-mt-knowledgebase-admin.php:196
+#: admin/class-mt-knowledgebase-admin.php:311
+#: admin/class-mt-knowledgebase-admin.php:347
+msgid "Edit Item"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:158
+#: admin/class-mt-knowledgebase-admin.php:197
+#: admin/class-mt-knowledgebase-admin.php:312
+#: admin/class-mt-knowledgebase-admin.php:348
+msgid "Update Item"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:159
+#: admin/class-mt-knowledgebase-admin.php:198
+#: admin/class-mt-knowledgebase-admin.php:313
+#: admin/class-mt-knowledgebase-admin.php:349
+msgid "View Item"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:160
+#: admin/class-mt-knowledgebase-admin.php:199
+#: admin/class-mt-knowledgebase-admin.php:314
+#: admin/class-mt-knowledgebase-admin.php:350
+msgid "Separate items with commas"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:161
+#: admin/class-mt-knowledgebase-admin.php:200
+#: admin/class-mt-knowledgebase-admin.php:315
+#: admin/class-mt-knowledgebase-admin.php:351
+msgid "Add or remove items"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:162
+#: admin/class-mt-knowledgebase-admin.php:201
+#: admin/class-mt-knowledgebase-admin.php:316
+#: admin/class-mt-knowledgebase-admin.php:352
+msgid "Choose from the most used"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:163
+#: admin/class-mt-knowledgebase-admin.php:202
+#: admin/class-mt-knowledgebase-admin.php:317
+#: admin/class-mt-knowledgebase-admin.php:353
+msgid "Popular Items"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:164
+#: admin/class-mt-knowledgebase-admin.php:203
+#: admin/class-mt-knowledgebase-admin.php:318
+#: admin/class-mt-knowledgebase-admin.php:354
+msgid "Search Items"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:165
+#: admin/class-mt-knowledgebase-admin.php:204
+#: admin/class-mt-knowledgebase-admin.php:319
+#: admin/class-mt-knowledgebase-admin.php:355
+msgid "Not Found"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:188
+#: admin/class-mt-knowledgebase-admin.php:339
+msgctxt "Taxonomy General Name"
+msgid "Tags"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:189
+#: admin/class-mt-knowledgebase-admin.php:340
+msgctxt "Taxonomy Singular Name"
+msgid "Tags"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:190
+#: admin/class-mt-knowledgebase-admin.php:341
+#: public/class-mt-knowledgebase-public.php:1221
+#: public/templates/mtkb-portfolio/single-mtkb-portfolio.php:52
+msgid "Tags"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:191
+#: admin/class-mt-knowledgebase-admin.php:342
+msgid "All Tags"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:224
+#: admin/class-mt-knowledgebase-admin.php:240
+#: admin/class-mt-knowledgebase-admin.php:241
+#: public/class-mt-knowledgebase-wp-bakery.php:516
+#: public/templates/mtkb-portfolio/single-mtkb-portfolio.php:25
+msgid "Changelog"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:242
+msgid "MT Changelog"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:243
+msgid "Add Changelog"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:244
+msgid "Add New Changelog"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:246
+msgid "Edit Changelog"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:247
+msgid "New Changelog"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:248
+#: admin/class-mt-knowledgebase-admin.php:249
+msgid "View Changelog"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:250
+msgid "Search Changelog"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:251
+msgid "No Changelog Found"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:252
+msgid "No Changelog Found in Trash"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:253
+msgid "Parent Changelog"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:264
+#: admin/class-mt-knowledgebase-admin.php:278
+#: admin/class-mt-knowledgebase-admin.php:279
+msgid "Portfolio"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:280
+msgid "MT Portfolio"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:281
+msgid "Add Portfolio"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:282
+msgid "Add New Portfolio"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:284
+msgid "Edit Portfolio"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:285
+msgid "New Portfolio"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:286
+#: admin/class-mt-knowledgebase-admin.php:287
+msgid "View Portfolio"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:288
+msgid "Search Portfolio"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:289
+msgid "No Portfolio Found"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:290
+msgid "No Portfolio Found in Trash"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:291
+msgid "Parent Portfolio"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:377
+#: admin/class-mt-knowledgebase-admin.php:378
+msgid "MT Plugins"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:389
+#: admin/class-mt-knowledgebase-admin.php:390
+#: public/class-mt-knowledgebase-elementor.php:76
+msgid "MT Knowledgebase"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:404
+msgid "MT knowledgebase Settings"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:446
+#: public/class-mt-knowledgebase-wp-bakery.php:368
+msgid "No"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:447
+#: public/class-mt-knowledgebase-wp-bakery.php:367
+msgid "Yes"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:453
+msgid "F j, Y"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:468
+#: admin/class-mt-knowledgebase-admin.php:493
+msgid "Custom:"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:468
+msgid "enter a custom date format in the following field"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:469
+msgid "Custom date format:"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:472
+#: admin/class-mt-knowledgebase-admin.php:497
+msgid "Preview:"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:478
+msgid "g:i a"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:493
+msgid "enter a custom time format in the following field"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:494
+msgid "Custom time format:"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:510
+msgid "Settings"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:517
+msgid "Enable MT Knowledgebase"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:529
+msgid "Enable MT Changelog"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:541
+msgid "Enable MT Portfolio"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:553
+msgid "Custom MT Date Format"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:565
+msgid "Custom MT Time Format"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:579
+msgid "Portfolio Options"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:608
+msgid "External Link Text:"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:613
+msgid "External Link URL:"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:618
+msgid "Knowledgebase Category:"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:632
+msgid "Changelog:"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:709
+msgid "Changelog Fields"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:718
+msgid "Version"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:719
+msgid "Add New Version"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:720
+msgid "Delete Version"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:723
+msgid "Are you sure you want to delete this Version?"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:728
+msgid "Version Number (ex: 1.0)"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:729
+msgid "Current version"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:735
+msgid "Version Release Date"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:736
+msgid "Date when the theme version has been released"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-admin.php:742
+msgid "Version Changes"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:47
+msgid "MT Knowledgebase Grid Container"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:50
+#: admin/class-mt-knowledgebase-shortcode-manager.php:71
+#: admin/class-mt-knowledgebase-shortcode-manager.php:112
+#: admin/class-mt-knowledgebase-shortcode-manager.php:153
+#: admin/class-mt-knowledgebase-shortcode-manager.php:201
+#: admin/class-mt-knowledgebase-shortcode-manager.php:220
+#: admin/class-mt-knowledgebase-shortcode-manager.php:233
+#: admin/class-mt-knowledgebase-shortcode-manager.php:255
+#: admin/class-mt-knowledgebase-shortcode-manager.php:282
+#: admin/class-mt-knowledgebase-shortcode-manager.php:299
+#: admin/class-mt-knowledgebase-shortcode-manager.php:322
+#: admin/class-mt-knowledgebase-shortcode-manager.php:339
+#: admin/class-mt-knowledgebase-shortcode-manager.php:351
+#: admin/class-mt-knowledgebase-shortcode-manager.php:372
+#: admin/class-mt-knowledgebase-shortcode-manager.php:422
+#: admin/class-mt-knowledgebase-shortcode-manager.php:453
+#: public/elementor-widgets/changelog-list.php:49
+#: public/elementor-widgets/changelog-list.php:78
+#: public/elementor-widgets/changelog-single-item.php:38
+#: public/elementor-widgets/faqs-acordion.php:38
+#: public/elementor-widgets/faqs-acordion.php:73
+#: public/elementor-widgets/knowledgebase-archive.php:38
+#: public/elementor-widgets/knowledgebase-categories-accordion.php:49
+#: public/elementor-widgets/knowledgebase-list-alphabetical.php:38
+#: public/elementor-widgets/knowledgebase-list.php:38
+#: public/elementor-widgets/knowledgebase-most.php:54
+#: public/elementor-widgets/knowledgebase-searchbar.php:39
+#: public/elementor-widgets/knowledgebase-single-category-accordion.php:38
+#: public/elementor-widgets/portfolio-category.php:36
+#: public/elementor-widgets/portfolio-filters.php:36
+#: public/elementor-widgets/portfolio-most.php:36
+msgid "Additional Class"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:68
+msgid "MT Knowledgebase List"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:76
+#: admin/class-mt-knowledgebase-shortcode-manager.php:238
+#: admin/class-mt-knowledgebase-shortcode-manager.php:427
+#: public/elementor-widgets/knowledgebase-list.php:72
+#: public/elementor-widgets/knowledgebase-single-category-accordion.php:57
+#: public/elementor-widgets/portfolio-category.php:81
+#: public/templates/mtkb-portfolio/single-mtkb-portfolio.php:45
+msgid "Category"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:81
+#: admin/class-mt-knowledgebase-shortcode-manager.php:158
+#: admin/class-mt-knowledgebase-shortcode-manager.php:243
+#: admin/class-mt-knowledgebase-shortcode-manager.php:265
+#: admin/class-mt-knowledgebase-shortcode-manager.php:377
+#: admin/class-mt-knowledgebase-shortcode-manager.php:432
+#: admin/class-mt-knowledgebase-shortcode-manager.php:458
+msgid "Posts Number"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:86
+#: admin/class-mt-knowledgebase-shortcode-manager.php:122
+#: admin/class-mt-knowledgebase-shortcode-manager.php:163
+#: admin/class-mt-knowledgebase-shortcode-manager.php:382
+#: admin/class-mt-knowledgebase-shortcode-manager.php:437
+#: admin/class-mt-knowledgebase-shortcode-manager.php:463
+#: public/class-mt-knowledgebase-wp-bakery.php:157
+#: public/class-mt-knowledgebase-wp-bakery.php:209
+#: public/class-mt-knowledgebase-wp-bakery.php:350
+#: public/class-mt-knowledgebase-wp-bakery.php:633
+#: public/class-mt-knowledgebase-wp-bakery.php:698
+#: public/class-mt-knowledgebase-wp-bakery.php:750
+msgid "Columns"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:89
+#: admin/class-mt-knowledgebase-shortcode-manager.php:98
+#: admin/class-mt-knowledgebase-shortcode-manager.php:125
+#: admin/class-mt-knowledgebase-shortcode-manager.php:134
+#: admin/class-mt-knowledgebase-shortcode-manager.php:166
+#: admin/class-mt-knowledgebase-shortcode-manager.php:385
+#: admin/class-mt-knowledgebase-shortcode-manager.php:440
+#: admin/class-mt-knowledgebase-shortcode-manager.php:466
+#: admin/class-mt-knowledgebase-shortcode-manager.php:475
+msgid "Select option"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:90
+#: admin/class-mt-knowledgebase-shortcode-manager.php:126
+#: admin/class-mt-knowledgebase-shortcode-manager.php:167
+#: admin/class-mt-knowledgebase-shortcode-manager.php:386
+#: admin/class-mt-knowledgebase-shortcode-manager.php:441
+#: admin/class-mt-knowledgebase-shortcode-manager.php:467
+#: public/class-mt-knowledgebase-wp-bakery.php:161
+#: public/class-mt-knowledgebase-wp-bakery.php:213
+#: public/class-mt-knowledgebase-wp-bakery.php:354
+#: public/class-mt-knowledgebase-wp-bakery.php:637
+#: public/class-mt-knowledgebase-wp-bakery.php:702
+#: public/class-mt-knowledgebase-wp-bakery.php:754
+#: public/elementor-widgets/knowledgebase-archive.php:70
+#: public/elementor-widgets/portfolio-category.php:53
+#: public/elementor-widgets/portfolio-filters.php:53
+#: public/elementor-widgets/portfolio-most.php:53
+msgid "3 columns"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:91
+#: admin/class-mt-knowledgebase-shortcode-manager.php:127
+#: admin/class-mt-knowledgebase-shortcode-manager.php:168
+#: admin/class-mt-knowledgebase-shortcode-manager.php:387
+#: admin/class-mt-knowledgebase-shortcode-manager.php:442
+#: admin/class-mt-knowledgebase-shortcode-manager.php:468
+#: public/class-mt-knowledgebase-wp-bakery.php:162
+#: public/class-mt-knowledgebase-wp-bakery.php:214
+#: public/class-mt-knowledgebase-wp-bakery.php:355
+#: public/class-mt-knowledgebase-wp-bakery.php:638
+#: public/class-mt-knowledgebase-wp-bakery.php:703
+#: public/class-mt-knowledgebase-wp-bakery.php:755
+#: public/elementor-widgets/knowledgebase-archive.php:71
+#: public/elementor-widgets/portfolio-category.php:54
+#: public/elementor-widgets/portfolio-filters.php:54
+#: public/elementor-widgets/portfolio-most.php:54
+msgid "2 columns"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:95
+#: admin/class-mt-knowledgebase-shortcode-manager.php:131
+msgid "Style"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:99
+#: admin/class-mt-knowledgebase-shortcode-manager.php:135
+#: public/class-mt-knowledgebase-wp-bakery.php:173
+#: public/class-mt-knowledgebase-wp-bakery.php:342
+msgid "Style 1"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:100
+#: admin/class-mt-knowledgebase-shortcode-manager.php:136
+#: public/class-mt-knowledgebase-wp-bakery.php:174
+#: public/class-mt-knowledgebase-wp-bakery.php:343
+msgid "Style 2"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:109
+msgid "MT Knowledgebase Categories Grid"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:117
+msgid "Posts number in each category"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:140
+#: public/elementor-widgets/knowledgebase-archive.php:90
+msgid "Hide empty categories"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:150
+msgid "MT Knowledgebase Most Liked/Viewed/Recent"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:172
+#: admin/class-mt-knowledgebase-shortcode-manager.php:304
+#: admin/class-mt-knowledgebase-shortcode-manager.php:472
+#: public/class-mt-knowledgebase-wp-bakery.php:471
+#: public/class-mt-knowledgebase-wp-bakery.php:773
+#: public/elementor-widgets/knowledgebase-most.php:38
+#: public/elementor-widgets/portfolio-most.php:73
+msgid "Type"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:175
+#: admin/class-mt-knowledgebase-shortcode-manager.php:307
+#: public/class-mt-knowledgebase-wp-bakery.php:160
+#: public/class-mt-knowledgebase-wp-bakery.php:172
+#: public/class-mt-knowledgebase-wp-bakery.php:212
+#: public/class-mt-knowledgebase-wp-bakery.php:224
+#: public/class-mt-knowledgebase-wp-bakery.php:341
+#: public/class-mt-knowledgebase-wp-bakery.php:353
+#: public/class-mt-knowledgebase-wp-bakery.php:366
+#: public/class-mt-knowledgebase-wp-bakery.php:474
+#: public/class-mt-knowledgebase-wp-bakery.php:636
+#: public/class-mt-knowledgebase-wp-bakery.php:701
+#: public/class-mt-knowledgebase-wp-bakery.php:753
+#: public/class-mt-knowledgebase-wp-bakery.php:776
+msgid "Select Option"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:176
+#: public/class-mt-knowledgebase-public.php:1128
+#: public/class-mt-knowledgebase-wp-bakery.php:225
+#: public/elementor-widgets/knowledgebase-most.php:144
+msgid "Most Liked"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:177
+#: admin/class-mt-knowledgebase-shortcode-manager.php:476
+#: public/class-mt-knowledgebase-public.php:1130
+#: public/class-mt-knowledgebase-wp-bakery.php:226
+#: public/class-mt-knowledgebase-wp-bakery.php:777
+#: public/elementor-widgets/knowledgebase-most.php:146
+msgid "Most Viewed"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:178
+#: admin/class-mt-knowledgebase-shortcode-manager.php:477
+#: public/class-mt-knowledgebase-public.php:1132
+#: public/class-mt-knowledgebase-wp-bakery.php:227
+#: public/class-mt-knowledgebase-wp-bakery.php:778
+#: public/elementor-widgets/knowledgebase-most.php:148
+msgid "Most Recent"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:182
+#: public/class-mt-knowledgebase-wp-bakery.php:240
+#: public/elementor-widgets/knowledgebase-most.php:75
+msgid "Button Text"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:187
+#: public/class-mt-knowledgebase-wp-bakery.php:245
+msgid "Button URL"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:198
+msgid "MT Knowledgebase Serach Bar"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:206
+msgid "Searchbar placeholder"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:208
+msgid "Search Knowledgebase..."
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:217
+msgid "MT Knowledgebase List A to Z"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:230
+msgid "MT Knowledgebase Single Category Accordion"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:252
+msgid "MT Knowledgebase Categories Accordion"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:260
+#: admin/class-mt-knowledgebase-shortcode-manager.php:287
+#: public/class-mt-knowledgebase-wp-bakery.php:287
+#: public/elementor-widgets/knowledgebase-categories-accordion.php:38
+msgid "Heading Title"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:270
+msgid "Cateory open"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:279
+msgid "MT Changelog Container"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:296
+msgid "MT Changelog Item"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:308
+#: public/class-mt-knowledgebase-wp-bakery.php:475
+#: public/elementor-widgets/changelog-list.php:67
+msgid "New"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:309
+#: public/class-mt-knowledgebase-wp-bakery.php:476
+#: public/elementor-widgets/changelog-list.php:68
+msgid "Update"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:310
+#: public/class-mt-knowledgebase-wp-bakery.php:477
+#: public/elementor-widgets/changelog-list.php:69
+msgid "Improvement"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:311
+#: public/class-mt-knowledgebase-wp-bakery.php:478
+#: public/elementor-widgets/changelog-list.php:70
+msgid "Fix"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:319
+msgid "MT Single Changelog"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:327
+#: public/elementor-widgets/changelog-single-item.php:64
+msgid "Changelog ID"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:336
+msgid "MT FAQs Container"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:348
+msgid "MT FAQs item"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:356
+#: public/class-mt-knowledgebase-wp-bakery.php:437
+#: public/class-mt-knowledgebase-wp-bakery.php:576
+#: public/elementor-widgets/faqs-acordion.php:51
+msgid "Title"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:361
+#: admin/class-mt-knowledgebase-shortcode-manager.php:560
+#: public/class-mt-knowledgebase-wp-bakery.php:582
+#: public/elementor-widgets/changelog-list.php:31
+#: public/elementor-widgets/changelog-single-item.php:31
+#: public/elementor-widgets/faqs-acordion.php:31
+#: public/elementor-widgets/faqs-acordion.php:62
+#: public/elementor-widgets/knowledgebase-archive.php:31
+#: public/elementor-widgets/knowledgebase-categories-accordion.php:31
+#: public/elementor-widgets/knowledgebase-list-alphabetical.php:31
+#: public/elementor-widgets/knowledgebase-list.php:31
+#: public/elementor-widgets/knowledgebase-most.php:31
+#: public/elementor-widgets/knowledgebase-searchbar.php:32
+#: public/elementor-widgets/knowledgebase-single-category-accordion.php:31
+#: public/elementor-widgets/portfolio-category.php:29
+#: public/elementor-widgets/portfolio-filters.php:29
+#: public/elementor-widgets/portfolio-most.php:29
+msgid "Content"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:369
+#: public/class-mt-knowledgebase-wp-bakery.php:615
+msgid "MT Portfolio Filters"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:391
+msgid "Show Tags Filter"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:396
+msgid "Show Category Filter"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:401
+#: public/elementor-widgets/portfolio-filters.php:73
+msgid "Show Search Filter"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:419
+msgid "MT Portfolio Posts by Category"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:450
+#: public/class-mt-knowledgebase-wp-bakery.php:732
+msgid "MT Portfolio Most Viewed/Recet"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:493
+msgid "Shortcodes Manager"
+msgstr ""
+
+#: admin/class-mt-knowledgebase-shortcode-manager.php:567
+msgid "Insert Shortcode"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2.php:199
+msgid "Metabox configuration is required to have an ID parameter."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2.php:618
+msgid "Click to toggle"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Ajax.php:75
+msgid "Please Try Again"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Ajax.php:181
+msgid "Remove Embed"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Ajax.php:189
+#: includes/cmb2/includes/helper-functions.php:107
+#, php-format
+msgid "No oEmbed Results Found for %1$s. View more info at %2$s."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Base.php:423
+#, php-format
+msgid ""
+"The \"%1$s\" field parameter has been deprecated in favor of the \"%2$s\" "
+"parameter."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Base.php:427
+#, php-format
+msgid ""
+"Using the \"%1$s\" field parameter as a callback has been deprecated in "
+"favor of the \"%2$s\" parameter."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Base.php:457
+#, php-format
+msgid ""
+"%1$s was called with a parameter that is <strong>deprecated</strong> since "
+"version %2$s! %3$s"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Base.php:459
+#, php-format
+msgid ""
+"%1$s was called with a parameter that is <strong>deprecated</strong> since "
+"version %2$s with no alternative available."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Base.php:492
+#: includes/cmb2/includes/CMB2_Hookup_Base.php:102
+#: includes/cmb2/includes/CMB2_Options.php:247
+#: includes/cmb2/includes/CMB2_Options_Hookup.php:369
+#: includes/cmb2/includes/types/CMB2_Type_Base.php:173
+#, php-format
+msgid "Invalid %1$s property: %2$s"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Base.php:510
+#: includes/cmb2/includes/types/CMB2_Type_Base.php:157
+#, php-format
+msgid "Invalid %1$s method: %2$s"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Field.php:1438
+msgid "Add Group"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Field.php:1439
+msgid "Remove Group"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Field.php:1471
+#: includes/cmb2/includes/CMB2_Field.php:1475
+msgid "None"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Field.php:1589
+msgid "Sorry, this field does not have a cmb_id specified."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Field_Display.php:453
+#: includes/cmb2/includes/CMB2_JS.php:242
+#: includes/cmb2/includes/types/CMB2_Type_File_Base.php:90
+msgid "File:"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Hookup.php:188
+msgid ""
+"Term Metadata is a WordPress 4.4+ feature. Please upgrade your WordPress "
+"install."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Hookup.php:192
+msgid "Term metaboxes configuration requires a \"taxonomies\" parameter."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Hookup.php:560
+#, php-format
+msgid "Toggle panel: %s"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Hookup_Base.php:44
+#, php-format
+msgid "%1$s should be implemented by the extended class."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:177
+#: includes/cmb2/includes/CMB2_JS.php:222
+msgid "Clear"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:178
+msgid "Default"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:179
+msgid "Select Color"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:180
+msgid "Current Color"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:212
+msgctxt "Valid formatDate string for jquery-ui datepicker"
+msgid "mm/dd/yy"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:213
+msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:214
+msgid "Su, Mo, Tu, We, Th, Fr, Sa"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:215
+msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:216
+msgid ""
+"January, February, March, April, May, June, July, August, September, "
+"October, November, December"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:217
+msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:218
+msgid "Next"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:219
+msgid "Prev"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:220
+msgid "Today"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:221
+#: includes/cmb2/includes/CMB2_JS.php:231
+msgid "Done"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:225
+msgid "Choose Time"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:226
+msgid "Time"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:227
+msgid "Hour"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:228
+msgid "Minute"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:229
+msgid "Second"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:230
+msgid "Now"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:232
+msgctxt ""
+"Valid formatting string, as per http://trentrichardson.com/examples/"
+"timepicker/"
+msgid "hh:mm TT"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:238
+msgid "Use this file"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:239
+msgid "Use these files"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:240
+#: includes/cmb2/includes/types/CMB2_Type_File_Base.php:75
+msgid "Remove Image"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:241
+#: includes/cmb2/includes/CMB2_Types.php:408
+#: includes/cmb2/includes/types/CMB2_Type_File_Base.php:95
+msgid "Remove"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:243
+#: includes/cmb2/includes/types/CMB2_Type_File_Base.php:93
+msgid "Download"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_JS.php:244
+msgid "Select / Deselect All"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Options_Hookup.php:139
+msgid "Nothing to update."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Options_Hookup.php:143
+msgid "Settings updated."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Types.php:226
+msgid "Custom CMB2 field type classes must extend CMB2_Type_Base."
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Types.php:344
+msgid "Add Row"
+msgstr ""
+
+#: includes/cmb2/includes/CMB2_Types.php:408
+msgid "Remove Row"
+msgstr ""
+
+#: includes/cmb2/includes/helper-functions.php:308
+msgid "Save"
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller.php:257
+msgid "This box does not have read permissions."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller.php:277
+msgid "This box does not have write permissions."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller.php:300
+msgid ""
+"No box found by that id. A box needs to be registered with the \"show_in_rest"
+"\" parameter configured."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller.php:378
+msgid "A human-readable description of the object."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller.php:385
+msgid "The id for the object."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller.php:392
+msgid "The title for the object."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:51
+msgid "Includes the registered fields for the box in the response."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:72
+msgid ""
+"Includes the fully rendered attributes, 'form_open', 'form_close', as well "
+"as the enqueued 'js_dependencies' script handles, and 'css_dependencies' "
+"stylesheet handles."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:122
+msgid "No boxes found."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:27
+msgid ""
+"Includes the box object which the fields are registered to in the response."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:30
+msgid ""
+"When the '_rendered' argument is passed, the renderable field attributes "
+"will be returned fully rendered. By default, the names of the callback "
+"handers for the renderable attributes will be returned."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:33
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:36
+msgid ""
+"To view or modify the field's value, the 'object_id' and 'object_type' "
+"arguments are required."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:236
+msgid ""
+"CMB2 Field value cannot be updated without the value parameter specified."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:297
+msgid ""
+"CMB2 Field value cannot be modified without the object_id and object_type "
+"parameters specified."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:312
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:341
+msgid "No field found by that id."
+msgstr ""
+
+#: includes/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:415
+#, php-format
+msgid "Value Error for %s"
+msgstr ""
+
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:25
+#, php-format
+msgid "Method '%s' must be overridden."
+msgstr ""
+
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:35
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:47
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:59
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:71
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:83
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:95
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:107
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:119
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:131
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:143
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:155
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:168
+#, php-format
+msgid "Method '%s' not implemented. Must be overridden in subclass."
+msgstr ""
+
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:273
+msgid "Current page of the collection."
+msgstr ""
+
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:281
+msgid "Maximum number of items to be returned in result set."
+msgstr ""
+
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:290
+msgid "Limit results to those matching a string."
+msgstr ""
+
+#: includes/cmb2/includes/shim/WP_REST_Controller.php:308
+msgid ""
+"Scope under which the request is made; determines fields present in response."
+msgstr ""
+
+#: includes/cmb2/includes/types/CMB2_Type_Counter_Base.php:50
+msgid "Words left"
+msgstr ""
+
+#: includes/cmb2/includes/types/CMB2_Type_Counter_Base.php:51
+msgid "Words"
+msgstr ""
+
+#: includes/cmb2/includes/types/CMB2_Type_Counter_Base.php:56
+msgid "Characters left"
+msgstr ""
+
+#: includes/cmb2/includes/types/CMB2_Type_Counter_Base.php:57
+msgid "Characters"
+msgstr ""
+
+#: includes/cmb2/includes/types/CMB2_Type_Counter_Base.php:62
+msgid "Your text may be truncated."
+msgstr ""
+
+#: includes/cmb2/includes/types/CMB2_Type_File.php:76
+msgid "Add or Upload File"
+msgstr ""
+
+#: includes/cmb2/includes/types/CMB2_Type_File_List.php:41
+msgid "Add or Upload Files"
+msgstr ""
+
+#: includes/cmb2/includes/types/CMB2_Type_Taxonomy_Base.php:115
+msgid "No terms"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:304
+msgid "Knowledgebase Sidebar"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:306
+msgid ""
+"Widgets in this area will be shown on Knowledgebase Category Page and "
+"Knowledgebase Single Page."
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:405
+#: public/class-mt-knowledgebase-public.php:674
+#: public/elementor-widgets/knowledgebase-archive.php:165
+#: public/elementor-widgets/knowledgebase-list.php:153
+#, php-format
+msgid "%s Article in this category"
+msgid_plural "%s Articles in this category"
+msgstr[0] ""
+msgstr[1] ""
+
+#: public/class-mt-knowledgebase-public.php:407
+#: public/class-mt-knowledgebase-public.php:676
+#: public/elementor-widgets/knowledgebase-archive.php:167
+#: public/elementor-widgets/knowledgebase-list.php:155
+msgid "View all"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:426
+msgid "Search Knowledge Base..."
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:781
+#: public/templates/mtkb-changelog/single-mtkb-changelog.php:24
+msgid "Version v"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:782
+#: public/templates/mtkb-changelog/single-mtkb-changelog.php:25
+msgid "Date: "
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:851
+#: public/elementor-widgets/knowledgebase-single-category-accordion.php:120
+msgid "read more"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:981
+msgid "You have to login or register to like posts!"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:1126
+#: public/elementor-widgets/knowledgebase-most.php:142
+#, php-format
+msgid "%s Article"
+msgid_plural "%s Articles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: public/class-mt-knowledgebase-public.php:1192
+msgid "Search Portfolio..."
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:1265
+#: public/class-mt-knowledgebase-public.php:1337
+#: public/class-mt-knowledgebase-public.php:1411
+#: public/templates/mtkb-portfolio/single-mtkb-portfolio.php:115
+#: public/templates/mtkb-portfolio/taxonomy-mtkb-portfolio.php:45
+msgid "View More"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:1276
+msgid "No results found"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:1428
+msgid "Share on Facebook"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:1430
+msgid "Tweet"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:1432
+msgid "Pin it"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:1434
+msgid "Post to Tumblr"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:1436
+msgid "Email"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:1438
+msgid "Share on LinkedIn"
+msgstr ""
+
+#: public/class-mt-knowledgebase-public.php:1440
+msgid "Submit to Reddit"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:66
+msgid "MT knowledgebase Search Bar"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:68
+#: public/class-mt-knowledgebase-wp-bakery.php:101
+#: public/class-mt-knowledgebase-wp-bakery.php:259
+#: public/class-mt-knowledgebase-wp-bakery.php:279
+#: public/class-mt-knowledgebase-wp-bakery.php:323
+#: public/class-mt-knowledgebase-wp-bakery.php:386
+#: public/class-mt-knowledgebase-wp-bakery.php:429
+#: public/class-mt-knowledgebase-wp-bakery.php:456
+#: public/class-mt-knowledgebase-wp-bakery.php:508
+#: public/class-mt-knowledgebase-wp-bakery.php:551
+#: public/class-mt-knowledgebase-wp-bakery.php:570
+#: public/class-mt-knowledgebase-wp-bakery.php:617
+#: public/class-mt-knowledgebase-wp-bakery.php:682
+#: public/class-mt-knowledgebase-wp-bakery.php:734
+msgid "Mt Knowledgebase"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:74
+#: public/class-mt-knowledgebase-wp-bakery.php:265
+#: public/class-mt-knowledgebase-wp-bakery.php:646
+#: public/class-mt-knowledgebase-wp-bakery.php:711
+#: public/class-mt-knowledgebase-wp-bakery.php:763
+msgid "Additional class"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:77
+#: public/class-mt-knowledgebase-wp-bakery.php:268
+#: public/class-mt-knowledgebase-wp-bakery.php:649
+#: public/class-mt-knowledgebase-wp-bakery.php:714
+#: public/class-mt-knowledgebase-wp-bakery.php:766
+msgid "The additional class for further styling (optional)."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:83
+msgid "Search placeholder"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:86
+msgid "The placeholder for the search bar."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:95
+msgid "Mt knowledgebase Grid Container"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:106
+#: public/class-mt-knowledgebase-wp-bakery.php:179
+#: public/class-mt-knowledgebase-wp-bakery.php:232
+#: public/class-mt-knowledgebase-wp-bakery.php:310
+#: public/class-mt-knowledgebase-wp-bakery.php:373
+#: public/class-mt-knowledgebase-wp-bakery.php:409
+#: public/class-mt-knowledgebase-wp-bakery.php:442
+#: public/class-mt-knowledgebase-wp-bakery.php:483
+#: public/class-mt-knowledgebase-wp-bakery.php:531
+#: public/class-mt-knowledgebase-wp-bakery.php:556
+#: public/class-mt-knowledgebase-wp-bakery.php:588
+msgid "Extra class name"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:108
+#: public/class-mt-knowledgebase-wp-bakery.php:181
+#: public/class-mt-knowledgebase-wp-bakery.php:234
+#: public/class-mt-knowledgebase-wp-bakery.php:312
+#: public/class-mt-knowledgebase-wp-bakery.php:375
+#: public/class-mt-knowledgebase-wp-bakery.php:411
+#: public/class-mt-knowledgebase-wp-bakery.php:444
+#: public/class-mt-knowledgebase-wp-bakery.php:485
+#: public/class-mt-knowledgebase-wp-bakery.php:533
+#: public/class-mt-knowledgebase-wp-bakery.php:558
+#: public/class-mt-knowledgebase-wp-bakery.php:590
+#: public/elementor-widgets/changelog-list.php:53
+#: public/elementor-widgets/changelog-list.php:82
+#: public/elementor-widgets/changelog-single-item.php:42
+#: public/elementor-widgets/faqs-acordion.php:42
+#: public/elementor-widgets/faqs-acordion.php:77
+#: public/elementor-widgets/knowledgebase-archive.php:42
+#: public/elementor-widgets/knowledgebase-categories-accordion.php:53
+#: public/elementor-widgets/knowledgebase-list-alphabetical.php:42
+#: public/elementor-widgets/knowledgebase-list.php:42
+#: public/elementor-widgets/knowledgebase-most.php:58
+#: public/elementor-widgets/knowledgebase-single-category-accordion.php:42
+#: public/elementor-widgets/portfolio-category.php:40
+#: public/elementor-widgets/portfolio-filters.php:40
+#: public/elementor-widgets/portfolio-most.php:40
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:127
+msgid "Mt Knowledgebase list"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:139
+#: public/class-mt-knowledgebase-wp-bakery.php:202
+#: public/class-mt-knowledgebase-wp-bakery.php:305
+#: public/class-mt-knowledgebase-wp-bakery.php:331
+#: public/class-mt-knowledgebase-wp-bakery.php:404
+msgid "Number"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:140
+#: public/class-mt-knowledgebase-wp-bakery.php:203
+#: public/class-mt-knowledgebase-wp-bakery.php:405
+msgid "Enter the number of the Knowledgebase items you want to be displayed."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:147
+#: public/class-mt-knowledgebase-wp-bakery.php:393
+#: public/class-mt-knowledgebase-wp-bakery.php:721
+msgid "Select Knowledgebase Category"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:149
+#: public/class-mt-knowledgebase-wp-bakery.php:395
+msgid "Please select knowledgebase category"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:169
+#: public/class-mt-knowledgebase-wp-bakery.php:338
+msgid "List Style"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:190
+msgid "Mt Knowledgebase most liked/viewed/recent"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:221
+msgid "List Type"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:238
+msgid "Button text"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:241
+msgid "The text for the button."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:247
+msgid "#"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:248
+msgid "The link for the button."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:257
+msgid "Mt Knowledgebase List A to Z"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:277
+msgid "Mt Knowledgebase Categories Accordion"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:288
+msgid ""
+"Enter the title of the Knowledgebase categories accordion that you want to "
+"be displayed."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:295
+msgid "Select the Active Category"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:296
+msgid ""
+"Select the Knowledgebase category that you want to be displayed open by "
+"deffault. "
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:306
+#: public/class-mt-knowledgebase-wp-bakery.php:332
+msgid ""
+"Enter the number of the Knowledgebase items you want to be displayed in each "
+"category."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:321
+msgid "Mt Knowledgebase Categories Grid"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:362
+msgid "Show categories without knowledgebase article?"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:384
+msgid "Mt Knowledgebase Category Accordion"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:424
+msgid "Mt Changelog List"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:438
+msgid "Enter the title of the Changelog list that you wish to be displayed."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:454
+msgid "Mt Changelog List Item"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:463
+msgid "Text"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:465
+msgid ""
+"I am text block. Click edit button to change this text. Lorem ipsum dolor "
+"sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
+"ullamcorper mattis, pulvinar dapibus leo."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:506
+msgid "Mt Single Changelog"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:517
+msgid "Select the Changelog that you want to be displayed."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:524
+#: public/elementor-widgets/changelog-single-item.php:76
+msgid "Changelog Version"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:527
+msgid "Type in the Changelog Version that You want to desiplay."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:546
+msgid "Mt FAQs Container"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:568
+msgid "Mt FAQs Item"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:578
+#: public/class-mt-knowledgebase-wp-bakery.php:584
+msgid "Enter the title of the FAQ that you wish to be displayed."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:624
+#: public/class-mt-knowledgebase-wp-bakery.php:689
+#: public/class-mt-knowledgebase-wp-bakery.php:741
+msgid "Number of posts"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:626
+#: public/class-mt-knowledgebase-wp-bakery.php:691
+#: public/class-mt-knowledgebase-wp-bakery.php:743
+msgid "Enter number of portfolio listings to show."
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:655
+msgid "Enable or disable search filter"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:663
+msgid "Enable or disable category filter"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:671
+msgid "Enable or disable tags filter"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:680
+msgid "MT Portfolio Category"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:723
+msgid "Please select the portfolio category"
+msgstr ""
+
+#: public/class-mt-knowledgebase-wp-bakery.php:724
+msgid "Default value"
+msgstr ""
+
+#: public/elementor-widgets/changelog-list.php:15
+msgid "MTKB - Changelog List"
+msgstr ""
+
+#: public/elementor-widgets/changelog-list.php:38
+msgid "Heading title"
+msgstr ""
+
+#: public/elementor-widgets/changelog-list.php:42
+msgid "The title of the list."
+msgstr ""
+
+#: public/elementor-widgets/changelog-list.php:62
+msgid "List item type"
+msgstr ""
+
+#: public/elementor-widgets/changelog-list.php:89
+msgid "List content"
+msgstr ""
+
+#: public/elementor-widgets/changelog-list.php:93
+msgid "The Content of the list item."
+msgstr ""
+
+#: public/elementor-widgets/changelog-list.php:101
+msgid "Changelog Items"
+msgstr ""
+
+#: public/elementor-widgets/changelog-single-item.php:15
+msgid "MTKB - Changelog Single Item"
+msgstr ""
+
+#: public/elementor-widgets/changelog-single-item.php:69
+msgid "The ID of the Changelog You want to display."
+msgstr ""
+
+#: public/elementor-widgets/changelog-single-item.php:80
+msgid "Type in the Version of the Changelog that you want to display."
+msgstr ""
+
+#: public/elementor-widgets/faqs-acordion.php:15
+msgid "MTKB - FAQs Accordion"
+msgstr ""
+
+#: public/elementor-widgets/faqs-acordion.php:55
+msgid "The FAQ title"
+msgstr ""
+
+#: public/elementor-widgets/faqs-acordion.php:66
+msgid "The FAQ content"
+msgstr ""
+
+#: public/elementor-widgets/faqs-acordion.php:84
+msgid "Frequently Asked Question"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-archive.php:15
+msgid "MTKB - Knowledgebase Categories Grid"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-archive.php:49
+#: public/elementor-widgets/knowledgebase-list.php:49
+msgid "Knowledgebase List version"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-archive.php:53
+#: public/elementor-widgets/knowledgebase-list.php:53
+#: public/elementor-widgets/knowledgebase-most.php:42
+msgid "Choose the Knowledgebase List version"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-archive.php:55
+#: public/elementor-widgets/knowledgebase-list.php:55
+msgid "Version 1"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-archive.php:56
+#: public/elementor-widgets/knowledgebase-list.php:56
+msgid "Version 2"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-archive.php:64
+#: public/elementor-widgets/portfolio-category.php:47
+#: public/elementor-widgets/portfolio-filters.php:47
+#: public/elementor-widgets/portfolio-most.php:47
+msgid "columns"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-archive.php:68
+msgid "Choose the width for the Category boxes"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-archive.php:79
+#: public/elementor-widgets/knowledgebase-categories-accordion.php:79
+#: public/elementor-widgets/knowledgebase-list.php:84
+#: public/elementor-widgets/knowledgebase-most.php:65
+#: public/elementor-widgets/knowledgebase-single-category-accordion.php:69
+#: public/elementor-widgets/portfolio-category.php:62
+#: public/elementor-widgets/portfolio-filters.php:62
+msgid "Knowledgebase Posts Number"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-archive.php:83
+msgid "The number of Knowledgebase posts to be displayed for each category"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-categories-accordion.php:15
+msgid "MTKB - Categories Accordion"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-categories-accordion.php:42
+msgid "Type here the title"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-categories-accordion.php:68
+msgid "Select the active category"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-categories-accordion.php:72
+msgid "The active category will be open by default"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-categories-accordion.php:83
+msgid ""
+"Type here the number of Knowledgebase articles to be displayed in each "
+"category."
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-list-alphabetical.php:15
+msgid "MTKB - Listing From A to Z"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-list.php:15
+msgid "MTKB - Knowledgebase Category"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-list.php:76
+#: public/elementor-widgets/knowledgebase-single-category-accordion.php:61
+#: public/elementor-widgets/portfolio-category.php:85
+msgid "Select the category"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-list.php:88
+#: public/elementor-widgets/knowledgebase-most.php:69
+#: public/elementor-widgets/knowledgebase-searchbar.php:43
+#: public/elementor-widgets/knowledgebase-single-category-accordion.php:73
+msgid "Type here the number of Knowledgebase posts to be displayed"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-most.php:15
+msgid "MTKB - Knowledgebase Most Liked/ Viewed/ Recent"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-most.php:44
+msgid "Knowledgebase List Most Liked"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-most.php:45
+msgid "Knowledgebase List Most Viewed"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-most.php:46
+msgid "Knowledgebase List Recent"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-most.php:79
+msgid "Type here the Text of the Button"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-most.php:86
+msgid "Button Url"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-most.php:94
+msgid "Type here the URL of the Button"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-searchbar.php:17
+msgid "MTKB - Search Bar"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-searchbar.php:50
+msgid "Placehoder"
+msgstr ""
+
+#: public/elementor-widgets/knowledgebase-single-category-accordion.php:15
+msgid "MTKB - Single Category accordion"
+msgstr ""
+
+#: public/elementor-widgets/portfolio-category.php:13
+msgid "MTKB - Portfolio Category"
+msgstr ""
+
+#: public/elementor-widgets/portfolio-category.php:51
+#: public/elementor-widgets/portfolio-filters.php:51
+#: public/elementor-widgets/portfolio-most.php:51
+msgid "Choose the number of columns"
+msgstr ""
+
+#: public/elementor-widgets/portfolio-category.php:66
+#: public/elementor-widgets/portfolio-filters.php:66
+#: public/elementor-widgets/portfolio-most.php:66
+msgid "The number of Portfolio Listings to be displayed."
+msgstr ""
+
+#: public/elementor-widgets/portfolio-filters.php:13
+msgid "MTKB - Portfolio Filters"
+msgstr ""
+
+#: public/elementor-widgets/portfolio-filters.php:75
+#: public/elementor-widgets/portfolio-filters.php:87
+#: public/elementor-widgets/portfolio-filters.php:99
+msgid "Show"
+msgstr ""
+
+#: public/elementor-widgets/portfolio-filters.php:76
+#: public/elementor-widgets/portfolio-filters.php:88
+#: public/elementor-widgets/portfolio-filters.php:100
+msgid "Hide"
+msgstr ""
+
+#: public/elementor-widgets/portfolio-filters.php:85
+#: public/elementor-widgets/portfolio-filters.php:97
+msgid "Show Title"
+msgstr ""
+
+#: public/elementor-widgets/portfolio-most.php:13
+msgid "MTKB - Portfolio Most Viewd/Recent"
+msgstr ""
+
+#: public/elementor-widgets/portfolio-most.php:62
+msgid "Portfolio Posts Number"
+msgstr ""
+
+#: public/elementor-widgets/portfolio-most.php:77
+msgid "Choose the Portfolio Order Type"
+msgstr ""
+
+#: public/elementor-widgets/portfolio-most.php:79
+msgid "Portfolio Most Viewed"
+msgstr ""
+
+#: public/elementor-widgets/portfolio-most.php:80
+msgid "Portfolio Recent"
+msgstr ""
+
+#: public/templates/mtkb-changelog/single-mtkb-changelog.php:13
+msgid "Changelog: "
+msgstr ""
+
+#: public/templates/mtkb-knowledgebase/single-mtkb-knowledgebase.php:55
+msgid "Related Knowledgebase"
+msgstr ""
+
+#: public/templates/mtkb-knowledgebase/taxonomy-mtkb-knowledgebase.php:23
+msgid "Search results for: "
+msgstr ""
+
+#: public/templates/mtkb-knowledgebase/taxonomy-mtkb-knowledgebase.php:26
+msgid "Knowledge Base Catergory: "
+msgstr ""
+
+#: public/templates/mtkb-knowledgebase/taxonomy-mtkb-knowledgebase.php:28
+msgid "Knowledge Base Tag: "
+msgstr ""
+
+#: public/templates/mtkb-knowledgebase/taxonomy-mtkb-knowledgebase.php:57
+msgid "Continue Reading "
+msgstr ""
+
+#: public/templates/mtkb-knowledgebase/taxonomy-mtkb-knowledgebase.php:63
+msgid "There are no KB Categories"
+msgstr ""
+
+#: public/templates/mtkb-portfolio/single-mtkb-portfolio.php:22
+msgid "Knowledgebase"
+msgstr ""
+
+#: public/templates/mtkb-portfolio/single-mtkb-portfolio.php:60
+msgid "Link"
+msgstr ""
+
+#: public/templates/mtkb-portfolio/single-mtkb-portfolio.php:64
+msgid "Share"
+msgstr ""
+
+#: public/templates/mtkb-portfolio/single-mtkb-portfolio.php:94
+msgid "Related Portfolio Listings"
+msgstr ""
+
+#: public/templates/mtkb-portfolio/single-mtkb-portfolio.php:123
+msgid "There are no Related Portfolio Listings."
+msgstr ""
+
+#: public/templates/mtkb-portfolio/taxonomy-mtkb-portfolio.php:16
+msgid "Portfolio Category: "
+msgstr ""
+
+#: public/templates/mtkb-portfolio/taxonomy-mtkb-portfolio.php:19
+msgid "Portfolio Tag: "
+msgstr ""
+
+#: public/templates/mtkb-portfolio/taxonomy-mtkb-portfolio.php:52
+msgid "There are no Portfolio Listings in this Category"
+msgstr ""

@@ -1,0 +1,88 @@
+/**
+ * Overwrite Styling
+ * Customisations for the Dark Mode option
+*/
+
+
+/* Dark Background */
+body .nft_marketplace_core-breadcrumbs,
+.single-nft-listing div#primary,
+.archive.tax-nft-listing-category .high-padding,
+.nft-marketplace-core-author,
+.page-template-template-nft-listings .high-padding,
+.nft-search-page{
+    background: #000;
+}
+
+/* Light Text color */
+body .nft_marketplace_core-breadcrumbs h1 span, 
+body .nft_marketplace_core-breadcrumbs h1,
+body .nft_marketplace_core-breadcrumbs .breadcrumb li,
+body .nft_marketplace_core-breadcrumbs .breadcrumb a,
+.nft-listing-wishlist a i,
+.nft-entry-summary .nft-listing-wishlist,
+.nft-listing-views-counter span,
+.nft-listing-views-counter i,
+.single-nft .nft_title,
+.single-collection-title,
+body .single-collection-title a,
+.nft-listing-crypto-price,
+.nft-listing-collection p,
+.nft-listing-meta div,
+body .nft-listing-meta a,
+.nft-listing-tabs ul li.tab-active a,
+.nft-listing-tabs ul li a:hover,
+.related.nft-listing > h3,
+.nft-listing-tabs section#tab-stats span, 
+.nft-listing-tabs section#tab-levels span,
+.nft-listing-author h4,
+.nft-listing-name a,
+.nft-listing-wrapper .details-container span.nft-listing-price,
+.nft-sidebar-title,
+.nft-marketplace-search-bar input,
+.nft-marketplace-search-bar input::placeholder,
+.nft-marketplace-ordering .nice-select,
+.author-details-wrapper .author-name h3,
+.author-description .author-eth-address,
+.author-edit-title h2,
+.author-edit-fields-wrapper label,
+.author-edit-fields-wrapper input[type=text]::placeholder,
+.author-edit-fields-wrapper input[type=text] {
+    color:  #fff !important;
+}
+
+/* Neutral Text color */
+.nft-listing-meta span,
+.nft-listing-tabs p,
+.nft-listing-wrapper .details-container span,
+.nft-marketplace-taxonomy-count,
+#sidebar .nft-marketplace-categories li a,
+.author-description p{
+    color:  #b9b9b9 !important;
+}
+
+/* NFT Listing Grids*/
+/*Background*/
+.nft-listing-wrapper,
+.nft-listing-name,
+.nft-listing-wrapper .details-container,
+.nft-marketplace-search-bar input,
+.nft-marketplace-ordering .nice-select,
+.author-edit-fields-wrapper input[type=text]{
+    background: #191d33;
+}
+body .nft-listing-wrapper .title-wrapper {
+    border-bottom: 1px solid rgb(255 255 255 / 16%);
+}
+.single-nft-listing .nft_marketplace_core-breadcrumbs,
+.archive.tax-nft-listing-category .nft_marketplace_core-breadcrumbs,
+.page-template-template-nft-listings .nft_marketplace_core-breadcrumbs,
+.nft_marketplace_core-breadcrumbs{
+    border-bottom:  none;
+    padding-bottom:  0px;
+}
+.nft-marketplace-search-bar input,
+.nft-marketplace-ordering .nice-select,
+.author-edit-fields-wrapper input[type=text]{
+    border:  none;
+}

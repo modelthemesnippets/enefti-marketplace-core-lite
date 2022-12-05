@@ -1,0 +1,9 @@
+.bg_video_inputs_group, .bg_revslider_inputs_group {
+    display: none;
+}
+#redux-header .rAds {
+    display: none !important;
+}
+.wrap .redux-notice{
+	display: none !important;
+}
