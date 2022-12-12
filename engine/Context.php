@@ -1,16 +1,16 @@
 <?php
 
 /**
- * NFT_Marketplace_Core
+ * NFT_Marketplace_Core_Lite
  *
- * @package   NFT_Marketplace_Core
+ * @package   NFT_Marketplace_Core_Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, ModelTheme, support@modeltheme.com
  * @license   GPL v3
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Engine;
+namespace NFT_Marketplace_Core_Lite\Engine;
 
 use Inpsyde\WpContext;
 

@@ -1,8 +1,8 @@
 <?php
 // Silence is golden.
-namespace NFT_Marketplace_Core\Integrations;
+namespace NFT_Marketplace_Core_Lite\Integrations;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 class Theme extends Base
 {
@@ -26,7 +26,7 @@ class Theme extends Base
     public function accountMenuLinkToManageYourNFTs()
     {
         echo '
-            <li><a href="' . esc_url(site_url("manage-your-nfts")) . '"><i class="icon-diamond icons"></i> ' . esc_html__('Enefti Core Dashboard', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</a></li>
+            <li><a href="' . esc_url(site_url("manage-your-nfts")) . '"><i class="icon-diamond icons"></i> ' . esc_html__('Enefti Core Dashboard', 'nft-marketplace-core-lite') . '</a></li>
         ';
     }
 

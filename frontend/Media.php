@@ -3,9 +3,9 @@
 Author Dashboard Custom field [image]
 --------------------------------------------------*/
 
-namespace NFT_Marketplace_Core\Frontend;
+namespace NFT_Marketplace_Core_Lite\Frontend;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 /**
  * Class wrapper for Front End Media example
@@ -54,14 +54,14 @@ class Media extends Base {
 	    $current_user = wp_get_current_user();
 		$allowed_roles = array('editor', 'administrator', 'author', 'customer');
 		if( array_intersect($allowed_roles, $current_user->roles ) ) {
-			$str = esc_html__( 'Select Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN );
+			$str = esc_html__( 'Select Image', 'nft-marketplace-core-lite' );
 			return '
 			
 			<div class="form-group">  
 				<div class="upload-images main-uploader col-md-12">
-					<label>'.esc_html__('Profile Banner Image',NFT_MARKETPLACE_CORE_TEXTDOMAIN).'</label>
+					<label>'.esc_html__('Profile Banner Image','nft-marketplace-core-lite').'</label>
 					<div class="spacer-upload">
-						<div class="text">' . $str . '</div>
+						<div class="text">' . esc_html($str) . '</div>
 					</div>			
 				</div>
 				<div class="clearfix"></div>

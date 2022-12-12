@@ -1,8 +1,8 @@
 <?php
 // Silence is golden.
-namespace NFT_Marketplace_Core\Integrations;
+namespace NFT_Marketplace_Core_Lite\Integrations;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 class WooCommerce extends Base
 {
@@ -30,9 +30,9 @@ class WooCommerce extends Base
     {
         echo "
         <p>
-            " . esc_html__('This is the Woocommerce My account page, if you are searching for the Enefti Core Dashboard page click on ', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . " <a href='" . esc_url(site_url("manage-your-nfts")) . "'>" . esc_html__('this', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . "</a> " . esc_html__(' link.', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . "
+            " . esc_html__('This is the Woocommerce My account page, if you are searching for the Enefti Core Dashboard page click on ', 'nft-marketplace-core-lite') . " <a href='" . esc_url(site_url("manage-your-nfts")) . "'>" . esc_html__('this', 'nft-marketplace-core-lite') . "</a> " . esc_html__(' link.', 'nft-marketplace-core-lite') . "
         </p>
-        <a class='single_nft_button button alt' href='" . esc_url(site_url("manage-your-nfts")) . "'>" . esc_html__('Enefti Core Dashboard', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . "</a>
+        <a class='single_nft_button button alt' href='" . esc_url(site_url("manage-your-nfts")) . "'>" . esc_html__('Enefti Core Dashboard', 'nft-marketplace-core-lite') . "</a>
         ";
     }
 
@@ -45,7 +45,7 @@ class WooCommerce extends Base
     function addItemToWoocommerceMenuItems($items): array
     {
         $my_items = array(
-            'manage-your-nfts' => __('Enefti Core Dashboard', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'manage-your-nfts' => __('Enefti Core Dashboard', 'nft-marketplace-core-lite'),
         );
 
         return array_slice($items, 0, 1, true) +

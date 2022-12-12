@@ -1,7 +1,7 @@
 <?php
-namespace NFT_Marketplace_Core\Internals\TaxMeta;
+namespace NFT_Marketplace_Core_Lite\Internals\TaxMeta;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 /**
  * Plugin class
@@ -38,14 +38,14 @@ class CL_TAX_META extends Base
     public function add_collection_image($taxonomy)
     { ?>
         <div class="form-field term-group">
-            <label for="collection-image-id-"><?php esc_html_e('Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+            <label for="collection-image-id-"><?php esc_html_e('Image', 'nft-marketplace-core-lite'); ?></label>
             <input type="hidden" id="collection-image-id" name="collection-image-id" class="custom_media_url" value="">
             <div id="collection-image-wrapper"></div>
             <p>
                 <input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button"
-                       name="ct_tax_media_button" value="<?php esc_html_e('Add Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                       name="ct_tax_media_button" value="<?php esc_html_e('Add Image', 'nft-marketplace-core-lite'); ?>"/>
                 <input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove"
-                       name="ct_tax_media_remove" value="<?php esc_html_e('Remove Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                       name="ct_tax_media_remove" value="<?php esc_html_e('Remove Image', 'nft-marketplace-core-lite'); ?>"/>
             </p>
         </div>
         <?php
@@ -59,7 +59,7 @@ class CL_TAX_META extends Base
     {
         global $pagenow;
         if (isset($_POST['collection-image-id']) && '' !== $_POST['collection-image-id']) {
-            $image = $_POST['collection-image-id'];
+            $image = sanitize_text_field($_POST['collection-image-id']);
             add_term_meta($term_id, 'collection-image-id', $image, true);
         }
 
@@ -78,7 +78,7 @@ class CL_TAX_META extends Base
     { ?>
         <tr class="form-field term-group-wrap">
             <th scope="row">
-                <label for="collection-image-id"><?php esc_html_e('Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+                <label for="collection-image-id"><?php esc_html_e('Image', 'nft-marketplace-core-lite'); ?></label>
             </th>
             <td>
                 <?php $image_id = get_term_meta($term->term_id, 'collection-image-id', true); ?>
@@ -92,10 +92,10 @@ class CL_TAX_META extends Base
                 <p>
                     <input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button"
                            name="ct_tax_media_button"
-                           value="<?php esc_html_e('Add Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                           value="<?php esc_html_e('Add Image', 'nft-marketplace-core-lite'); ?>"/>
                     <input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove"
                            name="ct_tax_media_remove"
-                           value="<?php esc_html_e('Remove Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                           value="<?php esc_html_e('Remove Image', 'nft-marketplace-core-lite'); ?>"/>
                 </p>
             </td>
         </tr>
@@ -111,7 +111,7 @@ class CL_TAX_META extends Base
         global $pagenow;
 
         if (isset($_POST['collection-image-id']) && '' !== $_POST['collection-image-id']) {
-            $image = $_POST['collection-image-id'];
+            $image = sanitize_text_field($_POST['collection-image-id']);
             update_term_meta($term_id, 'collection-image-id', $image);
         } else {
             update_term_meta($term_id, 'collection-image-id', '');
@@ -189,14 +189,14 @@ class CL_TAX_META extends Base
             );
 
             if (is_wp_error($term)) {
-                return '<div class="nft-marketplace-core-alert container"><strong>' . $term->get_error_message() . '</strong></div>';
+                return '<div class="nft-marketplace-core-alert container"><strong>' . esc_html($term->get_error_message()) . '</strong></div>';
             }
 
             if (!$this->uploadFileFrontend($files, $term["term-id"])) {
-                return '<div class="nft-marketplace-core-alert container"><strong>' . esc_html__("Cold not upload the image", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</strong></div>';
+                return '<div class="nft-marketplace-core-alert container"><strong>' . esc_html__("Cold not upload the image", 'nft-marketplace-core-lite') . '</strong></div>';
             }
 
-            return '<div class="nft-marketplace-core-alert success container"><strong>' . esc_html__("Collection created successfully.", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</strong></div>';
+            return '<div class="nft-marketplace-core-alert success container"><strong>' . esc_html__("Collection created successfully.", 'nft-marketplace-core-lite') . '</strong></div>';
         }
     }
 
@@ -232,7 +232,7 @@ class CL_TAX_META extends Base
     {
 
         if (is_wp_error($term)) {
-            return '<div class="nft-marketplace-core-alert container"><strong>' . $term->get_error_message() . '</strong></div>';
+            return '<div class="nft-marketplace-core-alert container"><strong>' . esc_html($term->get_error_message() ). '</strong></div>';
         }
 
         if (isset($post["submit"]) && $post["submit"] !== "") {
@@ -252,14 +252,14 @@ class CL_TAX_META extends Base
             );
 
             if (is_wp_error($term)) {
-                return '<div class="nft-marketplace-core-alert container"><strong>' . $term->get_error_message() . '</strong></div>';
+                return '<div class="nft-marketplace-core-alert container"><strong>' . esc_html($term->get_error_message() ). '</strong></div>';
             }
 
             if (!$this->uploadFileFrontend($files, $term["term-id"])) {
-                return '<div class="nft-marketplace-core-alert container"><strong>' . esc_html__("Cold not upload the image", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</strong></div>';
+                return '<div class="nft-marketplace-core-alert container"><strong>' . esc_html__("Cold not upload the image", 'nft-marketplace-core-lite') . '</strong></div>';
             }
 
-            return '<div class="nft-marketplace-core-alert success container"><strong>' . esc_html__("Collection created successfully.", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</strong></div>';
+            return '<div class="nft-marketplace-core-alert success container"><strong>' . esc_html__("Collection created successfully.", 'nft-marketplace-core-lite') . '</strong></div>';
         }
     }
 }

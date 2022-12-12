@@ -1,6 +1,6 @@
 <?php
 
-namespace NFT_Marketplace_Core\Backend\ActDeact;
+namespace NFT_Marketplace_Core_Lite\Backend\ActDeact;
 
 /**
  * Fired during plugin deactivation
@@ -8,8 +8,8 @@ namespace NFT_Marketplace_Core\Backend\ActDeact;
  * @link       https://modeltheme.com/
  * @since      1.0.0
  *
- * @package    NFT_Marketplace_Core
- * @subpackage NFT_Marketplace_Core/backend/act-deact
+ * @package    NFT_Marketplace_Core_Lite
+ * @subpackage NFT_Marketplace_Core_Lite/backend/act-deact
  */
 
 /**
@@ -18,8 +18,8 @@ namespace NFT_Marketplace_Core\Backend\ActDeact;
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    NFT_Marketplace_Core
- * @subpackage NFT_Marketplace_Core/backend/act-deact
+ * @package    NFT_Marketplace_Core_Lite
+ * @subpackage NFT_Marketplace_Core_Lite/backend/act-deact
  * @author     ModelTheme <support@modeltheme.com>
  */
 

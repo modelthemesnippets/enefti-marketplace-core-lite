@@ -109,9 +109,9 @@ jQuery(document).ready(function($){
       }
       //Extend the wp.media object
       custom_uploader_instructions = wp.media.frames.file_frame = wp.media({
-        title: esc_html__('Choose Image',NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+        title: esc_html__('Choose Image','nft-marketplace-core-lite'),
         button: {
-          text: esc_html__('Choose Image',NFT_MARKETPLACE_CORE_TEXTDOMAIN)
+          text: esc_html__('Choose Image','nft-marketplace-core-lite')
         },
         multiple: true
       });

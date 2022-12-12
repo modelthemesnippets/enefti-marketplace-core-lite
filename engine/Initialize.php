@@ -1,21 +1,21 @@
 <?php
 
 /**
- * NFT_Marketplace_Core
+ * NFT_Marketplace_Core_Lite
  *
- * @package   NFT_Marketplace_Core
+ * @package   NFT_Marketplace_Core_Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, ModelTheme, support@modeltheme.com
  * @license   GPL v3
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Engine;
+namespace NFT_Marketplace_Core_Lite\Engine;
 
-use NFT_Marketplace_Core\Engine;
+use NFT_Marketplace_Core_Lite\Engine;
 
 /**
- * NFT_Marketplace_Core Initializer
+ * NFT_Marketplace_Core_Lite Initializer
  */
 class Initialize {
 
@@ -120,10 +120,10 @@ class Initialize {
 	private function get_classes( string $namespace ) {
 		$prefix    = $this->composer->getPrefixesPsr4();
 		$classmap  = $this->composer->getClassMap();
-		$namespace = 'NFT_Marketplace_Core\\' . $namespace;
+		$namespace = 'NFT_Marketplace_Core_Lite\\' . $namespace;
 
 		// In case composer has autoload optimized
-		if ( isset( $classmap[ 'NFT_Marketplace_Core\\Engine\\Initialize' ] ) ) {
+		if ( isset( $classmap[ 'NFT_Marketplace_Core_Lite\\Engine\\Initialize' ] ) ) {
 			$classes = \array_keys( $classmap );
 
 			foreach ( $classes as $class ) {
@@ -146,7 +146,7 @@ class Initialize {
 			$this->find_classes( $php_files, $folder, $namespace );
 
 			if ( !WP_DEBUG ) {
-				\wp_die( \esc_html__( 'NFT Marketplace Core is on production environment with missing `composer dumpautoload -o` that will improve the performance on autoloading itself.', NFT_MARKETPLACE_CORE_TEXTDOMAIN ) );
+				\wp_die( \esc_html__( 'NFT Marketplace Core is on production environment with missing `composer dumpautoload -o` that will improve the performance on autoloading itself.', 'nft-marketplace-core-lite' ) );
 			}
 
 			return $this->classes;

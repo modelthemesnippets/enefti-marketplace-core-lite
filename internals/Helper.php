@@ -9,12 +9,12 @@
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Internals;
+namespace NFT_Marketplace_Core_Lite\Internals;
 
 /**
  * Helper class to easily access all useful functions
  *
- * @package   NFT Marketplace Core
+ * @package   NFT Marketplace Core Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, ModelTheme, support@modeltheme.com
  * @license   GPL-3.0
@@ -29,13 +29,13 @@ class Helper
         if (isset($nft_marketplace_core_nft_listing_blockchains_term_meta["nft_marketplace_core_taxonomy_blockchain_currency_image"])) {
             $image = wp_get_attachment_image_src($nft_marketplace_core_nft_listing_blockchains_term_meta["nft_marketplace_core_taxonomy_blockchain_currency_image"][0], $customSizes, true);
             if (is_array($image)) {
-                return "<img src='" . $image[0] . "' width='" . $customSizes[0] . "' height='" . $customSizes[1] . "' alt='" . esc_attr__("Blockchain Icon", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . "'/>";
+                return "<img src='" . esc_url($image[0]) . "' width='" . esc_attr($customSizes[0]) . "' height='" . esc_attr($customSizes[1]) . "' alt='" . esc_attr__("Blockchain Icon", 'nft-marketplace-core-lite') . "'/>";
             }
             return $image;
         } elseif($nft_marketplace_core_nft_listing_blockchains_term_meta["nft_marketplace_core_taxonomy_currency_symbol"]) {
             $image = wp_get_attachment_image_src($nft_marketplace_core_nft_listing_blockchains_term_meta["currency-image-id"][0], $customSizes, true);
             if (is_array($image)) {
-                return "<img src='" . $image[0] . "' width='" . $customSizes[0] . "' height='" . $customSizes[1] . "' alt='" . esc_attr__("Token Icon", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . "'/>";
+                return "<img src='" . esc_url($image[0]) . "' width='" . esc_attr($customSizes[0]) . "' height='" . esc_attr($customSizes[1]) . "' alt='" . esc_attr__("Token Icon", 'nft-marketplace-core-lite') . "'/>";
             }
             return $image;
         }
@@ -231,13 +231,13 @@ class Helper
 
         // NFT Created
         if ($log->type === 1) {
-            $text = esc_html__("The NFT was created by %address%.", NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+            $text = esc_html__("The NFT was created by %address%.", 'nft-marketplace-core-lite');
         } else if ($log->type === 2) {
-            $text = esc_html__("The NFT was listed by %address%.", NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+            $text = esc_html__("The NFT was listed by %address%.", 'nft-marketplace-core-lite');
         } else if ($log->type === 3) {
-            $text = esc_html__("The NFT was sold to %address%.", NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+            $text = esc_html__("The NFT was sold to %address%.", 'nft-marketplace-core-lite');
         } else if ($log->type === 4) {
-            $text = esc_html__("The NFT was relisted by %address%.", NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+            $text = esc_html__("The NFT was relisted by %address%.", 'nft-marketplace-core-lite');
         }
 
         return [
@@ -266,8 +266,8 @@ class Helper
         if ($size === "large") {
             $largeSize = "            
             <div class='overlay'>
-                <h5>" . esc_html__('This content might be disturbing. Proceed with caution!', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . "</h5>
-                <button id='nft-marketplace-core-nsfw-remove-button'>" . esc_html__('View Regardless', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . "</button>
+                <h5>" . esc_html__('This content might be disturbing. Proceed with caution!', 'nft-marketplace-core-lite') . "</h5>
+                <button id='nft-marketplace-core-nsfw-remove-button'>" . esc_html__('View Regardless', 'nft-marketplace-core-lite') . "</button>
             </div>";
         }
 
@@ -302,12 +302,8 @@ class Helper
         $external = get_post_meta($postid, "nft_marketplace_core_nft_listing_external_image", true);
         $assets = get_post_meta($postid, "nft_marketplace_core_nft_listing_assets", true);
 
-//        if ($external === "" && (!is_array($assets) || !isset($assets[0]))) {
-//            return esc_html__("Could not determine the location of the assets.",NFT_MARKETPLACE_CORE_TEXTDOMAIN);
-//        }
-
         if (is_array($assets) && strpos(wp_check_filetype(wp_get_attachment_url($assets[0]))["type"], 'image/') !== 0 && !function_exists("nft_marketplace_core_media_types_addon_media")) {
-            return esc_html__("You need to have the Media Types for NFT Marketplace Core Plugin to display assets of this type.", NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+            return esc_html__("You need to have the Media Types for NFT Marketplace Core Plugin to display assets of this type.", 'nft-marketplace-core-lite');
         }
 
         $filter = apply_filters("nft_marketplace_core_process_display_asset", false, $postid, $assets, $external, $size);
@@ -317,7 +313,7 @@ class Helper
         }
 
         if (!is_array($external) && $external != "") {
-            return '<img  src="' . $external . '"   style="' . $sizeT['image'] . '"  alt=""/>';
+            return '<img  src="' . esc_attr($external) . '"   style="' . esc_attr($sizeT['image']) . '"  alt=""/>';
         }
 
         $thumbnail = wp_get_attachment_image(get_post_thumbnail_id($postid), $size);
@@ -332,7 +328,7 @@ class Helper
     public static function getDefaultThumbnailSrc($width = 30, $height = 30)
     {
         $defaultThumbnailUrl = plugin_dir_url(__DIR__) . "assets/images/placeholder.png";
-        return "<img src='$defaultThumbnailUrl' width='$width' height='$height' />";
+        return "<img src='".esc_attr($defaultThumbnailUrl)."' width='".esc_attr($width)."' height='".esc_attr($height)."' />";
     }
 
     public static function getPlaceholderLocation()

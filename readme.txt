@@ -3,8 +3,8 @@ Contributors: modeltheme
 Tags: nft marketplace, nft, erc721, ethereum, bsc, polygon, mint, enefti, blockchain, smart contract
 Requires at least: 5.0
 Tested up to: 6.1
-Requires PHP: 5.6
-Stable tag: 1.5.5
+Requires PHP: 7.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

@@ -17,7 +17,7 @@ $nft_marketplace_core_banner_img = false;
             <div class="author-details-wrapper col-md-12">
                 <div class="author-title-image">
                     <div class="author-avatar">
-                        <img class="avatar avatar-96 photo avatar-default" src="<?php echo wp_get_attachment_image_url($nft_marketplace_core_avatar);?>"/>
+                        <img class="avatar avatar-96 photo avatar-default" src="<?php echo esc_url(wp_get_attachment_image_url($nft_marketplace_core_avatar));?>"/>
                     </div>
                     <div class="author-name">
                         <h3><?php echo esc_html($term->name); ?></h3>
@@ -61,7 +61,7 @@ $nft_marketplace_core_banner_img = false;
                         <?php do_action('nft_marketplace_core_author_after_grid'); ?>
 
                     <?php else : ?>
-                        <strong><?php echo esc_html__('There are no NFT Listings!',NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></strong>
+                        <strong><?php echo esc_html__('There are no NFT Listings!','nft-marketplace-core-lite') ?></strong>
                     <?php endif; ?>
                         <div class="clearfix"></div>
                     </div>

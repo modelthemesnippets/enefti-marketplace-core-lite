@@ -9,14 +9,14 @@
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Integrations;
+namespace NFT_Marketplace_Core_Lite\Integrations;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 /**
  * Handles integration with the NFT Creator.
  *
- * @package   NFT Marketplace Core
+ * @package   NFT Marketplace Core Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, ModelTheme, support@modeltheme.com
  * @license   GPL-3.0
@@ -48,14 +48,14 @@ class Creator extends Base
         $required = array('image', 'levels', 'name', 'properties', 'stats');
 
         if (count(array_intersect_key(array_flip($required), $data)) !== count($required)) {
-            return new \WP_REST_Response(["success" => false, "message" => esc_html__("Core: Something went wrong!",NFT_MARKETPLACE_CORE_TEXTDOMAIN)], 401);
+            return new \WP_REST_Response(["success" => false, "message" => esc_html__("Core: Something went wrong!",'nft-marketplace-core-lite')], 401);
         }
 
         if(!is_array($data["image"])) {
-            return new \WP_REST_Response(["success" => false, "message" => esc_html__("Core: Not a valid image!",NFT_MARKETPLACE_CORE_TEXTDOMAIN)], 401);
+            return new \WP_REST_Response(["success" => false, "message" => esc_html__("Core: Not a valid image!",'nft-marketplace-core-lite')], 401);
         }
 
-        return new \WP_REST_Response(["success" => true, "message" => esc_html__("Core: Everything went alright!",NFT_MARKETPLACE_CORE_TEXTDOMAIN)], 201);
+        return new \WP_REST_Response(["success" => true, "message" => esc_html__("Core: Everything went alright!",'nft-marketplace-core-lite')], 201);
     }
 
 
@@ -196,7 +196,7 @@ class Creator extends Base
         }
 
         return new \WP_REST_Response(["success" => false, "payload" => [
-            "message" => esc_html__("Post already exists",NFT_MARKETPLACE_CORE_TEXTDOMAIN)
+            "message" => esc_html__("Post already exists",'nft-marketplace-core-lite')
         ]], 401);
     }
 }

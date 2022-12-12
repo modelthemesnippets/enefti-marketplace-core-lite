@@ -47,7 +47,7 @@ do_action('nft_marketplace_core_before_main_content');
                     <div class="col-md-12 main-content row">
                         <div class="col-md-6 nft-thumbnails">
                             <div>
-                                <?php echo NFT_Marketplace_Core\Internals\Helper::getNFTDisplayAsset(get_the_ID()); ?>
+                                <?php echo NFT_Marketplace_Core_Lite\Internals\Helper::getNFTDisplayAsset(get_the_ID()); ?>
                             </div>
                         </div>
                         <div class="summary nft-entry-summary col-md-6">
@@ -76,7 +76,7 @@ do_action('nft_marketplace_core_before_main_content');
                                     ?>
                                     <?php do_action('nft_marketplace_core_single_nft_after_title_category'); ?>
 
-                                    <span><?php echo apply_filters('nft_marketplace_core_category_title', esc_html__('Category', NFT_MARKETPLACE_CORE_TEXTDOMAIN)); ?></span>
+                                    <span><?php echo apply_filters('nft_marketplace_core_category_title', esc_html__('Category', 'nft-marketplace-core-lite')); ?></span>
 
                                 </div>
                             <?php }
@@ -93,7 +93,7 @@ do_action('nft_marketplace_core_before_main_content');
                                     ?>
                                     <?php do_action('nft_marketplace_core_single_nft_after_title_collection'); ?>
 
-                                    <span><?php echo apply_filters('nft_marketplace_core_collection_title', esc_html__('Collection', NFT_MARKETPLACE_CORE_TEXTDOMAIN)); ?></span>
+                                    <span><?php echo apply_filters('nft_marketplace_core_collection_title', esc_html__('Collection', 'nft-marketplace-core-lite')); ?></span>
 
                                 </div>
 
@@ -101,15 +101,15 @@ do_action('nft_marketplace_core_before_main_content');
 
                             <div class="product_meta">
                                 <?php if ($isItemOnSale) { ?>
-                                    <span><?php esc_html_e("Quantity", NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>: <span><?php esc_html_e(get_post_meta($postID, "nft_marketplace_core_nft_listing_quantity", true)) ?></span></span>
+                                    <span><?php esc_html_e("Quantity", 'nft-marketplace-core-lite'); ?>: <span><?php esc_html_e(get_post_meta($postID, "nft_marketplace_core_nft_listing_quantity", true)) ?></span></span>
                                 <?php } ?>
-                                <span><?php esc_html_e("Listing Type", NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>: <span><?php esc_html_e(ucfirst(get_post_meta($postID, "nft_marketplace_core_nft_listing_type", true))) ?></span></span>
-                                <span><?php esc_html_e("NFT's Contract Address", NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>: <span><?php esc_html_e($nft_marketplace_core_nft_listing_address) ?></span></span>
-                                <span><?php esc_html_e("Token ID", NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>: <span><?php esc_html_e($nft_marketplace_core_nft_listing_token_id) ?></span></span>
+                                <span><?php esc_html_e("Listing Type", 'nft-marketplace-core-lite'); ?>: <span><?php esc_html_e(ucfirst(get_post_meta($postID, "nft_marketplace_core_nft_listing_type", true))) ?></span></span>
+                                <span><?php esc_html_e("NFT's Contract Address", 'nft-marketplace-core-lite'); ?>: <span><?php esc_html_e($nft_marketplace_core_nft_listing_address) ?></span></span>
+                                <span><?php esc_html_e("Token ID", 'nft-marketplace-core-lite'); ?>: <span><?php esc_html_e($nft_marketplace_core_nft_listing_token_id) ?></span></span>
 
                                 <?php if ($isItemOnSale) { ?>
                                     <span><?php esc_html_e(
-                                            "Ending", NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>: <span><?php esc_html_e(wp_date('l, F jS, Y \a\t g:i:s A', get_post_meta($postID, 'nft_marketplace_core_nft_listing_end_time', true))) ?></span></span>
+                                            "Ending", 'nft-marketplace-core-lite'); ?>: <span><?php esc_html_e(wp_date('l, F jS, Y \a\t g:i:s A', get_post_meta($postID, 'nft_marketplace_core_nft_listing_end_time', true))) ?></span></span>
                                 <?php } ?>
                             </div>
 

@@ -11,7 +11,7 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                 "type" => "dropdown",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Layout', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Layout', 'nft-marketplace-core-lite'),
                 "param_name" => "layout",
                 "value" => array(
                     'Select Layout' => '',
@@ -23,7 +23,7 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                 "type" => "vc_number",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Visible Items (Desktop)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Visible Items (Desktop)', 'nft-marketplace-core-lite'),
                 "param_name" => "items_desktop",
                 "dependency" => array(
                     'element' => 'layout',
@@ -34,7 +34,7 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                 "type" => "vc_number",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Visible Items (Mobiles)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Visible Items (Mobiles)', 'nft-marketplace-core-lite'),
                 "param_name" => "items_mobile",
                 "dependency" => array(
                     'element' => 'layout',
@@ -45,7 +45,7 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                 "type" => "vc_number",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Visible Items (Tablets)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Visible Items (Tablets)', 'nft-marketplace-core-lite'),
                 "param_name" => "items_tablet",
                 "dependency" => array(
                     'element' => 'layout',
@@ -56,7 +56,7 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                 "type" => "checkbox",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('AutoPlay', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('AutoPlay', 'nft-marketplace-core-lite'),
                 "param_name" => "autoplay",
                 "dependency" => array(
                     'element' => 'layout',
@@ -70,7 +70,7 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                 "max" => '10000',
                 "step" => '100',
                 "value" => "600",
-                "heading" => esc_attr__('Slide Speed (in ms)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Slide Speed (in ms)', 'nft-marketplace-core-lite'),
                 "param_name" => "delay",
                 "dependency" => array(
                     'element' => 'layout',
@@ -81,7 +81,7 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                 "type" => "checkbox",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Navigation', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Navigation', 'nft-marketplace-core-lite'),
                 "param_name" => "navigation",
                 "dependency" => array(
                     'element' => 'layout',
@@ -92,7 +92,7 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                 "type" => "dropdown",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Navigation Position', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Navigation Position', 'nft-marketplace-core-lite'),
                 "param_name" => "navigation_position",
                 "value" => array(
                     'Select Option' => '',
@@ -117,13 +117,13 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
             ),
             array(
                 "type" => "dropdown",
-                "heading" => esc_attr__("Navigation Shape", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__("Navigation Shape", 'nft-marketplace-core-lite'),
                 "param_name" => "nav_style",
                 "value" => array(
                     'Select Option' => '',
-                    esc_attr__('Square', NFT_MARKETPLACE_CORE_TEXTDOMAIN) => 'nav-square',
-                    esc_attr__('Rounded (5px Radius)', NFT_MARKETPLACE_CORE_TEXTDOMAIN) => 'nav-rounded',
-                    esc_attr__('Round (50px Radius)', NFT_MARKETPLACE_CORE_TEXTDOMAIN) => 'nav-round',
+                    esc_attr__('Square', 'nft-marketplace-core-lite') => 'nav-square',
+                    esc_attr__('Rounded (5px Radius)', 'nft-marketplace-core-lite') => 'nav-rounded',
+                    esc_attr__('Round (50px Radius)', 'nft-marketplace-core-lite') => 'nav-round',
                 ),
                 "dependency" => array(
                     'element' => 'navigation',
@@ -134,49 +134,49 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
             ),
             array(
                 'type' => 'colorpicker',
-                'heading' => esc_html__('Navigation color', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'heading' => esc_html__('Navigation color', 'nft-marketplace-core-lite'),
                 'param_name' => 'navigation_color',
                 "dependency" => array(
                     'element' => 'navigation',
                     'value' => 'true',
                 ),
-                'description' => esc_html__('Select Navigation Color.', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'description' => esc_html__('Select Navigation Color.', 'nft-marketplace-core-lite'),
             ),
             array(
                 'type' => 'colorpicker',
-                'heading' => esc_html__('Navigation Background color', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'heading' => esc_html__('Navigation Background color', 'nft-marketplace-core-lite'),
                 'param_name' => 'navigation_bg_color',
                 "dependency" => array(
                     'element' => 'navigation',
                     'value' => 'true',
                 ),
-                'description' => esc_html__('Select Background Navigation Color.', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'description' => esc_html__('Select Background Navigation Color.', 'nft-marketplace-core-lite'),
             ),
             array(
                 'type' => 'colorpicker',
-                'heading' => esc_html__('Navigation Color Hover', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'heading' => esc_html__('Navigation Color Hover', 'nft-marketplace-core-lite'),
                 'param_name' => 'navigation_color_hover',
                 "dependency" => array(
                     'element' => 'navigation',
                     'value' => 'true',
                 ),
-                'description' => esc_html__('Select Color Navigation Color - Hover.', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'description' => esc_html__('Select Color Navigation Color - Hover.', 'nft-marketplace-core-lite'),
             ),
             array(
                 'type' => 'colorpicker',
-                'heading' => esc_html__('Navigation Background color - Hover', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'heading' => esc_html__('Navigation Background color - Hover', 'nft-marketplace-core-lite'),
                 'param_name' => 'navigation_bg_color_hover',
                 "dependency" => array(
                     'element' => 'navigation',
                     'value' => 'true',
                 ),
-                'description' => esc_html__('Select Background Navigation Color - Hover.', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'description' => esc_html__('Select Background Navigation Color - Hover.', 'nft-marketplace-core-lite'),
             ),
             array(
                 "type" => "checkbox",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Pagination (dots)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Pagination (dots)', 'nft-marketplace-core-lite'),
                 "param_name" => "pagination",
                 "dependency" => array(
                     'element' => 'layout',
@@ -185,19 +185,19 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
             ),
             array(
                 'type' => 'colorpicker',
-                'heading' => esc_html__('Pagination color', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'heading' => esc_html__('Pagination color', 'nft-marketplace-core-lite'),
                 'param_name' => 'pagination_color',
                 "dependency" => array(
                     'element' => 'pagination',
                     'value' => 'true',
                 ),
-                'description' => esc_html__('Select Pagination Color.', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'description' => esc_html__('Select Pagination Color.', 'nft-marketplace-core-lite'),
             ),
             array(
                 "type" => "vc_number",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Space Between Items', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Space Between Items', 'nft-marketplace-core-lite'),
                 "param_name" => "space_items",
                 "dependency" => array(
                     'element' => 'layout',
@@ -208,31 +208,31 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                 "type" => "checkbox",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Allow Touch Move', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Allow Touch Move', 'nft-marketplace-core-lite'),
                 "param_name" => "touch_move",
                 "dependency" => array(
                     'element' => 'layout',
                     'value' => 'carousel',
                 ),
-                "description" => __('If checked, the touch move event will be triggered once for each movement and will continue to be triggered until the finger is released.', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "description" => __('If checked, the touch move event will be triggered once for each movement and will continue to be triggered until the finger is released.', 'nft-marketplace-core-lite'),
             ),
             array(
                 "type" => "checkbox",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Grab Cursor', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Grab Cursor', 'nft-marketplace-core-lite'),
                 "param_name" => "grab_cursor",
                 "dependency" => array(
                     'element' => 'layout',
                     'value' => 'carousel',
                 ),
-                "description" => __('If checked, will show the mouse pointer over the carousel.', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "description" => __('If checked, will show the mouse pointer over the carousel.', 'nft-marketplace-core-lite'),
             ),
             array(
                 "type" => "dropdown",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Carousel Effect', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Carousel Effect', 'nft-marketplace-core-lite'),
                 "param_name" => "effect",
                 "value" => array(
                     'Select Effect' => '',
@@ -247,13 +247,13 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                     'element' => 'layout',
                     'value' => 'carousel',
                 ),
-                "description" => __("See all availavble effects on <a target='_blank' href='https://swiperjs.com/demos#effect-fade'>swiperjs.com</a>", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "description" => __("See all availavble effects on <a target='_blank' href='https://swiperjs.com/demos#effect-fade'>swiperjs.com</a>", 'nft-marketplace-core-lite'),
             ),
             array(
                 "type" => "checkbox",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Infinite Loop', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Infinite Loop', 'nft-marketplace-core-lite'),
                 "param_name" => "infinite_loop",
                 "dependency" => array(
                     'element' => 'layout',
@@ -265,7 +265,7 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                 "type" => "checkbox",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Centered Slides', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Centered Slides', 'nft-marketplace-core-lite'),
                 "param_name" => "centered_slides",
                 "dependency" => array(
                     'element' => 'layout',
@@ -277,7 +277,7 @@ if (!function_exists('nft_marketplace_core_shortcode_swiper_vc_fields')) {
                 "type" => "dropdown",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Columns', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Columns', 'nft-marketplace-core-lite'),
                 "param_name" => "columns",
                 "value" => array(
                     'Select Option' => '',

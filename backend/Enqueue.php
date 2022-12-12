@@ -1,23 +1,23 @@
 <?php
 
 /**
- * NFT_Marketplace_Core
+ * NFT_Marketplace_Core_Lite
  *
- * @package   NFT_Marketplace_Core
+ * @package   NFT_Marketplace_Core_Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, ModelTheme, support@modeltheme.com
  * @license   GPL v3
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Backend;
+namespace NFT_Marketplace_Core_Lite\Backend;
 
 use Inpsyde\Assets\Asset;
 use Inpsyde\Assets\AssetManager;
 use Inpsyde\Assets\Script;
 use Inpsyde\Assets\Style;
 // {{/if}}
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 /**
  * This class contain the Enqueue stuff for the backend
@@ -94,10 +94,10 @@ class Enqueue extends Base {
     function addTypeAttribute($tag, $handle, $src)
     {
         // if not your script, do nothing and return original $tag
-        if (NFT_MARKETPLACE_CORE_TEXTDOMAIN . "-market" !== $handle) {
+        if ('nft-marketplace-core-lite' . "-market" !== $handle) {
             return $tag;
         }
         // change the script tag by adding type="module" and return it.
-        return '<script type="module" src="' . esc_url($src) . '" id="'.NFT_MARKETPLACE_CORE_TEXTDOMAIN . "-market".'" ></script>';
+        return '<script type="module" src="' . esc_url($src) . '" id="'.'nft-marketplace-core-lite' . "-market".'" ></script>';
     }
 }

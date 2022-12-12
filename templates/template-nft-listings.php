@@ -7,7 +7,7 @@ get_header();
 /**
  * Theme Panel Setting for number of NFT listings on row
  * since version 1.0
- */ 
+ */
 $class= '';
 if(isset(get_option( 'nft_marketplace_core_panel_shop_page' )['nft_marketplace_core_items_per_row'])){
     $class= get_option( 'nft_marketplace_core_panel_shop_page' )['nft_marketplace_core_items_per_row'];
@@ -61,7 +61,7 @@ do_action('nft_marketplace_core_before_main_content');
                         <?php dynamic_sidebar( $sidebar ); ?>
                     </div>
                 <?php } ?>
-            <?php } else { 
+            <?php } else {
                 $main_content = 'col-md-12';
             } ?>
             <div class="<?php echo esc_attr($main_content); ?>">
@@ -69,38 +69,39 @@ do_action('nft_marketplace_core_before_main_content');
                 <?php
                 /**
                 * Hook: Before The NFT Listings (Set: Ordering, Count)
-                */  
+                */
                 do_action('nft_marketplace_core_archive_before_grid_template'); ?>
 
-                <div class="main-content"> 
-                    <?php 
-                    $args = array(  
-                        'posts_per_page' => -1, 
-                        'post_type'      => 'nft-listing' 
+                <div class="main-content">
+                    <?php
+                    $args = array(
+                        'posts_per_page' => -1,
+                        'post_status' => 'publish',
+                        'post_type'      => 'nft-listing'
                     );
                     $my_query = new wp_query( $args ); ?>
                     <?php if ( $my_query->have_posts() ) : ?>
-                        <?php 
+                        <?php
                         while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
                             <article id="post-<?php the_ID(); ?>" class="nft-listing <?php echo esc_attr($class);?>">
 
                                 <?php
                                 /**
                                 * Hook: NFT Listing query (Set: Single NFT Block)
-                                */  
+                                */
                                 do_action('nft_marketplace_core_archive_listing_query_template'); ?>
 
                             </article>
                         <?php endwhile; ?>
                         <?php wp_reset_query();
-                        
+
                         /**
                         * Hook: After The NFT Listings (Set: Pagination)
                         */
                         do_action('nft_marketplace_core_archive_after_grid_template'); ?>
 
                     <?php else : ?>
-                        <?php echo apply_filters('nft_marketplace_core_no_listings_found', esc_html__('There are no NFT Listings', NFT_MARKETPLACE_CORE_TEXTDOMAIN)); ?>
+                        <?php echo apply_filters('nft_marketplace_core_no_listings_found', esc_html__('There are no NFT Listings', 'nft-marketplace-core-lite')); ?>
                     <?php endif; ?>
                 </div>
             </div>
@@ -108,7 +109,7 @@ do_action('nft_marketplace_core_before_main_content');
     </div>
 </div>
 
-<?php 
+<?php
 /**
  * Main Content : End of the page
  * since version 1.0

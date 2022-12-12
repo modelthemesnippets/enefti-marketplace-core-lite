@@ -1,12 +1,12 @@
 <?php
-namespace NFT_Marketplace_Core\Backend;
+namespace NFT_Marketplace_Core_Lite\Backend;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 /**
  * NFT Marketplace Core
  *
- * @package   NFT Marketplace Core
+ * @package   NFT Marketplace Core Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, Modeltheme, support@modeltheme.com
  * @license   GPL-3.0

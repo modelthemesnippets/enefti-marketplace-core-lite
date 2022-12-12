@@ -58,15 +58,15 @@ function nft_marketplace_core_shortcode_for_wpbakery_nft_collectors_group($param
 
     $title_color_style = '';
     if ($title_color) {
-        $title_color_style = 'color:' . $title_color . ';';
+        $title_color_style = 'color:' . esc_attr($title_color) . ';';
     }
     $position_color_style = '';
     if ($position_color) {
-        $position_color_style = 'color:' . $position_color . ';';
+        $position_color_style = 'color:' . esc_attr($position_color) . ';';
     }
     $description_color_style = '';
     if ($description_color) {
-        $description_color_style = 'color:' . $description_color . ';';
+        $description_color_style = 'color:' . esc_attr($description_color) . ';';
     }
     if ($collector_style_var == 'collector_style_2') {
         $style_var_value = 'mt-addons-collector-style-2';
@@ -104,13 +104,13 @@ function nft_marketplace_core_shortcode_for_wpbakery_nft_collectors_group($param
         if ($page_builder == 'elementor' && $navigation == "yes") {
             // next/prev
             $html_post_swiper_wrapper .= '
-        <i class="far fa-arrow-left swiper-button-prev ' . $nav_style . ' ' . $navigation_position . '" style="color:' . $navigation_color . '; background:' . $navigation_bg_color . ';"></i>
-        <i class="far fa-arrow-right swiper-button-next ' . $nav_style . ' ' . $navigation_position . '" style="color:' . $navigation_color . '; background:' . $navigation_bg_color . ';"></i>';
+        <i class="far fa-arrow-left swiper-button-prev ' . esc_attr($nav_style) . ' ' . esc_attr($navigation_position) . '" style="color:' . esc_attr($navigation_color) . '; background:' . esc_attr($navigation_bg_color) . ';"></i>
+        <i class="far fa-arrow-right swiper-button-next ' . esc_attr($nav_style) . ' ' . esc_attr($navigation_position) . '" style="color:' . esc_attr($navigation_color) . '; background:' . esc_attr($navigation_bg_color) . ';"></i>';
         } else {
             if ($navigation == "true") {
                 $html_post_swiper_wrapper .= '
-          <i class="far fa-arrow-left swiper-button-prev ' . $nav_style . ' ' . $navigation_position . '" style="color:' . $navigation_color . '; background:' . $navigation_bg_color . ';"></i>
-          <i class="far fa-arrow-right swiper-button-next ' . $nav_style . ' ' . $navigation_position . '" style="color:' . $navigation_color . '; background:' . $navigation_bg_color . ';"></i>';
+          <i class="far fa-arrow-left swiper-button-prev ' . esc_attr($nav_style) . ' ' . esc_attr($navigation_position) . '" style="color:' . esc_attr($navigation_color) . '; background:' . esc_attr($navigation_bg_color) . ';"></i>
+          <i class="far fa-arrow-right swiper-button-next ' . esc_attr($nav_style) . ' ' . esc_attr($navigation_position) . '" style="color:' . esc_attr($navigation_color) . '; background:' . esc_attr($navigation_bg_color) . ';"></i>';
             }
         }
         if ($page_builder == 'elementor' && $pagination == "yes") {
@@ -177,9 +177,9 @@ function nft_marketplace_core_shortcode_for_wpbakery_nft_collectors_group($param
                                 <?php foreach ($prods as $prod) {
                                     $thumbnail_src = wp_get_attachment_image_src(get_post_thumbnail_id($prod->ID), $image_size);
                                     if ($thumbnail_src) {
-                                        $post_img = '<img class="portfolio_post_image ' . $number . '" src="' . esc_url($thumbnail_src[0]) . '" alt="' . $prod->post_title . '" />';
+                                        $post_img = '<img class="portfolio_post_image ' . esc_attr($number) . '" src="' . esc_url($thumbnail_src[0]) . '" alt="' . esc_attr($prod->post_title) . '" />';
                                     } else {
-                                        $post_img = '<img class="portfolio_post_image ' . $number . '" src="http://via.placeholder.com/144x100" alt="' . $prod->post_title . '" />';
+                                        $post_img = '<img class="portfolio_post_image ' . esc_attr($number) . '" src="http://via.placeholder.com/144x100" alt="' . esc_attr($prod->post_title) . '" />';
                                     } ?>
                                     <a class="modeltheme_media_image" title="<?php echo esc_attr($prod->post_title); ?>"
                                        href="<?php echo esc_url(get_permalink($prod->ID)); ?>"><?php echo $post_img; ?></a>
@@ -268,13 +268,13 @@ if (!function_exists('nft_marketplace_core_shortcode_collector_group')) {
             $params = array(
                 array(
                     "type" => "dropdown",
-                    "heading" => esc_attr__("Number of items", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    "heading" => esc_attr__("Number of items", 'nft-marketplace-core-lite'),
                     "param_name" => "number",
                     "value" => array(
-                        esc_attr__('Select', NFT_MARKETPLACE_CORE_TEXTDOMAIN) => '',
-                        esc_attr__('1 Item', NFT_MARKETPLACE_CORE_TEXTDOMAIN) => 'one-item',
-                        esc_attr__('2 Items', NFT_MARKETPLACE_CORE_TEXTDOMAIN) => '2',
-                        esc_attr__('4 Items', NFT_MARKETPLACE_CORE_TEXTDOMAIN) => '4',
+                        esc_attr__('Select', 'nft-marketplace-core-lite') => '',
+                        esc_attr__('1 Item', 'nft-marketplace-core-lite') => 'one-item',
+                        esc_attr__('2 Items', 'nft-marketplace-core-lite') => '2',
+                        esc_attr__('4 Items', 'nft-marketplace-core-lite') => '4',
                     ),
                     "holder" => "div",
                     "class" => ""
@@ -283,19 +283,19 @@ if (!function_exists('nft_marketplace_core_shortcode_collector_group')) {
                     "type" => "dropdown",
                     "holder" => "div",
                     "class" => "",
-                    "heading" => esc_attr__("Featured Image size", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    "heading" => esc_attr__("Featured Image size", 'nft-marketplace-core-lite'),
                     "param_name" => "featured_image_size",
                     "std" => 'full',
                     "value" => nft_marketplace_core_shortcode_image_sizes_array()
                 ),
                 array(
                     "type" => "dropdown",
-                    "heading" => esc_attr__("Style Collector", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    "heading" => esc_attr__("Style Collector", 'nft-marketplace-core-lite'),
                     "param_name" => "collector_style_var",
                     "value" => array(
-                        esc_attr__("Select", NFT_MARKETPLACE_CORE_TEXTDOMAIN) => '',
-                        esc_attr__("Collector Image Floating", NFT_MARKETPLACE_CORE_TEXTDOMAIN) => 'collector_style_1',
-                        esc_attr__("Collector Image In Wrapper", NFT_MARKETPLACE_CORE_TEXTDOMAIN) => 'collector_style_2'
+                        esc_attr__("Select", 'nft-marketplace-core-lite') => '',
+                        esc_attr__("Collector Image Floating", 'nft-marketplace-core-lite') => 'collector_style_1',
+                        esc_attr__("Collector Image In Wrapper", 'nft-marketplace-core-lite') => 'collector_style_2'
                     ),
                     "holder" => "div",
                     "class" => ""
@@ -303,7 +303,7 @@ if (!function_exists('nft_marketplace_core_shortcode_collector_group')) {
                 array(
                     "type" => "checkbox",
                     "class" => "",
-                    "heading" => esc_attr__("Author", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    "heading" => esc_attr__("Author", 'nft-marketplace-core-lite'),
                     "param_name" => "author_status",
                     "dependency" => array(
                         'element' => 'collector_style_var',
@@ -320,9 +320,9 @@ if (!function_exists('nft_marketplace_core_shortcode_collector_group')) {
                             "type" => "dropdown",
                             "holder" => "div",
                             "class" => "",
-                            "heading" => esc_attr__("Category", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                            "heading" => esc_attr__("Category", 'nft-marketplace-core-lite'),
                             "param_name" => "category",
-                            "description" => esc_attr__("Select Category", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                            "description" => esc_attr__("Select Category", 'nft-marketplace-core-lite'),
                             "std" => 'Select',
                             "value" => $product_category
                         )
@@ -338,9 +338,9 @@ if (!function_exists('nft_marketplace_core_shortcode_collector_group')) {
             }
             vc_map(
                 array(
-                    "name" => esc_attr__("NFT: Collections Group", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    "name" => esc_attr__("NFT: Collections Group", 'nft-marketplace-core-lite'),
                     "base" => "mt-addons-nft-collectors-group",
-                    "category" => esc_attr__('Enefti Core', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    "category" => esc_attr__('Enefti Core', 'nft-marketplace-core-lite'),
                     "icon" => plugins_url('images/product-grid.svg', __FILE__),
                     "params" => $params,
                 ));

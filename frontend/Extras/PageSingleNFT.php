@@ -1,12 +1,12 @@
 <?php
 
-namespace NFT_Marketplace_Core\Frontend\Extras;
+namespace NFT_Marketplace_Core_Lite\Frontend\Extras;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 /**
  *
- * @package   NFT Marketplace Core
+ * @package   NFT Marketplace Core Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, Modeltheme, support@modeltheme.com
  * @license   GPL-3.0
@@ -68,13 +68,13 @@ class PageSingleNFT extends PageGlobal
         $isExplicit = get_post_meta( get_the_ID(), 'nft_marketplace_core_nft_listing_explicit_meta', true);
 
         if ($isExplicit) {
-            echo '<div class="nft-listing-views-counter"><i class="fa fa-eye-slash" aria-hidden="true"></i><span>'.esc_html__('Explicit',NFT_MARKETPLACE_CORE_TEXTDOMAIN).'</span></div>';
+            echo '<div class="nft-listing-views-counter"><i class="fa fa-eye-slash" aria-hidden="true"></i><span>'.esc_html__('Explicit','nft-marketplace-core-lite').'</span></div>';
         }
 
         $hasUnlockableContent = get_post_meta( get_the_ID(), 'nft_marketplace_core_nft_listing_content_meta', true);
 
         if ($hasUnlockableContent) {
-            echo '<div class="nft-listing-views-counter"><i class="fa fa-archive" aria-hidden="true"></i><span>'.esc_html__('Unlockable',NFT_MARKETPLACE_CORE_TEXTDOMAIN).'</span></div>';
+            echo '<div class="nft-listing-views-counter"><i class="fa fa-archive" aria-hidden="true"></i><span>'.esc_html__('Unlockable','nft-marketplace-core-lite').'</span></div>';
         }
     }
 
@@ -93,19 +93,19 @@ class PageSingleNFT extends PageGlobal
         $nft_marketplace_core_nft_listing_sales = get_post_meta(get_the_ID(), 'nft_marketplace_core_nft_listing_sales', true);
         echo '<div class="nft-listing-meta">';
         echo '<div class="meta-id">';
-        echo '<span>'.apply_filters('nft_marketplace_core_id_text', esc_html__('ID', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).': </span>'.get_the_ID().'';
+        echo '<span>'.apply_filters('nft_marketplace_core_id_text', esc_html__('ID', 'nft-marketplace-core-lite')).': </span>'.get_the_ID().'';
         echo '</div>';
         echo '<div class="meta-category">';
-        echo '<span>'.apply_filters('nft_marketplace_core_category_text', esc_html__('Category', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).': </span>';
+        echo '<span>'.apply_filters('nft_marketplace_core_category_text', esc_html__('Category', 'nft-marketplace-core-lite')).': </span>';
         do_action('nft_marketplace_core_single_nft_before_collection_text');
         echo '</div>';
         echo '<div class="meta-category">';
-        echo '<span>'.apply_filters('nft_marketplace_core_presale_text', esc_html__('Presale', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).': </span>';
+        echo '<span>'.apply_filters('nft_marketplace_core_presale_text', esc_html__('Presale', 'nft-marketplace-core-lite')).': </span>';
         echo 'Yes';
         echo '</div>';
         if($nft_marketplace_core_nft_listing_sales) {
             echo '<div class="meta-category">';
-            echo '<span>'.apply_filters('nft_marketplace_core_sales_text', esc_html__('Sales', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).': </span>';
+            echo '<span>'.apply_filters('nft_marketplace_core_sales_text', esc_html__('Sales', 'nft-marketplace-core-lite')).': </span>';
             echo esc_attr($nft_marketplace_core_nft_listing_sales);
             echo '</div>';
         }
@@ -128,7 +128,7 @@ class PageSingleNFT extends PageGlobal
                 if(!empty($nft_listing['nft_marketplace_core_nft_listing_stat_rate'])){
                     echo esc_html( $nft_listing['nft_marketplace_core_nft_listing_stat_rate'] );
                 }
-                echo esc_html__(' out of ',NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+                echo esc_html__(' out of ','nft-marketplace-core-lite');
                 if(!empty($nft_listing['nft_marketplace_core_nft_listing_stat_out_of'])){
                     echo esc_html( $nft_listing['nft_marketplace_core_nft_listing_stat_out_of'] );
                 }
@@ -137,7 +137,7 @@ class PageSingleNFT extends PageGlobal
             }
             echo '</ol>';
         } else {
-            echo '<p>'.apply_filters('nft_marketplace_core_tab_no_text', esc_html__('This NFT Listing does not have', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).' '.apply_filters('nft_marketplace_core_stats_tab_text', esc_html__('Stats', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).'</p>';
+            echo '<p>'.apply_filters('nft_marketplace_core_tab_no_text', esc_html__('This NFT Listing does not have', 'nft-marketplace-core-lite')).' '.apply_filters('nft_marketplace_core_stats_tab_text', esc_html__('Stats', 'nft-marketplace-core-lite')).'</p>';
         }
         echo '</section>';
     }
@@ -159,7 +159,7 @@ class PageSingleNFT extends PageGlobal
                 echo '</div>';
             }
         } else {
-            echo '<p>'.apply_filters('nft_marketplace_core_tab_no_text', esc_html__('This NFT Listing does not have', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).' '.apply_filters('nft_marketplace_core_properties_tab_text', esc_html__('Properties', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).'</p>';
+            echo '<p>'.apply_filters('nft_marketplace_core_tab_no_text', esc_html__('This NFT Listing does not have', 'nft-marketplace-core-lite')).' '.apply_filters('nft_marketplace_core_properties_tab_text', esc_html__('Properties', 'nft-marketplace-core-lite')).'</p>';
         }
         echo '</section>';
     }
@@ -180,7 +180,7 @@ class PageSingleNFT extends PageGlobal
                 if($nft_listing['nft_marketplace_core_nft_listing_level_rate'] == 0 || !empty($nft_listing['nft_marketplace_core_nft_listing_level_rate'])){
                     echo esc_html( $nft_listing['nft_marketplace_core_nft_listing_level_rate'] );
                 }
-                echo esc_html__(' out of ',NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+                echo esc_html__(' out of ','nft-marketplace-core-lite');
                 if($nft_listing['nft_marketplace_core_nft_listing_level_out_of'] == 0 || !empty($nft_listing['nft_marketplace_core_nft_listing_level_out_of'])){
                     echo esc_html( $nft_listing['nft_marketplace_core_nft_listing_level_out_of'] );
                 }
@@ -189,7 +189,7 @@ class PageSingleNFT extends PageGlobal
             }
             echo '</ol>';
         } else {
-            echo '<p>'.apply_filters('nft_marketplace_core_tab_no_text', esc_html__('This NFT Listing does not have', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).' '.apply_filters('nft_marketplace_core_levels_tab_text', esc_html__('Levels', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).'</p>';
+            echo '<p>'.apply_filters('nft_marketplace_core_tab_no_text', esc_html__('This NFT Listing does not have', 'nft-marketplace-core-lite')).' '.apply_filters('nft_marketplace_core_levels_tab_text', esc_html__('Levels', 'nft-marketplace-core-lite')).'</p>';
         }
         echo '</section>';
     }
@@ -201,7 +201,7 @@ class PageSingleNFT extends PageGlobal
         $author    = get_the_author_meta( 'display_name', $author_id );
         $description    = get_the_author_meta( 'description', $author_id );
         $link = get_author_posts_url($author_id);
-        echo '<h4>'.esc_html__('About',NFT_MARKETPLACE_CORE_TEXTDOMAIN).'<a href="'.$link.'"> '.esc_attr($author).'</a></h4>';
+        echo '<h4>'.esc_html__('About','nft-marketplace-core-lite').'<a href="'.esc_url($link).'"> '.esc_attr($author).'</a></h4>';
         echo get_avatar( $author_id, 96);
         echo '<p>'.esc_html($description).'</p>';
     }
@@ -215,16 +215,16 @@ class PageSingleNFT extends PageGlobal
         echo '<div class="nft-listing-tabs">';
         echo '<ul class="nft-tab-list">';
         if (!empty($nft_marketplace_core_nft_listing_description_meta)) {
-            echo '<li class="description_tab"><a href="#tab-description">'.apply_filters('nft_marketplace_core_description_tab_text', esc_html__('Description', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).'</a></li>';
+            echo '<li class="description_tab"><a href="#tab-description">'.apply_filters('nft_marketplace_core_description_tab_text', esc_html__('Description', 'nft-marketplace-core-lite')).'</a></li>';
         }
-        echo '<li class="stats_tab"><a href="#tab-stats">'.apply_filters('nft_marketplace_core_stats_tab_text', esc_html__('Stats', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).'</a></li>';
-        echo '<li class="properties_tab"><a href="#tab-properties">'.apply_filters('nft_marketplace_core_properties_tab_text', esc_html__('Properties', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).'</a></li>';
-        echo '<li class="levels_tab"><a href="#tab-levels">'.apply_filters('nft_marketplace_core_levels_tab_text', esc_html__('Levels', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).'</a></li>';
-        echo '<li class="author_tab"><a href="#tab-author">'.apply_filters('nft_marketplace_core_author_tab_text', esc_html__('About Author', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).'</a></li>';
+        echo '<li class="stats_tab"><a href="#tab-stats">'.apply_filters('nft_marketplace_core_stats_tab_text', esc_html__('Stats', 'nft-marketplace-core-lite')).'</a></li>';
+        echo '<li class="properties_tab"><a href="#tab-properties">'.apply_filters('nft_marketplace_core_properties_tab_text', esc_html__('Properties', 'nft-marketplace-core-lite')).'</a></li>';
+        echo '<li class="levels_tab"><a href="#tab-levels">'.apply_filters('nft_marketplace_core_levels_tab_text', esc_html__('Levels', 'nft-marketplace-core-lite')).'</a></li>';
+        echo '<li class="author_tab"><a href="#tab-author">'.apply_filters('nft_marketplace_core_author_tab_text', esc_html__('About Author', 'nft-marketplace-core-lite')).'</a></li>';
         echo '</ul>';
         if (!empty($nft_marketplace_core_nft_listing_description_meta)) {
             echo '<section class="nft-listing-crypto-description" id="tab-description">';
-            echo '<p>'.esc_html__('Created by ',NFT_MARKETPLACE_CORE_TEXTDOMAIN).' <strong>'.esc_attr($author).'</strong></p>';
+            echo '<p>'.esc_html__('Created by ','nft-marketplace-core-lite').' <strong>'.esc_attr($author).'</strong></p>';
             echo '<p>'.esc_html($nft_marketplace_core_nft_listing_description_meta).'</p>';
             echo '</section>';
         }
@@ -243,13 +243,14 @@ class PageSingleNFT extends PageGlobal
             'post__not_in'          => array(get_the_ID()),
             'posts_per_page'        => 4,
             'ignore_sticky_posts'   => 1,
+            'post_status' => 'publish',
             'post_type'             => 'nft-listing'
         );
         $posts = get_posts( $args );
 
         if($posts) {
             echo '<section class="related nft-listing">';
-            echo '<h3>' . apply_filters('nft_marketplace_core_related_nfts', esc_html__('Related NFTs', NFT_MARKETPLACE_CORE_TEXTDOMAIN)) . '</h3>';
+            echo '<h3>' . apply_filters('nft_marketplace_core_related_nfts', esc_html__('Related NFTs', 'nft-marketplace-core-lite')) . '</h3>';
             echo '<div class="row">';
             foreach ($posts as $post) {
                 echo '<div class="col-md-3 post">';
@@ -268,7 +269,7 @@ class PageSingleNFT extends PageGlobal
         $nft_category = get_the_term_list( get_the_ID(), 'nft-listing-category', '', ' / ' );
         if ($nft_category) {
             $term = get_term_by( 'slug', $nft_category, 'nft-listing-category');
-            echo '<p>'.apply_filters('nft_marketplace_core_collection_title', esc_html__('Collection', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).'</p>';
+            echo '<p>'.apply_filters('nft_marketplace_core_collection_title', esc_html__('Collection', 'nft-marketplace-core-lite')).'</p>';
             $img_id = '';
             if(!empty($img_id)) {
                 $img_id = get_term_meta( $term->term_id, 'category-image-id', true );
@@ -288,7 +289,7 @@ class PageSingleNFT extends PageGlobal
     function display_views_count() {
         $post_id = get_the_ID();
         $views_count = get_post_meta($post_id, "nft_marketplace_core_post_views_count", true);
-        echo '<div class="nft-listing-views-counter"><i class="fa fa-eye"></i><span>'.esc_html($views_count).' '.esc_html__('views',NFT_MARKETPLACE_CORE_TEXTDOMAIN).'</span></div>';
+        echo '<div class="nft-listing-views-counter"><i class="fa fa-eye"></i><span>'.esc_html($views_count).' '.esc_html__('views','nft-marketplace-core-lite').'</span></div>';
     }
 
 
@@ -296,7 +297,7 @@ class PageSingleNFT extends PageGlobal
     function display_owner() {
         $nft_marketplace_core_nft_listing_owner = get_post_meta(get_the_ID(), 'nft_marketplace_core_nft_listing_owner', true);
         if($nft_marketplace_core_nft_listing_owner) {
-            echo '<div class="nft-listing-owner">'.esc_html__('Owned by ',NFT_MARKETPLACE_CORE_TEXTDOMAIN).' '.esc_attr($nft_marketplace_core_nft_listing_owner).'</div>';
+            echo '<div class="nft-listing-owner">'.esc_html__('Owned by ','nft-marketplace-core-lite').' '.esc_attr($nft_marketplace_core_nft_listing_owner).'</div>';
         }
     }
 }

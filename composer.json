@@ -18,26 +18,15 @@
         "ayecode\/wp-super-duper": "2.0.2",
         "cmb2\/cmb2": "2.9.*",
         "composer\/installers": "1.x",
-        "decodelabs\/tagged": "^0.11.9",
-        "freemius\/wordpress-sdk": "2.4.*",
         "inpsyde\/assets": "^2.8",
         "inpsyde\/wp-context": "1.3.*",
         "johnbillion\/extended-cpts": "4.5.*",
-        "julien731\/wp-review-me": "dev-develop",
         "micropackage\/requirements": "^1.0",
         "origgami\/cmb2-grid": "dev-master",
         "seravo\/wp-custom-bulk-actions": "dev-master",
-        "stevegrunwell\/wp-cache-remember": "dev-master",
         "wpbp\/cpt_columns": "1.0.*",
-        "wpbp\/cronplus": "1.0.*",
         "wpbp\/debug": "1.1.*",
-        "wpbp\/page-madness-detector": "^1.0",
-        "wpbp\/pointerplus": "1.0.*",
-        "wpbp\/template": "1.0.*",
-        "wpbp\/widgets-helper": "1.0.*",
-        "wpdesk\/wp-notice": "^3.2",
-        "yahnis-elsts\/plugin-update-checker": "^4.9",
-        "yoast\/i18n-module": "3.1.*"
+        "wpbp\/page-madness-detector": "^1.0"
     },
     "require-dev": {
         "codeatcode\/codeatcs": "^1.0",
@@ -85,16 +74,16 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "NFT_Marketplace_Core\\Backend\\": "backend\/",
-            "NFT_Marketplace_Core\\Backend\\ActDeact\\": "backend\/act-deact\/",
-            "NFT_Marketplace_Core\\Frontend\\": "frontend\/",
-            "NFT_Marketplace_Core\\Rest\\": "rest\/",
-            "NFT_Marketplace_Core\\Ajax\\": "ajax\/",
-            "NFT_Marketplace_Core\\Internals\\": "internals\/",
-            "NFT_Marketplace_Core\\Cli\\": "cli\/",
-            "NFT_Marketplace_Core\\Integrations\\": "integrations\/",
-            "NFT_Marketplace_Core\\Engine\\": "engine\/",
-            "NFT_Marketplace_Core\\Internals\\TaxMeta\\": "internals\/tax-meta\/"
+            "NFT_Marketplace_Core_Lite\\Backend\\": "backend\/",
+            "NFT_Marketplace_Core_Lite\\Backend\\ActDeact\\": "backend\/act-deact\/",
+            "NFT_Marketplace_Core_Lite\\Frontend\\": "frontend\/",
+            "NFT_Marketplace_Core_Lite\\Rest\\": "rest\/",
+            "NFT_Marketplace_Core_Lite\\Ajax\\": "ajax\/",
+            "NFT_Marketplace_Core_Lite\\Internals\\": "internals\/",
+            "NFT_Marketplace_Core_Lite\\Cli\\": "cli\/",
+            "NFT_Marketplace_Core_Lite\\Integrations\\": "integrations\/",
+            "NFT_Marketplace_Core_Lite\\Engine\\": "engine\/",
+            "NFT_Marketplace_Core_Lite\\Internals\\TaxMeta\\": "internals\/tax-meta\/"
         },
         "files": [
             "vendor\/wp-custom-bulk-actions\/custom-bulk-actions.php"

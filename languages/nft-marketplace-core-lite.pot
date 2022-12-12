@@ -1,0 +1,1310 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: BUG-EMAIL-ADDR <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: yyyy-mm-dd hh:mm+0000\n"
+"PO-Revision-Date: 2022-12-08 14:09+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#: nft-marketplace-core-lite.php:60
+msgid "\"NFT Marketplace Core\" requires PHP 5.6 or newer."
+msgstr ""
+
+#: engine/Initialize.php:149
+msgid ""
+"NFT Marketplace Core is on production environment with missing `composer "
+"dumpautoload -o` that will improve the performance on autoloading itself."
+msgstr ""
+
+#: frontend/Media.php:57
+msgid "Select Image"
+msgstr ""
+
+#: frontend/Media.php:62 integrations/NFTForm.php:554
+msgid "Profile Banner Image"
+msgstr ""
+
+#: frontend/Extras/PageCategory.php:87 frontend/Extras/PageNFTListings.php:48
+msgid "Showing "
+msgstr ""
+
+#: frontend/Extras/PageCategory.php:100 frontend/Extras/PageNFTListings.php:59
+msgid "Default Sorting"
+msgstr ""
+
+#: frontend/Extras/PageCategory.php:101 frontend/Extras/PageNFTListings.php:60
+msgid "Sort by Title"
+msgstr ""
+
+#: frontend/Extras/PageCategory.php:102 frontend/Extras/PageNFTListings.php:61
+msgid "Sort by Date"
+msgstr ""
+
+#: frontend/Extras/PageGlobal.php:70
+msgid "Search results: "
+msgstr ""
+
+#: frontend/Extras/PageGlobal.php:88
+msgid "Home"
+msgstr ""
+
+#: frontend/Extras/PageGlobal.php:145 internals/PostTypes.php:94
+#: internals/PostTypes.php:95
+msgid "View NFT"
+msgstr ""
+
+#: frontend/Extras/PageGlobal.php:184 frontend/Extras/PageSingleNFT.php:99
+#: integrations/NFTForm.php:349 internals/Shortcode.php:160
+#: internals/shortcodes/listings-category/listings-category.php:155
+#: internals/shortcodes/nft-category-group/nft-category-group.php:323
+#: templates/single-nft-listing.php:79
+msgid "Category"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:71
+msgid "Explicit"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:77
+msgid "Unlockable"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:96
+msgid "ID"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:103
+msgid "Presale"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:108
+msgid "Sales"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:131 frontend/Extras/PageSingleNFT.php:183
+msgid " out of "
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:140 frontend/Extras/PageSingleNFT.php:162
+#: frontend/Extras/PageSingleNFT.php:192
+msgid "This NFT Listing does not have"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:140 frontend/Extras/PageSingleNFT.php:220
+msgid "Stats"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:162 frontend/Extras/PageSingleNFT.php:221
+msgid "Properties"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:192 frontend/Extras/PageSingleNFT.php:222
+msgid "Levels"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:204
+msgid "About"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:218
+msgid "Description"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:223
+msgid "About Author"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:227
+msgid "Created by "
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:252
+msgid "Related NFTs"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:271 integrations/NFTForm.php:314
+#: integrations/NFTForm.php:325 templates/single-nft-listing.php:96
+msgid "Collection"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:291
+msgid "views"
+msgstr ""
+
+#: frontend/Extras/PageSingleNFT.php:299
+msgid "Owned by "
+msgstr ""
+
+#: functions/debug.php:12 internals/PostTypes.php:88
+msgid "NFT Marketplace Core"
+msgstr ""
+
+#: integrations/Creator.php:51
+msgid "Core: Something went wrong!"
+msgstr ""
+
+#: integrations/Creator.php:55
+msgid "Core: Not a valid image!"
+msgstr ""
+
+#: integrations/Creator.php:58
+msgid "Core: Everything went alright!"
+msgstr ""
+
+#: integrations/Creator.php:199
+msgid "Post already exists"
+msgstr ""
+
+#: integrations/NFTForm.php:85
+msgid "No"
+msgstr ""
+
+#: integrations/NFTForm.php:86
+msgid "Yes"
+msgstr ""
+
+#: integrations/NFTForm.php:158
+msgid "The following fields are required and highlighted below:"
+msgstr ""
+
+#: integrations/NFTForm.php:175 integrations/NFTForm.php:179
+msgid "NFT Title"
+msgstr ""
+
+#: integrations/NFTForm.php:199
+msgid "Security check failed."
+msgstr ""
+
+#: integrations/NFTForm.php:203
+msgid "New post requires a title."
+msgstr ""
+
+#: integrations/NFTForm.php:247
+msgid "NFT’s Stats"
+msgstr ""
+
+#: integrations/NFTForm.php:256
+msgid "Stat"
+msgstr ""
+
+#: integrations/NFTForm.php:257
+msgid "Add New Stat"
+msgstr ""
+
+#: integrations/NFTForm.php:258 integrations/NFTForm.php:477
+#: integrations/NFTForm.php:515
+msgid "Remove"
+msgstr ""
+
+#: integrations/NFTForm.php:261
+msgid "Are you sure you want to delete this Stat?"
+msgstr ""
+
+#: integrations/NFTForm.php:266 integrations/NFTForm.php:486
+#: integrations/NFTForm.php:525
+msgid "Name"
+msgstr ""
+
+#: integrations/NFTForm.php:272 integrations/NFTForm.php:532
+msgid "Rate"
+msgstr ""
+
+#: integrations/NFTForm.php:284
+msgid "Contract Data"
+msgstr ""
+
+#: integrations/NFTForm.php:289 templates/single-nft-listing.php:107
+msgid "NFT's Contract Address"
+msgstr ""
+
+#: integrations/NFTForm.php:299
+msgid "NFT's Token ID"
+msgstr ""
+
+#: integrations/NFTForm.php:331 integrations/NFTForm.php:355
+msgid ""
+"Sorry, no terms could be found. Create some from inside the NFTs Manager"
+msgstr ""
+
+#: integrations/NFTForm.php:371
+msgid "General Information"
+msgstr ""
+
+#: integrations/NFTForm.php:376
+msgid "NFT Description"
+msgstr ""
+
+#: integrations/NFTForm.php:382
+msgid "Explicit Content"
+msgstr ""
+
+#: integrations/NFTForm.php:385
+msgid ""
+"Is this item something that can be very sensitive for a group of people?"
+msgstr ""
+
+#: integrations/NFTForm.php:389
+msgid "Unlockable Content"
+msgstr ""
+
+#: integrations/NFTForm.php:392
+msgid ""
+"Include unlockable content that can only be revealed by the owner of the "
+"item."
+msgstr ""
+
+#: integrations/NFTForm.php:396
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:34
+msgid "Content"
+msgstr ""
+
+#: integrations/NFTForm.php:399
+msgid "The content you want to hide."
+msgstr ""
+
+#: integrations/NFTForm.php:409
+msgid "Socials"
+msgstr ""
+
+#: integrations/NFTForm.php:414
+msgid "Slug"
+msgstr ""
+
+#: integrations/NFTForm.php:420
+msgid "Telegram Url"
+msgstr ""
+
+#: integrations/NFTForm.php:426
+msgid "Twitter"
+msgstr ""
+
+#: integrations/NFTForm.php:432
+msgid "Instagram"
+msgstr ""
+
+#: integrations/NFTForm.php:438
+msgid "Wiki"
+msgstr ""
+
+#: integrations/NFTForm.php:449
+msgid "Crypto Prices"
+msgstr ""
+
+#: integrations/NFTForm.php:454
+msgid "Price"
+msgstr ""
+
+#: integrations/NFTForm.php:457
+msgid ""
+"Complete this field only if you are reimporting an already existing NFT on "
+"the marketplace."
+msgstr ""
+
+#: integrations/NFTForm.php:465
+msgid "NFT’s Properties"
+msgstr ""
+
+#: integrations/NFTForm.php:475
+msgid "Property"
+msgstr ""
+
+#: integrations/NFTForm.php:476
+msgid "Add New Property"
+msgstr ""
+
+#: integrations/NFTForm.php:480
+msgid "Are you sure you want to delete this Property?"
+msgstr ""
+
+#: integrations/NFTForm.php:492
+msgid "Value"
+msgstr ""
+
+#: integrations/NFTForm.php:504
+msgid "NFT’s Levels"
+msgstr ""
+
+#: integrations/NFTForm.php:513
+msgid "Level"
+msgstr ""
+
+#: integrations/NFTForm.php:514
+msgid "Add New Level"
+msgstr ""
+
+#: integrations/NFTForm.php:519
+msgid "Are you sure you want to delete this Level?"
+msgstr ""
+
+#: integrations/NFTForm.php:548
+msgid "NFT Marketplace Core Extra Fields"
+msgstr ""
+
+#: integrations/NFTForm.php:575
+msgid "Address Hash"
+msgstr ""
+
+#: integrations/NFTForm.php:582 internals/Shortcode.php:104
+msgid "Facebook link"
+msgstr ""
+
+#: integrations/NFTForm.php:589 internals/Shortcode.php:114
+msgid "Instagram link"
+msgstr ""
+
+#: integrations/NFTForm.php:595 internals/Shortcode.php:109
+msgid "Youtube link"
+msgstr ""
+
+#: integrations/Theme.php:29 integrations/WooCommerce.php:35
+#: integrations/WooCommerce.php:48
+msgid "Enefti Core Dashboard"
+msgstr ""
+
+#: integrations/WooCommerce.php:33
+msgid ""
+"This is the Woocommerce My account page, if you are searching for the Enefti "
+"Core Dashboard page click on "
+msgstr ""
+
+#: integrations/WooCommerce.php:33
+msgid "this"
+msgstr ""
+
+#: integrations/WooCommerce.php:33
+msgid " link."
+msgstr ""
+
+#: internals/Helper.php:32
+msgid "Blockchain Icon"
+msgstr ""
+
+#: internals/Helper.php:38
+msgid "Token Icon"
+msgstr ""
+
+#: internals/Helper.php:234
+msgid "The NFT was created by %address%."
+msgstr ""
+
+#: internals/Helper.php:236
+msgid "The NFT was listed by %address%."
+msgstr ""
+
+#: internals/Helper.php:238
+msgid "The NFT was sold to %address%."
+msgstr ""
+
+#: internals/Helper.php:240
+msgid "The NFT was relisted by %address%."
+msgstr ""
+
+#: internals/Helper.php:269
+msgid "This content might be disturbing. Proceed with caution!"
+msgstr ""
+
+#: internals/Helper.php:270
+msgid "View Regardless"
+msgstr ""
+
+#: internals/Helper.php:310
+msgid ""
+"You need to have the Media Types for NFT Marketplace Core Plugin to display "
+"assets of this type."
+msgstr ""
+
+#: internals/PostTypes.php:70 internals/PostTypes.php:85
+#: internals/PostTypes.php:86 internals/PostTypes.php:87
+msgid "NFT Listings"
+msgstr ""
+
+#: internals/PostTypes.php:89
+msgid "Add NFT"
+msgstr ""
+
+#: internals/PostTypes.php:90
+msgid "Add New NFT"
+msgstr ""
+
+#: internals/PostTypes.php:91
+msgid "Edit"
+msgstr ""
+
+#: internals/PostTypes.php:92
+msgid "Edit NFT"
+msgstr ""
+
+#: internals/PostTypes.php:93
+msgid "New NFT"
+msgstr ""
+
+#: internals/PostTypes.php:96
+msgid "Search NFT"
+msgstr ""
+
+#: internals/PostTypes.php:97
+msgid "No NFT Found"
+msgstr ""
+
+#: internals/PostTypes.php:98
+msgid "No NFT Found in Trash"
+msgstr ""
+
+#: internals/PostTypes.php:99
+msgid "Parent NFT"
+msgstr ""
+
+#: internals/PostTypes.php:106
+msgctxt "Taxonomy General Name"
+msgid "Collections"
+msgstr ""
+
+#: internals/PostTypes.php:107
+msgctxt "Taxonomy Singular Name"
+msgid "Collections"
+msgstr ""
+
+#: internals/PostTypes.php:108
+msgid "Collections"
+msgstr ""
+
+#: internals/PostTypes.php:109 internals/PostTypes.php:142
+msgid "All Items"
+msgstr ""
+
+#: internals/PostTypes.php:110 internals/PostTypes.php:143
+msgid "Parent Item"
+msgstr ""
+
+#: internals/PostTypes.php:111 internals/PostTypes.php:144
+msgid "Parent Item:"
+msgstr ""
+
+#: internals/PostTypes.php:112 internals/PostTypes.php:145
+#: internals/PostTypes.php:178
+msgid "New Item Name"
+msgstr ""
+
+#: internals/PostTypes.php:113 internals/PostTypes.php:146
+msgid "Add New Item"
+msgstr ""
+
+#: internals/PostTypes.php:114 internals/PostTypes.php:147
+msgid "Edit Item"
+msgstr ""
+
+#: internals/PostTypes.php:115 internals/PostTypes.php:148
+msgid "Update Item"
+msgstr ""
+
+#: internals/PostTypes.php:116 internals/PostTypes.php:149
+msgid "View Item"
+msgstr ""
+
+#: internals/PostTypes.php:117 internals/PostTypes.php:150
+#: internals/PostTypes.php:183
+msgid "Separate items with commas"
+msgstr ""
+
+#: internals/PostTypes.php:118 internals/PostTypes.php:151
+#: internals/PostTypes.php:184
+msgid "Add or remove items"
+msgstr ""
+
+#: internals/PostTypes.php:119 internals/PostTypes.php:152
+#: internals/PostTypes.php:185 internals/PostTypes.php:218
+msgid "Choose from the most used"
+msgstr ""
+
+#: internals/PostTypes.php:120 internals/PostTypes.php:153
+#: internals/PostTypes.php:186
+msgid "Popular Items"
+msgstr ""
+
+#: internals/PostTypes.php:121 internals/PostTypes.php:154
+#: internals/PostTypes.php:187
+msgid "Search Items"
+msgstr ""
+
+#: internals/PostTypes.php:122 internals/PostTypes.php:155
+#: internals/PostTypes.php:188 internals/PostTypes.php:221
+msgid "Not Found"
+msgstr ""
+
+#: internals/PostTypes.php:139
+msgctxt "Taxonomy General Name"
+msgid "Custom Currency"
+msgstr ""
+
+#: internals/PostTypes.php:140
+msgctxt "Taxonomy Singular Name"
+msgid "Currency"
+msgstr ""
+
+#: internals/PostTypes.php:141
+msgid "Currencies"
+msgstr ""
+
+#: internals/PostTypes.php:172
+msgctxt "Taxonomy General Name"
+msgid "Blockchains"
+msgstr ""
+
+#: internals/PostTypes.php:173
+msgctxt "Taxonomy Singular Name"
+msgid "Blockchain"
+msgstr ""
+
+#: internals/PostTypes.php:174
+msgid "Blockchains"
+msgstr ""
+
+#: internals/PostTypes.php:175
+msgid "All Blockchains"
+msgstr ""
+
+#: internals/PostTypes.php:176 internals/PostTypes.php:209
+msgid "Parent Item (leave empty)"
+msgstr ""
+
+#: internals/PostTypes.php:177 internals/PostTypes.php:210
+msgid "Parent Item (leave empty):"
+msgstr ""
+
+#: internals/PostTypes.php:179
+msgid "Add New Blockchain"
+msgstr ""
+
+#: internals/PostTypes.php:180
+msgid "Edit Blockchain"
+msgstr ""
+
+#: internals/PostTypes.php:181
+msgid "Update Blockchain"
+msgstr ""
+
+#: internals/PostTypes.php:182
+msgid "View Blockchains"
+msgstr ""
+
+#: internals/PostTypes.php:205
+msgctxt "Taxonomy General Name"
+msgid "Categories"
+msgstr ""
+
+#: internals/PostTypes.php:206
+msgctxt "Taxonomy Singular Name"
+msgid "Category"
+msgstr ""
+
+#: internals/PostTypes.php:207
+msgid "Categories"
+msgstr ""
+
+#: internals/PostTypes.php:208
+msgid "All Categories"
+msgstr ""
+
+#: internals/PostTypes.php:211
+msgid "New Category Name"
+msgstr ""
+
+#: internals/PostTypes.php:212
+msgid "Add Category Item"
+msgstr ""
+
+#: internals/PostTypes.php:213
+msgid "Edit Category"
+msgstr ""
+
+#: internals/PostTypes.php:214
+msgid "Update Category"
+msgstr ""
+
+#: internals/PostTypes.php:215
+msgid "View Category"
+msgstr ""
+
+#: internals/PostTypes.php:216
+msgid "Separate Categories with commas"
+msgstr ""
+
+#: internals/PostTypes.php:217
+msgid "Add or remove Categories"
+msgstr ""
+
+#: internals/PostTypes.php:219
+msgid "Popular Categories"
+msgstr ""
+
+#: internals/PostTypes.php:220
+msgid "Search Categories"
+msgstr ""
+
+#: internals/Shortcode.php:128
+msgid "Save Changes"
+msgstr ""
+
+#: internals/Shortcode.php:141 internals/Shortcode.php:145
+msgid "Search"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:14
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:122
+msgid "Layout"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:26
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:136
+msgid "Visible Items (Desktop)"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:37
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:147
+msgid "Visible Items (Mobiles)"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:48
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:158
+msgid "Visible Items (Tablets)"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:59
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:169
+msgid "AutoPlay"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:73
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:183
+msgid "Slide Speed (in ms)"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:84
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:197
+msgid "Navigation"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:95
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:211
+msgid "Navigation Position"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:120
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:240
+msgid "Navigation Shape"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:124
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:246
+msgid "Square"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:125
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:247
+msgid "Rounded (5px Radius)"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:126
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:248
+msgid "Round (50px Radius)"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:137
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:260
+msgid "Navigation color"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:143
+msgid "Select Navigation Color."
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:147
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:272
+msgid "Navigation Background color"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:153
+msgid "Select Background Navigation Color."
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:157
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:284
+msgid "Navigation Color Hover"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:163
+msgid "Select Color Navigation Color - Hover."
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:167
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:296
+msgid "Navigation Background color - Hover"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:173
+msgid "Select Background Navigation Color - Hover."
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:179
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:307
+msgid "Pagination (dots)"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:188
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:322
+msgid "Pagination color"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:194
+msgid "Select Pagination Color."
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:200
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:333
+msgid "Space Between Items"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:211
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:344
+msgid "Allow Touch Move"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:217
+msgid ""
+"If checked, the touch move event will be triggered once for each movement "
+"and will continue to be triggered until the finger is released."
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:223
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:358
+msgid "Grab Cursor"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:229
+msgid "If checked, will show the mouse pointer over the carousel."
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:235
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:373
+msgid "Carousel Effect"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:250
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:374
+msgid ""
+"See all availavble effects on <a target='_blank' href='https://swiperjs.com/"
+"demos#effect-fade'>swiperjs.com</a>"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:256
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:395
+msgid "Infinite Loop"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:262
+msgid "If checked, will show the numerical value of infinite loop."
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:268
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:410
+msgid "Centered Slides"
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:274
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:411
+msgid ""
+"If checked, the left side and the right side will have a partial slide "
+"visible."
+msgstr ""
+
+#: internals/shortcodes/helpers.swiper.nft.php:280
+#: internals/shortcodes/elementor/widgets/listings-category.php:72
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:425
+#: internals/shortcodes/elementor/widgets/nft-category-list.php:54
+#: internals/shortcodes/listings-category/listings-category.php:164
+#: internals/shortcodes/nft-category-list/nft-category-list.php:96
+msgid "Columns"
+msgstr ""
+
+#: internals/shortcodes/elementor/functions-core-elementor.php:48
+msgid "NFT"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:34
+#: internals/shortcodes/elementor/widgets/nft-category-list.php:34
+msgid "Title"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:40
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:55
+#: internals/shortcodes/listings-category/listings-category.php:139
+#: internals/shortcodes/nft-category-group/nft-category-group.php:286
+msgid "Featured Image size"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:50
+#: internals/shortcodes/elementor/widgets/nft-category-list.php:47
+#: internals/shortcodes/listings-category/listings-category.php:148
+#: internals/shortcodes/nft-category-list/nft-category-list.php:89
+msgid "Number"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:63
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:103
+msgid "Select Products Category"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:76
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:68
+#: internals/shortcodes/elementor/widgets/nft-category-list.php:58
+#: internals/shortcodes/nft-category-group/nft-category-group.php:274
+#: internals/shortcodes/nft-category-group/nft-category-group.php:296
+msgid "Select"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:77
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:432
+msgid "2 Columns"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:78
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:433
+msgid "3 Columns"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:79
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:434
+msgid "4 Columns"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:86
+#: internals/shortcodes/listings-category/listings-category.php:177
+msgid "Buy Now Text"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:95
+#: internals/shortcodes/listings-category/listings-category.php:185
+msgid "Title color"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:103
+#: internals/shortcodes/listings-category/listings-category.php:193
+msgid "Background Button Color"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:111
+msgid "Button Text Color "
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:119
+#: internals/shortcodes/listings-category/listings-category.php:209
+msgid "Reserve Text Color"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/listings-category.php:127
+#: internals/shortcodes/listings-category/listings-category.php:217
+msgid "Price Text Color"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:40
+#: internals/shortcodes/nft-category-group/nft-category-group.php:271
+msgid "Number of items"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:45
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:127
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:216
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:245
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:379
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:430
+msgid "Select Option"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:46
+#: internals/shortcodes/nft-category-group/nft-category-group.php:275
+msgid "1 Item"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:47
+#: internals/shortcodes/nft-category-group/nft-category-group.php:276
+msgid "2 Items"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:48
+#: internals/shortcodes/nft-category-group/nft-category-group.php:277
+msgid "4 Items"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:64
+#: internals/shortcodes/nft-category-group/nft-category-group.php:293
+msgid "Style Collector"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:69
+#: internals/shortcodes/nft-category-group/nft-category-group.php:297
+msgid "Collector Image Floating"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:70
+#: internals/shortcodes/nft-category-group/nft-category-group.php:298
+msgid "Collector Image In Wrapper"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:77
+#: internals/shortcodes/nft-category-group/nft-category-group.php:306
+msgid "Author"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:79
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:171
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:199
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:309
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:346
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:361
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:398
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:413
+msgid "Show"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:80
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:172
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:200
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:310
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:347
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:362
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:399
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:414
+msgid "Hide"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:98
+#: internals/shortcodes/nft-category-group/nft-category-group.php:325
+msgid "Select Category"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:115
+msgid "Carousel/Grid"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:128
+msgid "Carousel"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:129
+msgid "Grid"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:217
+msgid "Above Slider Left"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:218
+msgid "Above Slider Center"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:219
+msgid "Above Slider Right"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:220
+msgid "Top Left (In Slider)"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:221
+msgid "Top Center (In Slider)"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:222
+msgid "Top Right (In Slider)"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:223
+msgid "Middle (Left/Right)"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:224
+msgid "Bottom Left (In Slider)"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:225
+msgid "Bottom Center (In Slider)"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:226
+msgid "Bottom Right (In Slider)"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:227
+msgid "Below Slider Left"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:228
+msgid "Below Slider Center"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:229
+msgid "Below Slider Right"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:359
+msgid "If checked, will show the mouse pointer over the carousel"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:380
+msgid "Creative"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:381
+msgid "Cards"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:382
+msgid "Coverflow"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:383
+msgid "Cube"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:384
+msgid "Fade"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:385
+msgid "Flip"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:396
+msgid "If checked, will show the numerical value of infinite loop"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:431
+msgid "1 Column"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-group.php:435
+msgid "6 Columns"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-list.php:59
+msgid "One"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-list.php:60
+msgid "Two"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-list.php:61
+msgid "Three"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-list.php:62
+msgid "Four"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-list.php:71
+#: internals/shortcodes/nft-category-list/nft-category-list.php:110
+msgid "Title Color"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-list.php:79
+#: internals/shortcodes/nft-category-list/nft-category-list.php:119
+msgid "Subtitle Color"
+msgstr ""
+
+#: internals/shortcodes/elementor/widgets/nft-category-list.php:87
+msgid "Number Color "
+msgstr ""
+
+#: internals/shortcodes/listings-category/listings-category.php:53
+msgid "Buy Now"
+msgstr ""
+
+#: internals/shortcodes/listings-category/listings-category.php:100
+msgid "Reserve Price"
+msgstr ""
+
+#: internals/shortcodes/listings-category/listings-category.php:201
+msgid "Button Text Color"
+msgstr ""
+
+#: internals/shortcodes/listings-category/listings-category.php:223
+msgid "NFT: Recent Category"
+msgstr ""
+
+#: internals/shortcodes/listings-category/listings-category.php:225
+#: internals/shortcodes/nft-category-group/nft-category-group.php:343
+#: internals/shortcodes/nft-category-list/nft-category-list.php:82
+msgid "Enefti Core"
+msgstr ""
+
+#: internals/shortcodes/nft-category-group/nft-category-group.php:341
+msgid "NFT: Collections Group"
+msgstr ""
+
+#: internals/shortcodes/nft-category-list/nft-category-list.php:80
+msgid "NFT: Owner Profile List"
+msgstr ""
+
+#: internals/shortcodes/nft-category-list/nft-category-list.php:128
+msgid "Number Color"
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:41 internals/tax-meta/BL_TAX_META.php:90
+#: internals/tax-meta/CL_TAX_META.php:41 internals/tax-meta/CL_TAX_META.php:81
+#: internals/tax-meta/CT_TAX_META.php:51 internals/tax-meta/CT_TAX_META.php:85
+#: internals/tax-meta/CUR_TAX_META.php:69
+#: internals/tax-meta/CUR_TAX_META.php:157
+msgid "Image"
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:47
+#: internals/tax-meta/BL_TAX_META.php:105
+#: internals/tax-meta/BL_TAX_META.php:169
+#: internals/tax-meta/CL_TAX_META.php:46 internals/tax-meta/CL_TAX_META.php:95
+#: internals/tax-meta/CT_TAX_META.php:56 internals/tax-meta/CT_TAX_META.php:99
+#: internals/tax-meta/CUR_TAX_META.php:74
+#: internals/tax-meta/CUR_TAX_META.php:172
+msgid "Add Image"
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:49
+#: internals/tax-meta/BL_TAX_META.php:108
+#: internals/tax-meta/BL_TAX_META.php:172
+#: internals/tax-meta/CL_TAX_META.php:48 internals/tax-meta/CL_TAX_META.php:98
+#: internals/tax-meta/CT_TAX_META.php:58
+#: internals/tax-meta/CT_TAX_META.php:102
+#: internals/tax-meta/CUR_TAX_META.php:76
+#: internals/tax-meta/CUR_TAX_META.php:175
+msgid "Remove Image"
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:119
+msgid "Currency Symbol"
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:126
+msgid "Default currency symbol for this blockchain. Ex: ETH, MATIC etc."
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:131
+#: internals/tax-meta/BL_TAX_META.php:235
+msgid "Chain ID"
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:138
+msgid "The value will be automatically converted to the right format (hex)."
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:143
+#: internals/tax-meta/BL_TAX_META.php:240
+msgid "RPC Url"
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:154
+msgid "Currency Image"
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:230
+#: internals/tax-meta/CUR_TAX_META.php:51
+#: internals/tax-meta/CUR_TAX_META.php:121
+msgid "Symbol"
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:232
+msgid "Ex: ETH, MATIC etc."
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:237
+msgid "The value will be automatically converted to hex."
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:247
+msgid "Learn how to add more networks on the websites below (skip to point 3):"
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:249
+msgid "BSC"
+msgstr ""
+
+#: internals/tax-meta/BL_TAX_META.php:250
+msgid "MATIC (Polygon)"
+msgstr ""
+
+#: internals/tax-meta/CL_TAX_META.php:196
+#: internals/tax-meta/CL_TAX_META.php:259
+msgid "Cold not upload the image"
+msgstr ""
+
+#: internals/tax-meta/CL_TAX_META.php:199
+#: internals/tax-meta/CL_TAX_META.php:262
+msgid "Collection created successfully."
+msgstr ""
+
+#: internals/tax-meta/CUR_TAX_META.php:53
+#: internals/tax-meta/CUR_TAX_META.php:128
+msgid "Ex: BUSD, USDC, SHIB etc."
+msgstr ""
+
+#: internals/tax-meta/CUR_TAX_META.php:57
+#: internals/tax-meta/CUR_TAX_META.php:133
+msgid "Token Address"
+msgstr ""
+
+#: internals/tax-meta/CUR_TAX_META.php:59
+#: internals/tax-meta/CUR_TAX_META.php:140
+msgid "The address of your currency's contract you wold like to support."
+msgstr ""
+
+#: internals/tax-meta/CUR_TAX_META.php:63
+#: internals/tax-meta/CUR_TAX_META.php:145
+msgid "Blockchain"
+msgstr ""
+
+#: internals/tax-meta/CUR_TAX_META.php:65
+#: internals/tax-meta/CUR_TAX_META.php:152
+msgid "The blockchain that currency is deployed on."
+msgstr ""
+
+#: templates/author.php:33
+msgid "Edit Profile"
+msgstr ""
+
+#: templates/author.php:81 templates/category.php:64
+#: templates/collection.php:64
+msgid "There are no NFT Listings!"
+msgstr ""
+
+#: templates/single-nft-listing.php:104
+msgid "Quantity"
+msgstr ""
+
+#: templates/single-nft-listing.php:106
+msgid "Listing Type"
+msgstr ""
+
+#: templates/single-nft-listing.php:108
+msgid "Token ID"
+msgstr ""
+
+#: templates/single-nft-listing.php:112
+msgid "Ending"
+msgstr ""
+
+#: templates/taxonomy-nft-listing.php:113
+#: templates/taxonomy-nft-listing.php:117
+#: templates/template-nft-listings.php:103
+msgid "There are no NFT Listings"
+msgstr ""

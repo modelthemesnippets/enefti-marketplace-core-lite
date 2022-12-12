@@ -2,9 +2,9 @@
 /**
  * Plugin class
  **/
-namespace NFT_Marketplace_Core\Internals\TaxMeta;
+namespace NFT_Marketplace_Core_Lite\Internals\TaxMeta;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 
 class CT_TAX_META extends Base
@@ -48,14 +48,14 @@ class CT_TAX_META extends Base
     public function add_category_image($taxonomy)
     { ?>
         <div class="form-field term-group">
-            <label for="category-image-id-"><?php esc_html_e('Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+            <label for="category-image-id-"><?php esc_html_e('Image', 'nft-marketplace-core-lite'); ?></label>
             <input type="hidden" id="category-image-id" name="category-image-id" class="custom_media_url" value="">
             <div id="category-image-wrapper"></div>
             <p>
                 <input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button"
-                       name="ct_tax_media_button" value="<?php esc_html_e('Add Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                       name="ct_tax_media_button" value="<?php esc_html_e('Add Image', 'nft-marketplace-core-lite'); ?>"/>
                 <input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove"
-                       name="ct_tax_media_remove" value="<?php esc_html_e('Remove Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                       name="ct_tax_media_remove" value="<?php esc_html_e('Remove Image', 'nft-marketplace-core-lite'); ?>"/>
             </p>
         </div>
         <?php
@@ -69,7 +69,7 @@ class CT_TAX_META extends Base
     {
         global $pagenow;
         if (isset($_POST['category-image-id']) && '' !== $_POST['category-image-id']) {
-            $image = $_POST['category-image-id'];
+            $image = sanitize_text_field($_POST['category-image-id']);
             add_term_meta($term_id, 'category-image-id', $image, true);
         }
     }
@@ -82,7 +82,7 @@ class CT_TAX_META extends Base
     { ?>
         <tr class="form-field term-group-wrap">
             <th scope="row">
-                <label for="category-image-id"><?php esc_html_e('Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+                <label for="category-image-id"><?php esc_html_e('Image', 'nft-marketplace-core-lite'); ?></label>
             </th>
             <td>
                 <?php $image_id = get_term_meta($term->term_id, 'category-image-id', true); ?>
@@ -96,10 +96,10 @@ class CT_TAX_META extends Base
                 <p>
                     <input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button"
                            name="ct_tax_media_button"
-                           value="<?php esc_html_e('Add Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                           value="<?php esc_html_e('Add Image', 'nft-marketplace-core-lite'); ?>"/>
                     <input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove"
                            name="ct_tax_media_remove"
-                           value="<?php esc_html_e('Remove Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                           value="<?php esc_html_e('Remove Image', 'nft-marketplace-core-lite'); ?>"/>
                 </p>
             </td>
         </tr>
@@ -115,7 +115,7 @@ class CT_TAX_META extends Base
         global $pagenow;
 
         if (isset($_POST['category-image-id']) && '' !== $_POST['category-image-id']) {
-            $image = $_POST['category-image-id'];
+            $image = sanitize_text_field($_POST['category-image-id']);
             update_term_meta($term_id, 'category-image-id', $image);
         } else {
             update_term_meta($term_id, 'category-image-id', '');

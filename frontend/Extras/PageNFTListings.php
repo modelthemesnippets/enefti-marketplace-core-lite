@@ -9,13 +9,13 @@
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Frontend\Extras;
+namespace NFT_Marketplace_Core_Lite\Frontend\Extras;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 /**
  *
- * @package   NFT Marketplace Core
+ * @package   NFT Marketplace Core Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, Modeltheme, support@modeltheme.com
  * @license   GPL-3.0
@@ -37,6 +37,7 @@ class PageNFTListings extends PageGlobal
         $nfts_query_arg = array(
             'post_type' => 'nft-listing',
             'posts_per_page'  => -1,
+            'post_status' => 'publish',
         );
         $nfts_query = new \WP_Query( $nfts_query_arg );
         echo '<div class="nft-marketplace-taxonomy-count col-md-9">';
@@ -45,7 +46,7 @@ class PageNFTListings extends PageGlobal
         $last_page = $posts_per_page * $query_page;
         $first_page = $last_page - $posts_per_page + 1;
         $total = $nfts_query->found_posts;
-        echo esc_html__('Showing '.esc_attr($first_page).' - '.esc_attr($last_page).' of '.esc_attr($total).' results',NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+        echo esc_html__('Showing '.esc_attr($first_page).' - '.esc_attr($last_page).' of '.esc_attr($total).' results','nft-marketplace-core-lite');
         echo '</div>';
     }
 
@@ -57,8 +58,8 @@ class PageNFTListings extends PageGlobal
         echo '<form class="nft-marketplace-ordering" method="get">'; ?>
         <select onchange="if(this.value != '') document.location ='?orderby=' + this.value">
             <option value=""><?php echo esc_html__('Default Sorting'); ?></option>
-            <option value="title"<?php if(isset($_GET['order_by']) && $_GET['order_by'] == 'title') echo ' selected="selected"'; ?>><?php echo esc_html__('Sort by Title',NFT_MARKETPLACE_CORE_TEXTDOMAIN);?></option>
-            <option value="date"<?php if(isset($_GET['order_by']) && $_GET['order_by'] == 'date') echo ' selected="selected"'; ?>><?php echo esc_html__('Sort by Date',NFT_MARKETPLACE_CORE_TEXTDOMAIN);?></option>
+            <option value="title"<?php if(isset($_GET['order_by']) && $_GET['order_by'] == 'title') echo ' selected="selected"'; ?>><?php echo esc_html__('Sort by Title','nft-marketplace-core-lite');?></option>
+            <option value="date"<?php if(isset($_GET['order_by']) && $_GET['order_by'] == 'date') echo ' selected="selected"'; ?>><?php echo esc_html__('Sort by Date','nft-marketplace-core-lite');?></option>
         </select><?php
         echo '<input type="hidden" name="paged" value="1">';
         echo '</form>';

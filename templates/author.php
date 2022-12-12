@@ -30,7 +30,7 @@ $nft_marketplace_core_banner_img = get_user_meta($author->ID,'nft_marketplace_co
                         <h3><?php echo esc_html($author->display_name); ?></h3>
 
                         <?php if($current_user->user_nicename == $author->user_nicename) { ?>
-                            <p><a class="btn-edit" href="<?php echo esc_url($author_edit_link); ?>"><?php echo esc_html__('Edit Profile',NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></a></p>
+                            <p><a class="btn-edit" href="<?php echo esc_url($author_edit_link); ?>"><?php echo esc_html__('Edit Profile','nft-marketplace-core-lite'); ?></a></p>
                         <?php } ?>
                     </div>
                     <div class="author-description">
@@ -61,6 +61,7 @@ $nft_marketplace_core_banner_img = get_user_meta($author->ID,'nft_marketplace_co
                     $nfts_query_arg = array(
                         'post_type' => 'nft-listing',
                         'author' => $author->ID,
+                        'post_status' => 'publish',
                         'posts_per_page'  => 8,
                     );
                     $nfts_query = new WP_Query( $nfts_query_arg );
@@ -78,7 +79,7 @@ $nft_marketplace_core_banner_img = get_user_meta($author->ID,'nft_marketplace_co
                         <?php do_action('nft_marketplace_core_author_after_grid'); ?>
 
                     <?php else : ?>
-                        <strong><?php echo esc_html__('There are no NFT Listings!',NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></strong>
+                        <strong><?php echo esc_html__('There are no NFT Listings!','nft-marketplace-core-lite') ?></strong>
                     <?php endif; ?>
                         <div class="clearfix"></div>
                     </div>

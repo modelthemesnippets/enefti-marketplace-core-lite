@@ -1,7 +1,7 @@
 <?php
 
 /**
- * NFT_Marketplace_Core
+ * NFT_Marketplace_Core_Lite
  *
  * Fired when the plugin is uninstalled.
  *
@@ -15,7 +15,7 @@
  * - Repeat with other user roles. Best directly by using the links/query string parameters.
  * - Repeat things for multisite. Once for a single site in the network, once sitewide.
  *
- * @package   NFT_Marketplace_Core
+ * @package   NFT_Marketplace_Core_Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, ModelTheme, support@modeltheme.com
  * @license   GPL v3

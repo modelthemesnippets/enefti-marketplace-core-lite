@@ -5,8 +5,8 @@
  * @link       https://modeltheme.com/
  * @since      1.0.0
  *
- * @package    NFT_Marketplace_Core
- * @subpackage NFT NFT_Marketplace_Core Core/includes
+ * @package    NFT_Marketplace_Core_Lite
+ * @subpackage NFT NFT_Marketplace_Core_Lite Core/includes
  */
 
 /**
@@ -20,7 +20,7 @@
  * @author     ModelTheme <support@modeltheme.com>
  */
 
-namespace NFT_Marketplace_Core\Integrations;
+namespace NFT_Marketplace_Core_Lite\Integrations;
 
 use WP_Error;
 
@@ -82,8 +82,8 @@ class NFTForm
     public function render_yesno_field($args)
     {
         echo '<select id="' . esc_attr($args['name']) . '" name="' . esc_attr($args['name']) . '">';
-        echo '<option value="no" ' . ($args['value'] == 'no' ? 'selected' : '') . '>' . esc_html__('No', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</option>';
-        echo '<option value="yes" ' . ($args['value'] == 'yes' ? 'selected' : '') . '>' . esc_html__('Yes', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</option>';
+        echo '<option value="no" ' . ($args['value'] == 'no' ? 'selected' : '') . '>' . esc_html__('No', 'nft-marketplace-core-lite') . '</option>';
+        echo '<option value="yes" ' . ($args['value'] == 'yes' ? 'selected' : '') . '>' . esc_html__('Yes', 'nft-marketplace-core-lite') . '</option>';
         echo '</select>';
     }
 
@@ -155,7 +155,7 @@ class NFTForm
 
                     if ($first_error_row) {
                         evt.preventDefault();
-                        alert('<?php esc_html_e('The following fields are required and highlighted below:', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?> ' + labels.join(', '));
+                        alert('<?php esc_html_e('The following fields are required and highlighted below:', 'nft-marketplace-core-lite'); ?> ' + labels.join(', '));
                         $htmlbody.animate({
                             scrollTop: ($first_error_row.offset().top - 200)
                         }, 1000);
@@ -172,11 +172,11 @@ class NFTForm
     {
         $cmb = new_cmb2_box(array(
             'id' => 'nft_marketplace_core_nft_listing_title',
-            'title' => esc_html__('NFT Title', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'title' => esc_html__('NFT Title', 'nft-marketplace-core-lite'),
             'object_types' => array('nft-listing'),
         ));
         $cmb->add_field(array(
-            'name' => esc_html__('NFT Title', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('NFT Title', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_name',
             'type' => 'text',
             'default' => $this->isEdit ? get_post($postID)->post_title : '',
@@ -196,16 +196,16 @@ class NFTForm
             !isset($_POST['submit-cmb'], $_POST['object_id'], $_POST[$cmb->nonce()])
             || !wp_verify_nonce($_POST[$cmb->nonce()], $cmb->nonce())
         ) {
-            return new WP_Error('security_fail', esc_html__('Security check failed.', NFT_MARKETPLACE_CORE_TEXTDOMAIN));
+            return new WP_Error('security_fail', esc_html__('Security check failed.', 'nft-marketplace-core-lite'));
         }
 
         if (empty($_POST['nft_marketplace_core_nft_listing_name'])) {
-            return new WP_Error('post_data_missing', esc_html__('New post requires a title.', NFT_MARKETPLACE_CORE_TEXTDOMAIN));
+            return new WP_Error('post_data_missing', esc_html__('New post requires a title.', 'nft-marketplace-core-lite'));
         }
 
         $args = array(
-            'ID' => $_POST['object_id'],
-            'post_title' => esc_html($_POST['nft_marketplace_core_nft_listing_name']),
+            'ID' => sanitize_text_field($_POST['object_id']),
+            'post_title' => sanitize_text_field($_POST['nft_marketplace_core_nft_listing_name']),
         );
         wp_update_post($args);
 
@@ -228,7 +228,7 @@ class NFTForm
 
         $this->nft_marketplace_core_nft_listing_nft_collection();
 
-        echo '<form class="cmb-form" method="post" id="wpcasa-listing-form" enctype="multipart/form-data" encoding="multipart/form-data"><input type="hidden" name="object_id" value="' . $postID . '">';
+        echo '<form class="cmb-form" method="post" id="wpcasa-listing-form" enctype="multipart/form-data" encoding="multipart/form-data"><input type="hidden" name="object_id" value="' . esc_attr($postID) . '">';
         $args = array('form_format' => '%3$s');
         foreach (['nft_marketplace_core_nft_listing_title', 'nft_marketplace_core_nft_listing_price_group', 'nft_marketplace_core_nft_listing_collection', 'nft_marketplace_core_nft_listing_group', 'nft_marketplace_core_nft_listing_level_group', 'nft_marketplace_core_nft_listing_properties_group'] as $metabox) { // loop over config array
             cmb2_metabox_form($metabox, $postID, $args);
@@ -244,7 +244,7 @@ class NFTForm
     {
         $fields_group = new_cmb2_box(array(
             'id' => 'nft_marketplace_core_nft_listing_group',
-            'title' => esc_html__('NFT’s Stats', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'title' => esc_html__('NFT’s Stats', 'nft-marketplace-core-lite'),
             'object_types' => array('nft-listing'),
         ));
 
@@ -253,23 +253,23 @@ class NFTForm
             'id' => 'nft_marketplace_core_nft_listing_group',
             'type' => 'group',
             'options' => array(
-                'group_title' => esc_html__('Stat', NFT_MARKETPLACE_CORE_TEXTDOMAIN), // {#} gets replaced by row number
-                'add_button' => esc_html__('Add New Stat', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'remove_button' => esc_html__('Remove', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'group_title' => esc_html__('Stat', 'nft-marketplace-core-lite'), // {#} gets replaced by row number
+                'add_button' => esc_html__('Add New Stat', 'nft-marketplace-core-lite'),
+                'remove_button' => esc_html__('Remove', 'nft-marketplace-core-lite'),
                 'sortable' => true,
                 'closed' => true, // true to have the groups closed by default
-                'remove_confirm' => esc_html__('Are you sure you want to delete this Stat?', NFT_MARKETPLACE_CORE_TEXTDOMAIN), // Performs confirmation before removing group.
+                'remove_confirm' => esc_html__('Are you sure you want to delete this Stat?', 'nft-marketplace-core-lite'), // Performs confirmation before removing group.
             ),
         ));
 
         $fields_group->add_group_field($fields_group_id, array(
-            'name' => esc_html__('Name', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Name', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_stat_name',
             'type' => 'text'
         ));
 
         $fields_group->add_group_field($fields_group_id, array(
-            'name' => esc_html__('Rate', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Rate', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_stat_rate',
             'type' => 'text'
 
@@ -281,12 +281,12 @@ class NFTForm
     {
         $cmb = new_cmb2_box(array(
             'id' => 'nft_marketplace_core_nft_listing_socials_group',
-            'title' => esc_html__('Contract Data', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'title' => esc_html__('Contract Data', 'nft-marketplace-core-lite'),
             'object_types' => array('nft-listing'),
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('NFT\'s Contract Address', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('NFT\'s Contract Address', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_address',
             'type' => 'text',
             'attributes' => array(
@@ -296,7 +296,7 @@ class NFTForm
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('NFT\'s Token ID', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('NFT\'s Token ID', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_token_id',
             'type' => 'text',
             'attributes' => array(
@@ -311,7 +311,7 @@ class NFTForm
     {
         $cmb = new_cmb2_box(array(
             'id' => 'nft_marketplace_core_nft_listing_collection',
-            'title' => esc_html__('Collection', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'title' => esc_html__('Collection', 'nft-marketplace-core-lite'),
             'object_types' => array('nft-listing'),
         ));
 
@@ -322,13 +322,13 @@ class NFTForm
 
         if($terms) {
             $cmb->add_field(array(
-                'name' => esc_html__("Collection", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'name' => esc_html__("Collection", 'nft-marketplace-core-lite'),
                 'id' => 'nft_marketplace_core_nft_listing_collection',
                 'taxonomy' => 'nft-listing-collection', // Enter Taxonomy Slug
                 'type' => 'taxonomy_select',
                 // Optional :
                 'text' => array(
-                    'no_terms_text' => esc_html__('Sorry, no terms could be found. Create some from inside the NFTs Manager', NFT_MARKETPLACE_CORE_TEXTDOMAIN) // Change default text. Default: "No terms"
+                    'no_terms_text' => esc_html__('Sorry, no terms could be found. Create some from inside the NFTs Manager', 'nft-marketplace-core-lite') // Change default text. Default: "No terms"
                 ),
                 'remove_default' => 'true', // Removes the default metabox provided by WP core.
                 // Optionally override the args sent to the WordPress get_terms function.
@@ -346,13 +346,13 @@ class NFTForm
 
         if($terms) {
             $cmb->add_field(array(
-                'name' => esc_html__("Category", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'name' => esc_html__("Category", 'nft-marketplace-core-lite'),
                 'id' => 'nft_marketplace_core_nft_listing_category',
                 'taxonomy' => 'nft-listing-category', // Enter Taxonomy Slug
                 'type' => 'taxonomy_select',
                 // Optional :
                 'text' => array(
-                    'no_terms_text' => esc_html__('Sorry, no terms could be found. Create some from inside the NFTs Manager', NFT_MARKETPLACE_CORE_TEXTDOMAIN) // Change default text. Default: "No terms"
+                    'no_terms_text' => esc_html__('Sorry, no terms could be found. Create some from inside the NFTs Manager', 'nft-marketplace-core-lite') // Change default text. Default: "No terms"
                 ),
                 'remove_default' => 'true', // Removes the default metabox provided by WP core.
                 // Optionally override the args sent to the WordPress get_terms function.
@@ -368,35 +368,35 @@ class NFTForm
     {
         $cmb = new_cmb2_box(array(
             'id' => 'nft_marketplace_core_nft_listing_price_group',
-            'title' => esc_html__('General Information', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'title' => esc_html__('General Information', 'nft-marketplace-core-lite'),
             'object_types' => array('nft-listing'),
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('NFT Description', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('NFT Description', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_description_meta',
             'type' => 'textarea'
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Explicit Content', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Explicit Content', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_explicit_meta',
             'type' => 'checkbox',
-            'desc' => esc_html__('Is this item something that can be very sensitive for a group of people?', NFT_MARKETPLACE_CORE_TEXTDOMAIN)
+            'desc' => esc_html__('Is this item something that can be very sensitive for a group of people?', 'nft-marketplace-core-lite')
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Unlockable Content', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Unlockable Content', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_content_meta',
             'type' => 'checkbox',
-            'desc' => esc_html__('Include unlockable content that can only be revealed by the owner of the item.', NFT_MARKETPLACE_CORE_TEXTDOMAIN)
+            'desc' => esc_html__('Include unlockable content that can only be revealed by the owner of the item.', 'nft-marketplace-core-lite')
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Content', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Content', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_content',
             'type' => 'text',
-            'desc' => esc_html__('The content you want to hide.', NFT_MARKETPLACE_CORE_TEXTDOMAIN)
+            'desc' => esc_html__('The content you want to hide.', 'nft-marketplace-core-lite')
         ));
 
     }
@@ -406,36 +406,36 @@ class NFTForm
     {
         $cmb = new_cmb2_box(array(
             'id' => 'nft_marketplace_core_nft_listing_socials_group',
-            'title' => esc_html__('Socials', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'title' => esc_html__('Socials', 'nft-marketplace-core-lite'),
             'object_types' => array('nft-listing'),
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Slug', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Slug', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_slug',
             'type' => 'text'
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Telegram Url', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Telegram Url', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_telegram_url',
             'type' => 'text'
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Twitter', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Twitter', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_twitter_url',
             'type' => 'text'
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Instagram', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Instagram', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_instagram_url',
             'type' => 'text'
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Wiki', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Wiki', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_wiki_url',
             'type' => 'text'
         ));
@@ -446,15 +446,15 @@ class NFTForm
     {
         $cmb = new_cmb2_box(array(
             'id' => 'nft_marketplace_core_nft_listing_crypto_prices_group',
-            'title' => esc_html__('Crypto Prices', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'title' => esc_html__('Crypto Prices', 'nft-marketplace-core-lite'),
             'object_types' => array('nft-listing'),
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Price', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Price', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_currency_price',
             'type' => 'text',
-            'desc' => esc_html__('Complete this field only if you are reimporting an already existing NFT on the marketplace.', NFT_MARKETPLACE_CORE_TEXTDOMAIN)
+            'desc' => esc_html__('Complete this field only if you are reimporting an already existing NFT on the marketplace.', 'nft-marketplace-core-lite')
         ));
     }
 
@@ -462,7 +462,7 @@ class NFTForm
     {
         $fields_group = new_cmb2_box(array(
             'id' => 'nft_marketplace_core_nft_listing_properties_group',
-            'title' => esc_html__('NFT’s Properties', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'title' => esc_html__('NFT’s Properties', 'nft-marketplace-core-lite'),
             'object_types' => array('nft-listing'),
         ));
 
@@ -472,24 +472,24 @@ class NFTForm
             'id' => 'nft_marketplace_core_nft_listing_properties_group',
             'type' => 'group',
             'options' => array(
-                'group_title' => esc_html__('Property', NFT_MARKETPLACE_CORE_TEXTDOMAIN), // {#} gets replaced by row number
-                'add_button' => esc_html__('Add New Property', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'remove_button' => esc_html__('Remove', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'group_title' => esc_html__('Property', 'nft-marketplace-core-lite'), // {#} gets replaced by row number
+                'add_button' => esc_html__('Add New Property', 'nft-marketplace-core-lite'),
+                'remove_button' => esc_html__('Remove', 'nft-marketplace-core-lite'),
                 'sortable' => true,
                 'closed' => true, // true to have the groups closed by default
-                'remove_confirm' => esc_html__('Are you sure you want to delete this Property?', NFT_MARKETPLACE_CORE_TEXTDOMAIN), // Performs confirmation before removing group.
+                'remove_confirm' => esc_html__('Are you sure you want to delete this Property?', 'nft-marketplace-core-lite'), // Performs confirmation before removing group.
             ),
         ));
 
 
         $fields_group->add_group_field($fields_group_id, array(
-            'name' => esc_html__('Name', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Name', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_property_name',
             'type' => 'text'
         ));
 
         $fields_group->add_group_field($fields_group_id, array(
-            'name' => esc_html__('Value', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Value', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_property_value',
             'type' => 'text'
         ));
@@ -501,7 +501,7 @@ class NFTForm
     {
         $fields_group = new_cmb2_box(array(
             'id' => 'nft_marketplace_core_nft_listing_level_group',
-            'title' => esc_html__('NFT’s Levels', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'title' => esc_html__('NFT’s Levels', 'nft-marketplace-core-lite'),
             'object_types' => array('nft-listing'),
         ));
 
@@ -510,26 +510,26 @@ class NFTForm
             'id' => 'nft_marketplace_core_nft_listing_level_group',
             'type' => 'group',
             'options' => array(
-                'group_title' => esc_html__('Level', NFT_MARKETPLACE_CORE_TEXTDOMAIN), // {#} gets replaced by row number
-                'add_button' => esc_html__('Add New Level', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'remove_button' => esc_html__('Remove', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'group_title' => esc_html__('Level', 'nft-marketplace-core-lite'), // {#} gets replaced by row number
+                'add_button' => esc_html__('Add New Level', 'nft-marketplace-core-lite'),
+                'remove_button' => esc_html__('Remove', 'nft-marketplace-core-lite'),
                 'sortable' => true,
                 'closed' => true, // true to have the groups closed by default,
                 'class' => "single_nft_button",
-                'remove_confirm' => esc_html__('Are you sure you want to delete this Level?', NFT_MARKETPLACE_CORE_TEXTDOMAIN), // Performs confirmation before removing group.
+                'remove_confirm' => esc_html__('Are you sure you want to delete this Level?', 'nft-marketplace-core-lite'), // Performs confirmation before removing group.
             ),
         ));
 
 
         $fields_group->add_group_field($fields_group_id, array(
-            'name' => esc_html__('Name', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Name', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_level_name',
             'type' => 'text',
             'default' => ''
         ));
 
         $fields_group->add_group_field($fields_group_id, array(
-            'name' => esc_html__('Rate', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Rate', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_nft_listing_level_rate',
             'type' => 'text',
             'default' => ''
@@ -545,13 +545,13 @@ class NFTForm
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('NFT Marketplace Core Extra Fields', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('NFT Marketplace Core Extra Fields', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_user_extra_fields',
             'type' => 'title'
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Profile Banner Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Profile Banner Image', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_banner_img',
             'type' => 'file',
             'options' => array(
@@ -572,27 +572,27 @@ class NFTForm
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Address Hash', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Address Hash', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_user_address',
             'type' => 'text'
         ));
 
 
         $cmb->add_field(array(
-            'name' => esc_html__('Facebook link', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Facebook link', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_user_facebook',
             'type' => 'text'
         ));
 
 
         $cmb->add_field(array(
-            'name' => esc_html__('Instagram link', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Instagram link', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_user_instagram',
             'type' => 'text'
         ));
 
         $cmb->add_field(array(
-            'name' => esc_html__('Youtube link', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+            'name' => esc_html__('Youtube link', 'nft-marketplace-core-lite'),
             'id' => 'nft_marketplace_core_user_youtube',
             'type' => 'text'
         ));

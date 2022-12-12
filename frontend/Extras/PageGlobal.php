@@ -9,14 +9,14 @@
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Frontend\Extras;
+namespace NFT_Marketplace_Core_Lite\Frontend\Extras;
 
-use NFT_Marketplace_Core\Engine\Base;
-use NFT_Marketplace_Core\Internals\Helper;
+use NFT_Marketplace_Core_Lite\Engine\Base;
+use NFT_Marketplace_Core_Lite\Internals\Helper;
 
 /**
  *
- * @package   NFT Marketplace Core
+ * @package   NFT Marketplace Core Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, Modeltheme, support@modeltheme.com
  * @license   GPL-3.0
@@ -65,9 +65,9 @@ class PageGlobal extends Base
         echo '<div class="row">';
         echo '<div class="col-md-12">';
         if (is_singular('nft-listing')) {
-            echo '<h1>'. $actionBefore . get_the_title().'</h1>';
+            echo '<h1>'. esc_html($actionBefore . get_the_title()).'</h1>';
         } else if(is_search()) {
-            echo '<h1>'.esc_html__('Search results: ',NFT_MARKETPLACE_CORE_TEXTDOMAIN).'</h1>';
+            echo '<h1>'.esc_html__('Search results: ','nft-marketplace-core-lite').'</h1>';
         } else if (is_tax()) {
             $taxonomy = $term->taxonomy;
             $taxonomy_slug = $term->slug;
@@ -79,13 +79,13 @@ class PageGlobal extends Base
                 echo '<h1>'.esc_html($taxonomy_name).'</h1>';
             }
         } else {
-            echo '<h1>'.apply_filters('nft_marketplace_core_taxonomy_heading', esc_html__($title, NFT_MARKETPLACE_CORE_TEXTDOMAIN)).'</h1>';
+            echo '<h1>'.apply_filters('nft_marketplace_core_taxonomy_heading', esc_html__($title, 'nft-marketplace-core-lite')).'</h1>';
         }
         echo'</div>';
         echo '<div class="col-md-12">';
         echo '<ol class="breadcrumb">';
         $delimiter = '';
-        $name = esc_html__("Home", NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+        $name = esc_html__("Home", 'nft-marketplace-core-lite');
         if ((!is_home() && !is_front_page()) || is_paged()) {
             global $post;
             global $product;
@@ -142,7 +142,7 @@ class PageGlobal extends Base
             $postId = get_the_ID();
         }
 
-        $text = esc_html__('View NFT', NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+        $text = esc_html__('View NFT', 'nft-marketplace-core-lite');
         echo '<div class="nft-listing-wrapper">';
         echo '<div class="nft-listing-image">';
         echo '<div class="overlay-container">';
@@ -181,7 +181,7 @@ class PageGlobal extends Base
     {
         echo '<div class="nft-marketplace-sidebar-category">';
         echo '<h3 class="nft-sidebar-title">';
-        echo apply_filters('nft_marketplace_core_category_text', esc_html__('Category', NFT_MARKETPLACE_CORE_TEXTDOMAIN));
+        echo apply_filters('nft_marketplace_core_category_text', esc_html__('Category', 'nft-marketplace-core-lite'));
         echo '</h3>';
         echo '<div class="nft-marketplace-categories">';
         $terms_c = get_terms(array(
@@ -191,7 +191,7 @@ class PageGlobal extends Base
             foreach ($terms_c as $term) {
                 if ($term->parent == 0) {
                     echo '<li>';
-                    echo '<a href="' . get_term_link($term->slug, 'nft-listing-category') . '">' . $term->name . '</a>';
+                    echo '<a href="' . esc_url(get_term_link($term->slug, 'nft-listing-category')) . '">' . esc_html($term->name) . '</a>';
                     echo '</li>';
                 }
             }

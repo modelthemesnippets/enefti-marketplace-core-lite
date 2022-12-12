@@ -2,9 +2,9 @@
 /**
  * Plugin class
  **/
-namespace NFT_Marketplace_Core\Internals\TaxMeta;
+namespace NFT_Marketplace_Core_Lite\Internals\TaxMeta;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 
 class BL_TAX_META extends Base
@@ -38,15 +38,15 @@ class BL_TAX_META extends Base
     public function add_blockchain_image()
     { ?>
         <div class="form-field term-group">
-            <label for="nft_marketplace_core_taxonomy_blockchain_currency_image-"><?php esc_html_e('Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+            <label for="nft_marketplace_core_taxonomy_blockchain_currency_image-"><?php esc_html_e('Image', 'nft-marketplace-core-lite'); ?></label>
             <input type="hidden" id="nft_marketplace_core_taxonomy_blockchain_currency_image"
                    name="nft_marketplace_core_taxonomy_blockchain_currency_image" class="custom_media_url" value="">
             <div id="blockchain-image-wrapper"></div>
             <p>
                 <input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button"
-                       name="ct_tax_media_button" value="<?php esc_html_e('Add Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                       name="ct_tax_media_button" value="<?php esc_html_e('Add Image', 'nft-marketplace-core-lite'); ?>"/>
                 <input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove"
-                       name="ct_tax_media_remove" value="<?php esc_html_e('Remove Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                       name="ct_tax_media_remove" value="<?php esc_html_e('Remove Image', 'nft-marketplace-core-lite'); ?>"/>
             </p>
         </div>
         <?php
@@ -74,7 +74,7 @@ class BL_TAX_META extends Base
             sanitize_text_field('0x' . dechex($_POST['nft_marketplace_core_taxonomy_blockchain_currency_chainid']))
         );
         if (isset($_POST['nft_marketplace_core_taxonomy_blockchain_currency_image']) && '' !== $_POST['nft_marketplace_core_taxonomy_blockchain_currency_image']) {
-            $image = $_POST['nft_marketplace_core_taxonomy_blockchain_currency_image'];
+            $image = sanitize_text_field($_POST['nft_marketplace_core_taxonomy_blockchain_currency_image']);
             add_term_meta($term_id, 'nft_marketplace_core_taxonomy_blockchain_currency_image', $image, true);
         }
     }
@@ -87,7 +87,7 @@ class BL_TAX_META extends Base
     { ?>
         <tr class="form-field term-group-wrap">
             <th scope="row">
-                <label for="nft_marketplace_core_taxonomy_blockchain_currency_image"><?php esc_html_e('Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+                <label for="nft_marketplace_core_taxonomy_blockchain_currency_image"><?php esc_html_e('Image', 'nft-marketplace-core-lite'); ?></label>
             </th>
             <td>
                 <?php $image_id = get_term_meta($term->term_id, 'nft_marketplace_core_taxonomy_blockchain_currency_image', true); ?>
@@ -102,10 +102,10 @@ class BL_TAX_META extends Base
                 <p>
                     <input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button"
                            name="ct_tax_media_button"
-                           value="<?php esc_html_e('Add Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                           value="<?php esc_html_e('Add Image', 'nft-marketplace-core-lite'); ?>"/>
                     <input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove"
                            name="ct_tax_media_remove"
-                           value="<?php esc_html_e('Remove Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                           value="<?php esc_html_e('Remove Image', 'nft-marketplace-core-lite'); ?>"/>
                 </p>
             </td>
         </tr>
@@ -116,31 +116,31 @@ class BL_TAX_META extends Base
     { ?>
         <tr class="form-field term-group-wrap">
             <th scope="row">
-                <label for="nft_marketplace_core_taxonomy_blockchain_currency_symbol"><?php esc_html_e('Currency Symbol', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+                <label for="nft_marketplace_core_taxonomy_blockchain_currency_symbol"><?php esc_html_e('Currency Symbol', 'nft-marketplace-core-lite'); ?></label>
             </th>
             <td>
                 <?php $symbol = get_term_meta($term->term_id, 'nft_marketplace_core_taxonomy_blockchain_currency_symbol', true); ?>
                 <input aria-required="true" name="nft_marketplace_core_taxonomy_blockchain_currency_symbol"
                        id="nft_marketplace_core_taxonomy_blockchain_currency_symbol" type="text"
                        value="<?php echo esc_attr($symbol) ?>"/>
-                <p class="description"><?php echo esc_html__("Default currency symbol for this blockchain. Ex: ETH, MATIC etc.", NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></p>
+                <p class="description"><?php echo esc_html__("Default currency symbol for this blockchain. Ex: ETH, MATIC etc.", 'nft-marketplace-core-lite'); ?></p>
             </td>
         </tr>
         <tr class="form-field term-group-wrap">
             <th scope="row">
-                <label for="nft_marketplace_core_taxonomy_blockchain_currency_chainid"><?php esc_html_e('Chain ID', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+                <label for="nft_marketplace_core_taxonomy_blockchain_currency_chainid"><?php esc_html_e('Chain ID', 'nft-marketplace-core-lite'); ?></label>
             </th>
             <td>
                 <?php $symbol = get_term_meta($term->term_id, 'nft_marketplace_core_taxonomy_blockchain_currency_chainid', true); ?>
                 <input aria-required="true" name="nft_marketplace_core_taxonomy_blockchain_currency_chainid"
                        id="nft_marketplace_core_taxonomy_blockchain_currency_chainid" type="text"
                        value="<?php echo esc_attr($symbol) ?>"/>
-                <p class="description"><?php esc_html_e("The value will be automatically converted to the right format (hex).", NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></p>
+                <p class="description"><?php esc_html_e("The value will be automatically converted to the right format (hex).", 'nft-marketplace-core-lite'); ?></p>
             </td>
         </tr>
         <tr class="form-field term-group-wrap">
             <th scope="row">
-                <label for="nft_marketplace_core_taxonomy_blockchain_currency_rpc_url"><?php esc_html_e('RPC Url', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+                <label for="nft_marketplace_core_taxonomy_blockchain_currency_rpc_url"><?php esc_html_e('RPC Url', 'nft-marketplace-core-lite'); ?></label>
             </th>
             <td>
                 <?php $symbol = get_term_meta($term->term_id, 'nft_marketplace_core_taxonomy_blockchain_currency_rpc_url', true); ?>
@@ -151,7 +151,7 @@ class BL_TAX_META extends Base
         </tr>
         <tr class="form-field term-group-wrap">
             <th scope="row">
-                <label for="nft_marketplace_core_taxonomy_blockchain_currency_image"><?php esc_html_e('Currency Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+                <label for="nft_marketplace_core_taxonomy_blockchain_currency_image"><?php esc_html_e('Currency Image', 'nft-marketplace-core-lite'); ?></label>
             </th>
             <td>
                 <?php $image_id = get_term_meta($term->term_id, 'nft_marketplace_core_taxonomy_blockchain_currency_image', true); ?>
@@ -166,10 +166,10 @@ class BL_TAX_META extends Base
                 <p>
                     <input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button"
                            name="ct_tax_media_button"
-                           value="<?php esc_html_e('Add Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                           value="<?php esc_html_e('Add Image', 'nft-marketplace-core-lite'); ?>"/>
                     <input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove"
                            name="ct_tax_media_remove"
-                           value="<?php esc_html_e('Remove Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                           value="<?php esc_html_e('Remove Image', 'nft-marketplace-core-lite'); ?>"/>
                 </p>
             </td>
         </tr>
@@ -216,7 +216,7 @@ class BL_TAX_META extends Base
         );
 
         if (isset($_POST['nft_marketplace_core_taxonomy_blockchain_currency_image']) && '' !== $_POST['nft_marketplace_core_taxonomy_blockchain_currency_image']) {
-            $image = $_POST['nft_marketplace_core_taxonomy_blockchain_currency_image'];
+            $image = sanitize_text_field($_POST['nft_marketplace_core_taxonomy_blockchain_currency_image']);
             update_term_meta($term_id, 'nft_marketplace_core_taxonomy_blockchain_currency_image', $image);
         } else {
             update_term_meta($term_id, 'nft_marketplace_core_taxonomy_blockchain_currency_image', '');
@@ -227,27 +227,27 @@ class BL_TAX_META extends Base
     {
         echo '
             <div class="form-field form-required term-slug-wrap">
-                <label for="nft_marketplace_core_taxonomy_blockchain_currency_symbol">' . esc_html__("Symbol", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</label>
+                <label for="nft_marketplace_core_taxonomy_blockchain_currency_symbol">' . esc_html__("Symbol", 'nft-marketplace-core-lite') . '</label>
                 <input required name="nft_marketplace_core_taxonomy_blockchain_currency_symbol" id="nft_marketplace_core_taxonomy_blockchain_currency_symbol" type="text" value="" />
-                <p class="description">' . esc_html__("Ex: ETH, MATIC etc.", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</p>
+                <p class="description">' . esc_html__("Ex: ETH, MATIC etc.", 'nft-marketplace-core-lite') . '</p>
             </div>
             <div class="form-field form-required term-slug-wrap">
-                <label for="nft_marketplace_core_taxonomy_blockchain_currency_chainid">' . esc_html__("Chain ID", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</label>
+                <label for="nft_marketplace_core_taxonomy_blockchain_currency_chainid">' . esc_html__("Chain ID", 'nft-marketplace-core-lite') . '</label>
                 <input required name="nft_marketplace_core_taxonomy_blockchain_currency_chainid" id="nft_marketplace_core_taxonomy_blockchain_currency_chainid" type="text" value="" />
-                <p class="description">' . esc_html__("The value will be automatically converted to hex.", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</p>
+                <p class="description">' . esc_html__("The value will be automatically converted to hex.", 'nft-marketplace-core-lite') . '</p>
             </div>
             <div class="form-field form-required term-slug-wrap">
-                <label for="nft_marketplace_core_taxonomy_blockchain_currency_rpc_url">' . esc_html__("RPC Url", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</label>
+                <label for="nft_marketplace_core_taxonomy_blockchain_currency_rpc_url">' . esc_html__("RPC Url", 'nft-marketplace-core-lite') . '</label>
                 <input required name="nft_marketplace_core_taxonomy_blockchain_currency_rpc_url" id="nft_marketplace_core_taxonomy_blockchain_currency_rpc_url" type="text" value="" />
                 <p class="description"></p>
             </div>
             ' . $this->add_blockchain_image() . '
            <ul>
            <p class="description">
-           ' . esc_html__("Learn how to add more networks on the websites below (skip to point 3):", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '
+           ' . esc_html__("Learn how to add more networks on the websites below (skip to point 3):", 'nft-marketplace-core-lite') . '
             </p>
-                <li><a href="https://autofarm.gitbook.io/autofarm-network/how-tos/binance-smart-chain-bsc/metamask-add-binance-smart-chain-bsc-network">' . esc_html__("BSC", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</a></li>
-                <li><a href="https://autofarm.gitbook.io/autofarm-network/how-tos/polygon-chain-matic/metamask-add-polygon-matic-network">' . esc_html__("MATIC (Polygon)", NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</a></li>
+                <li><a href="https://autofarm.gitbook.io/autofarm-network/how-tos/binance-smart-chain-bsc/metamask-add-binance-smart-chain-bsc-network">' . esc_html__("BSC", 'nft-marketplace-core-lite') . '</a></li>
+                <li><a href="https://autofarm.gitbook.io/autofarm-network/how-tos/polygon-chain-matic/metamask-add-polygon-matic-network">' . esc_html__("MATIC (Polygon)", 'nft-marketplace-core-lite') . '</a></li>
             </ul>
         ';
     }

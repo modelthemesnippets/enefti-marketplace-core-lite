@@ -1,15 +1,15 @@
 <?php
 /**
- * NFT_Marketplace_Core
+ * NFT_Marketplace_Core_Lite
  *
- * @package   NFT_Marketplace_Core
+ * @package   NFT_Marketplace_Core_Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, ModelTheme, support@modeltheme.com
  * @license   GPL v3
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Frontend;
+namespace NFT_Marketplace_Core_Lite\Frontend;
 
 // WPBPGen{{#if libraries_inpsyde__assets}}
 use Inpsyde\Assets\Asset;
@@ -18,7 +18,7 @@ use Inpsyde\Assets\Script;
 use Inpsyde\Assets\Style;
 
 // {{/if}}
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 /**
  * Enqueue stuff on the frontend
@@ -89,9 +89,9 @@ class Enqueue extends Base
 
         wp_enqueue_style('bootstrap-grid', plugin_dir_url(__DIR__) . 'assets/css/bootstrap-grid.css', [], NFT_MARKETPLACE_CORE_VERSION, 'all');
         wp_enqueue_style('font-awesome5', plugin_dir_url(__DIR__) . 'assets/css/fonts/font-awesome/all.min.css', [], '5.15.4', 'all');
-        wp_enqueue_style(NFT_MARKETPLACE_CORE_TEXTDOMAIN . "-alerts", plugin_dir_url(__DIR__) . 'assets/css/nft-marketplace-core-alerts.css', [], NFT_MARKETPLACE_CORE_VERSION, 'all');
-        wp_enqueue_style(NFT_MARKETPLACE_CORE_TEXTDOMAIN, plugin_dir_url(__DIR__) . 'assets/css/nft-marketplace-core-public.css', [], NFT_MARKETPLACE_CORE_VERSION, 'all');
-        wp_enqueue_style(NFT_MARKETPLACE_CORE_TEXTDOMAIN . "-loader", plugin_dir_url(__DIR__) . 'assets/css/nft-marketplace-core-loader.css', [], NFT_MARKETPLACE_CORE_VERSION, 'all');
+        wp_enqueue_style('nft-marketplace-core-lite' . "-alerts", plugin_dir_url(__DIR__) . 'assets/css/nft-marketplace-core-alerts.css', [], NFT_MARKETPLACE_CORE_VERSION, 'all');
+        wp_enqueue_style('nft-marketplace-core-lite', plugin_dir_url(__DIR__) . 'assets/css/nft-marketplace-core-public.css', [], NFT_MARKETPLACE_CORE_VERSION, 'all');
+        wp_enqueue_style('nft-marketplace-core-lite' . "-loader", plugin_dir_url(__DIR__) . 'assets/css/nft-marketplace-core-loader.css', [], NFT_MARKETPLACE_CORE_VERSION, 'all');
         if (isset(get_option('nft_marketplace_core_panel_styling')['nft_marketplace_core_dark']) && get_option('nft_marketplace_core_panel_styling')['nft_marketplace_core_dark'] == 'on') {
             wp_enqueue_style('dark-mode', plugin_dir_url(__DIR__) . 'assets/css/nft-marketplace-core-dark-mode.css', [], NFT_MARKETPLACE_CORE_VERSION, 'all');
         }
@@ -111,19 +111,19 @@ class Enqueue extends Base
     {
         $scripts = array();
 
-        wp_enqueue_script(NFT_MARKETPLACE_CORE_TEXTDOMAIN, plugin_dir_url(__DIR__) . 'assets/js/nft-marketplace-core-public.js', array('jquery'), NFT_MARKETPLACE_CORE_VERSION, false);
+        wp_enqueue_script('nft-marketplace-core-lite', plugin_dir_url(__DIR__) . 'assets/js/nft-marketplace-core-public.js', array('jquery'), NFT_MARKETPLACE_CORE_VERSION, false);
 
-        wp_localize_script(NFT_MARKETPLACE_CORE_TEXTDOMAIN, 'ajax_search', array(
+        wp_localize_script('nft-marketplace-core-lite', 'ajax_search', array(
             'url' => admin_url('admin-ajax.php'),
         ));
-        wp_localize_script(NFT_MARKETPLACE_CORE_TEXTDOMAIN, 'ajax_var', array(
+        wp_localize_script('nft-marketplace-core-lite', 'ajax_var', array(
             'url' => admin_url('admin-ajax.php'),
             'nonce' => wp_create_nonce('ajax-nonce')
         ));
 
-        $scripts[0] = new Script(NFT_MARKETPLACE_CORE_TEXTDOMAIN . "-market", plugin_dir_url(__DIR__) . 'assets/js/blockchain-interaction/assets/main.78435a22.js', Asset::FRONTEND);
+        $scripts[0] = new Script('nft-marketplace-core-lite' . "-market", plugin_dir_url(__DIR__) . 'assets/js/blockchain-interaction/assets/main.78435a22.js', Asset::FRONTEND);
         $scripts[0]->withAttributes(["type" => "module"]);
-        $scripts[0]->withTranslation(NFT_MARKETPLACE_CORE_TEXTDOMAIN . "-market", NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+        $scripts[0]->withTranslation('nft-marketplace-core-lite' . "-market", 'nft-marketplace-core-lite');
         $scripts[0]->withLocalize('nftMarketplaceCorelocation', array(
             'location' => plugin_dir_url(__DIR__),
         ));
@@ -136,11 +136,11 @@ class Enqueue extends Base
     function addTypeAttribute($tag, $handle, $src)
     {
         // if not your script, do nothing and return original $tag
-        if (NFT_MARKETPLACE_CORE_TEXTDOMAIN . "-market" !== $handle) {
+        if ('nft-marketplace-core-lite' . "-market" !== $handle) {
             return $tag;
         }
         // change the script tag by adding type="module" and return it.
-        $tag = '<script type="module" src="' . esc_url($src) . '" id="'.NFT_MARKETPLACE_CORE_TEXTDOMAIN . "-market".'" ></script>';
+        $tag = '<script type="module" src="' . esc_url($src) . '" id="'.'nft-marketplace-core-lite' . "-market".'" ></script>';
         return $tag;
     }
 

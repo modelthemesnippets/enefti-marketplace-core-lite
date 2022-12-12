@@ -1,19 +1,19 @@
 <?php
 
 /**
- * NFT_Marketplace_Core
+ * NFT_Marketplace_Core_Lite
  *
- * @package   NFT_Marketplace_Core
+ * @package   NFT_Marketplace_Core_Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, ModelTheme, support@modeltheme.com
  * @license   GPL v3
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Internals;
+namespace NFT_Marketplace_Core_Lite\Internals;
 
 use DecodeLabs\Tagged as Html;
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 /**
  * Shortcodes of this plugin
@@ -50,16 +50,16 @@ class Shortcode extends Base {
             );
             $pid = wp_update_user($my_listing);
             if (isset($_POST['nft_marketplace_core_user_facebook'])) {
-                update_user_meta($pid, 'nft_marketplace_core_user_facebook', $_POST['nft_marketplace_core_user_facebook']);
+                update_user_meta($pid, 'nft_marketplace_core_user_facebook', sanitize_text_field($_POST['nft_marketplace_core_user_facebook']));
             }
             if (isset($_POST['nft_marketplace_core_user_instagram'])) {
-                update_user_meta($pid, 'nft_marketplace_core_user_instagram', $_POST['nft_marketplace_core_user_instagram']);
+                update_user_meta($pid, 'nft_marketplace_core_user_instagram', sanitize_text_field( $_POST['nft_marketplace_core_user_instagram']));
             }
             if (isset($_POST['nft_marketplace_core_user_youtube'])) {
-                update_user_meta($pid, 'nft_marketplace_core_user_youtube', $_POST['nft_marketplace_core_user_youtube']);
+                update_user_meta($pid, 'nft_marketplace_core_user_youtube', sanitize_text_field($_POST['nft_marketplace_core_user_youtube']));
             }
             if (isset($_POST['nft_marketplace_core_banner_img'])) {
-                $nft_marketplace_core_banner_img_string = $_POST['nft_marketplace_core_banner_img'];
+                $nft_marketplace_core_banner_img_string = sanitize_text_field($_POST['nft_marketplace_core_banner_img']);
                 $nft_marketplace_core_banner_img_array = explode(',', $nft_marketplace_core_banner_img_string);
                 $count = 0;
                 $gallery_media_links =[];
@@ -101,19 +101,19 @@ class Shortcode extends Base {
 
         $html = '';
         $html .= '<div class="form-group">
-		            <label for="nft_marketplace_core_user_facebook">' . esc_html__('Facebook link', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</label>';
+		            <label for="nft_marketplace_core_user_facebook">' . esc_html__('Facebook link', 'nft-marketplace-core-lite') . '</label>';
         $nft_marketplace_core_user_facebook = get_user_meta($author->ID, 'nft_marketplace_core_user_facebook', true);
-        $html .= '<input type="text" class="form-control" name="nft_marketplace_core_user_facebook" value="' . $nft_marketplace_core_user_facebook . '" placeholder="' . $nft_marketplace_core_user_facebook . '">
+        $html .= '<input type="text" class="form-control" name="nft_marketplace_core_user_facebook" value="' . esc_attr($nft_marketplace_core_user_facebook) . '" placeholder="' . esc_attr($nft_marketplace_core_user_facebook) . '">
 	    		</div>';
         $html .= '<div class="form-group">
-		            <label for="nft_marketplace_core_user_youtube">' . esc_html__('Youtube link', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</label>';
+		            <label for="nft_marketplace_core_user_youtube">' . esc_html__('Youtube link', 'nft-marketplace-core-lite') . '</label>';
         $nft_marketplace_core_user_youtube = get_user_meta($author->ID, 'nft_marketplace_core_user_youtube', true);
-        $html .= '<input type="text" class="form-control" name="nft_marketplace_core_user_youtube" value="' . $nft_marketplace_core_user_youtube . '" placeholder="' . $nft_marketplace_core_user_youtube . '">
+        $html .= '<input type="text" class="form-control" name="nft_marketplace_core_user_youtube" value="' . esc_attr($nft_marketplace_core_user_youtube) . '" placeholder="' . esc_attr($nft_marketplace_core_user_youtube) . '">
 	    		</div>';
         $html .= '<div class="form-group">
-	        		<label for="nft_marketplace_core_user_instagram">' . esc_html__('Instagram link', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</label>';
+	        		<label for="nft_marketplace_core_user_instagram">' . esc_html__('Instagram link', 'nft-marketplace-core-lite') . '</label>';
         $nft_marketplace_core_user_instagram = get_user_meta($author->ID, 'nft_marketplace_core_user_instagram', true);
-        $html .= '<input type="text" class="form-control" name="nft_marketplace_core_user_instagram" value="' . $nft_marketplace_core_user_instagram . '" placeholder="' . $nft_marketplace_core_user_instagram . '">
+        $html .= '<input type="text" class="form-control" name="nft_marketplace_core_user_instagram" value="' . esc_attr($nft_marketplace_core_user_instagram) . '" placeholder="' . esc_attr($nft_marketplace_core_user_instagram) . '">
 	    		</div>';
         wp_reset_postdata();
         return $html;
@@ -125,7 +125,7 @@ class Shortcode extends Base {
     {
         $html = '';
         $html .= '<div class="form-group pull-left">
-	                    <button type="submit" class="button-listing" name="add-listing" class="btn btn-success">' . esc_html__('Save Changes', NFT_MARKETPLACE_CORE_TEXTDOMAIN) . '</button>
+	                    <button type="submit" class="button-listing" name="add-listing" class="btn btn-success">' . esc_html__('Save Changes', 'nft-marketplace-core-lite') . '</button>
 	                </div>';
         wp_reset_postdata();
         return $html;
@@ -138,11 +138,11 @@ class Shortcode extends Base {
         $html  = '';
         $html .= '<div class="nft-marketplace-search-bar">';
         $html .= '<h3 class="nft-sidebar-title">';
-        $html .=  apply_filters('nft_marketplace_core_search_text', esc_html__('Search', NFT_MARKETPLACE_CORE_TEXTDOMAIN));
+        $html .=  apply_filters('nft_marketplace_core_search_text', esc_html__('Search', 'nft-marketplace-core-lite'));
         $html .= '</h3>';
         $html .= '<form role="search" method="get" id="nft_marketplace_core_searchform" autocomplete="off" class="clearfix" action="'.esc_url(get_site_url()).'">';
         $html .= '<input type="hidden" name="post_type" value="nft-listing">';
-        $html .= '<input placeholder="'.apply_filters('nft_marketplace_core_search_text', esc_html__('Search', NFT_MARKETPLACE_CORE_TEXTDOMAIN)).'" type="text" name="s" id="nft_marketplace_core_keyword">';
+        $html .= '<input placeholder="'.apply_filters('nft_marketplace_core_search_text', esc_html__('Search', 'nft-marketplace-core-lite')).'" type="text" name="s" id="nft_marketplace_core_keyword">';
         $html .= '<button type="submit" id="nft_marketplace_core_searchsubmit"> <i class="fa fa-search"></i></button>';
         $html .= '</form>';
         $html .= '<div id="mtkb_datafetch"></div>';
@@ -157,7 +157,7 @@ class Shortcode extends Base {
         $html  = '';
         $html .= '<div class="nft-marketplace-sidebar-category">';
         $html .= '<h3 class="nft-sidebar-title">';
-        $html .= apply_filters('nft_marketplace_core_category_text', esc_html__('Category', NFT_MARKETPLACE_CORE_TEXTDOMAIN));
+        $html .= apply_filters('nft_marketplace_core_category_text', esc_html__('Category', 'nft-marketplace-core-lite'));
         $html .= '</h3>';
         $html .= '<div class="nft-marketplace-categories">';
         $terms_c = get_terms( array(
@@ -167,7 +167,7 @@ class Shortcode extends Base {
             foreach ($terms_c as $term) {
                 if ($term->parent == 0) {
                     $html .= '<li>';
-                    $html .= '<a href="'.get_term_link( $term->slug, 'nft-listing-category' ).'">'.$term->name.'</a>';
+                    $html .= '<a href="'.get_term_link( $term->slug, 'nft-listing-category' ).'">'.esc_html($term->name).'</a>';
                     $html .= '</li>';
                 }
             }

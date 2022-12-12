@@ -9,9 +9,9 @@
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Internals;
+namespace NFT_Marketplace_Core_Lite\Internals;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 class Kses extends Base
 {

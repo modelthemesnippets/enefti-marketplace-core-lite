@@ -1,15 +1,15 @@
 <?php
 /**
- * NFT_Marketplace_Core
+ * NFT_Marketplace_Core_Lite
  *
- * @package   NFT_Marketplace_Core
+ * @package   NFT_Marketplace_Core_Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, ModelTheme, support@modeltheme.com
  * @license   GPL v3
  * @link      https://modeltheme.com
  */
 
-$nft_marketplace_core_debug = new WPBP_Debug( __( 'NFT Marketplace Core', NFT_MARKETPLACE_CORE_TEXTDOMAIN ) );
+$nft_marketplace_core_debug = new WPBP_Debug( __( 'NFT Marketplace Core', 'nft-marketplace-core-lite' ) );
 
 /**
  * Log text inside the debugging plugins.

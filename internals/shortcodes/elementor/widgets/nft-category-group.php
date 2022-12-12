@@ -31,21 +31,21 @@ class nft_collectors_group extends Widget_Base
         $this->start_controls_section(
             'section_title',
             [
-                'label' => __('Content', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Content', 'nft-marketplace-core-lite'),
             ]
         );
         $this->add_control(
             'number',
             [
-                'label' => __('Number of items', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Number of items', 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'type' => Controls_Manager::SELECT,
                 'default' => '',
                 'options' => [
-                    '' => __('Select Option', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'one-item' => __('1 Item', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    '2' => __('2 Items', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    '4' => __('4 Items', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    '' => __('Select Option', 'nft-marketplace-core-lite'),
+                    'one-item' => __('1 Item', 'nft-marketplace-core-lite'),
+                    '2' => __('2 Items', 'nft-marketplace-core-lite'),
+                    '4' => __('4 Items', 'nft-marketplace-core-lite'),
                 ]
             ]
         );
@@ -61,23 +61,23 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'collector_style_var',
             [
-                'label' => __('Style Collector', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Style Collector', 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    '' => __('Select', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'collector_style_1' => __('Collector Image Floating', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'collector_style_2' => __('Collector Image In Wrapper', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    '' => __('Select', 'nft-marketplace-core-lite'),
+                    'collector_style_1' => __('Collector Image Floating', 'nft-marketplace-core-lite'),
+                    'collector_style_2' => __('Collector Image In Wrapper', 'nft-marketplace-core-lite'),
                 ]
             ]
         );
         $this->add_control(
             'author_status',
             [
-                'label' => __('Author', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Author', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Show', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'label_off' => __('Hide', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label_on' => __('Show', 'nft-marketplace-core-lite'),
+                'label_off' => __('Hide', 'nft-marketplace-core-lite'),
                 'return_value' => 'yes',
                 'default' => 'no',
                 'condition' => [
@@ -112,28 +112,28 @@ class nft_collectors_group extends Widget_Base
         $this->start_controls_section(
             'title_tab_carousel',
             [
-                'label' => __('Carousel/Grid', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Carousel/Grid', 'nft-marketplace-core-lite'),
             ]
         );
         //carousel
         $this->add_control(
             'layout',
             [
-                'label' => __('Layout', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Layout', 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'type' => Controls_Manager::SELECT,
                 'default' => '',
                 'options' => [
-                    '' => __('Select Option', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'carousel' => __('Carousel', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'grid' => __('Grid', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    '' => __('Select Option', 'nft-marketplace-core-lite'),
+                    'carousel' => __('Carousel', 'nft-marketplace-core-lite'),
+                    'grid' => __('Grid', 'nft-marketplace-core-lite'),
                 ]
             ]
         );
         $this->add_control(
             'items_desktop',
             [
-                'label' => esc_html__('Visible Items (Desktop)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => esc_html__('Visible Items (Desktop)', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'default' => 4,
                 'condition' => [
@@ -144,7 +144,7 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'items_mobile',
             [
-                'label' => esc_html__('Visible Items (Mobiles)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => esc_html__('Visible Items (Mobiles)', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'default' => 1,
                 'condition' => [
@@ -155,7 +155,7 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'items_tablet',
             [
-                'label' => esc_html__('Visible Items (Tablets)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => esc_html__('Visible Items (Tablets)', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'default' => 4,
                 'condition' => [
@@ -166,10 +166,10 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'autoplay',
             [
-                'label' => __('AutoPlay', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('AutoPlay', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Show', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'label_off' => __('Hide', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label_on' => __('Show', 'nft-marketplace-core-lite'),
+                'label_off' => __('Hide', 'nft-marketplace-core-lite'),
                 'return_value' => 'yes',
                 'default' => 'no',
                 'condition' => [
@@ -180,7 +180,7 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'delay',
             [
-                'label' => esc_html__('Slide Speed (in ms)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => esc_html__('Slide Speed (in ms)', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'min' => 500,
                 'max' => 10000,
@@ -194,10 +194,10 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'navigation',
             [
-                'label' => __('Navigation', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Navigation', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Show', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'label_off' => __('Hide', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label_on' => __('Show', 'nft-marketplace-core-lite'),
+                'label_off' => __('Hide', 'nft-marketplace-core-lite'),
                 'return_value' => 'yes',
                 'default' => 'no',
                 'condition' => [
@@ -208,25 +208,25 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'navigation_position',
             [
-                'label' => __('Navigation Position', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Navigation Position', 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'type' => Controls_Manager::SELECT,
                 'default' => '',
                 'options' => [
-                    '' => __('Select Option', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_above_left' => __('Above Slider Left', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_above_center' => __('Above Slider Center', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_above_right' => __('Above Slider Right', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_top_left' => __('Top Left (In Slider)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_top_center' => __('Top Center (In Slider)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_top_right' => __('Top Right (In Slider)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_middle' => __('Middle (Left/Right)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_bottom_left' => __('Bottom Left (In Slider)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_bottom_center' => __('Bottom Center (In Slider)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_bottom_right' => __('Bottom Right (In Slider)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_below_left' => __('Below Slider Left', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_below_center' => __('Below Slider Center', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav_below_right' => __('Below Slider Right', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    '' => __('Select Option', 'nft-marketplace-core-lite'),
+                    'nav_above_left' => __('Above Slider Left', 'nft-marketplace-core-lite'),
+                    'nav_above_center' => __('Above Slider Center', 'nft-marketplace-core-lite'),
+                    'nav_above_right' => __('Above Slider Right', 'nft-marketplace-core-lite'),
+                    'nav_top_left' => __('Top Left (In Slider)', 'nft-marketplace-core-lite'),
+                    'nav_top_center' => __('Top Center (In Slider)', 'nft-marketplace-core-lite'),
+                    'nav_top_right' => __('Top Right (In Slider)', 'nft-marketplace-core-lite'),
+                    'nav_middle' => __('Middle (Left/Right)', 'nft-marketplace-core-lite'),
+                    'nav_bottom_left' => __('Bottom Left (In Slider)', 'nft-marketplace-core-lite'),
+                    'nav_bottom_center' => __('Bottom Center (In Slider)', 'nft-marketplace-core-lite'),
+                    'nav_bottom_right' => __('Bottom Right (In Slider)', 'nft-marketplace-core-lite'),
+                    'nav_below_left' => __('Below Slider Left', 'nft-marketplace-core-lite'),
+                    'nav_below_center' => __('Below Slider Center', 'nft-marketplace-core-lite'),
+                    'nav_below_right' => __('Below Slider Right', 'nft-marketplace-core-lite'),
                 ],
                 'condition' => [
                     'navigation' => 'yes',
@@ -237,15 +237,15 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'nav_style',
             [
-                'label' => __('Navigation Shape', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Navigation Shape', 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'type' => Controls_Manager::SELECT,
                 'default' => '',
                 'options' => [
-                    '' => __('Select Option', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav-square' => __('Square', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav-rounde' => __('Rounded (5px Radius)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'nav-round' => __('Round (50px Radius)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    '' => __('Select Option', 'nft-marketplace-core-lite'),
+                    'nav-square' => __('Square', 'nft-marketplace-core-lite'),
+                    'nav-rounde' => __('Rounded (5px Radius)', 'nft-marketplace-core-lite'),
+                    'nav-round' => __('Round (50px Radius)', 'nft-marketplace-core-lite'),
                 ],
                 'condition' => [
                     'navigation' => 'yes',
@@ -257,7 +257,7 @@ class nft_collectors_group extends Widget_Base
             'navigation_color',
             [
                 'type' => \Elementor\Controls_Manager::COLOR,
-                'label' => __('Navigation color', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Navigation color', 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'condition' => [
                     'navigation' => 'yes',
@@ -269,7 +269,7 @@ class nft_collectors_group extends Widget_Base
             'navigation_bg_color',
             [
                 'type' => \Elementor\Controls_Manager::COLOR,
-                'label' => __('Navigation Background color', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Navigation Background color', 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'condition' => [
                     'navigation' => 'yes',
@@ -281,7 +281,7 @@ class nft_collectors_group extends Widget_Base
             'navigation_color_hover',
             [
                 'type' => \Elementor\Controls_Manager::COLOR,
-                'label' => __('Navigation Color Hover', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Navigation Color Hover', 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'condition' => [
                     'navigation' => 'yes',
@@ -293,7 +293,7 @@ class nft_collectors_group extends Widget_Base
             'navigation_bg_color_hover',
             [
                 'type' => \Elementor\Controls_Manager::COLOR,
-                'label' => __('Navigation Background color - Hover', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Navigation Background color - Hover', 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'condition' => [
                     'navigation' => 'yes',
@@ -304,10 +304,10 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'pagination',
             [
-                'label' => __('Pagination (dots)', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Pagination (dots)', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Show', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'label_off' => __('Hide', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label_on' => __('Show', 'nft-marketplace-core-lite'),
+                'label_off' => __('Hide', 'nft-marketplace-core-lite'),
                 'return_value' => 'yes',
                 'default' => 'no',
                 'condition' => [
@@ -319,7 +319,7 @@ class nft_collectors_group extends Widget_Base
             'pagination_color',
             [
                 'type' => \Elementor\Controls_Manager::COLOR,
-                'label' => __('Pagination color', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Pagination color', 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'condition' => [
                     'pagination' => 'yes',
@@ -330,7 +330,7 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'space_items',
             [
-                'label' => esc_html__('Space Between Items', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => esc_html__('Space Between Items', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'default' => 30,
                 'condition' => [
@@ -341,10 +341,10 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'touch_move',
             [
-                'label' => __('Allow Touch Move', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Allow Touch Move', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Show', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'label_off' => __('Hide', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label_on' => __('Show', 'nft-marketplace-core-lite'),
+                'label_off' => __('Hide', 'nft-marketplace-core-lite'),
                 'return_value' => 'yes',
                 'default' => 'no',
                 'condition' => [
@@ -355,11 +355,11 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'grab_cursor',
             [
-                'label' => __('Grab Cursor', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'placeholder' => esc_html__('If checked, will show the mouse pointer over the carousel', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Grab Cursor', 'nft-marketplace-core-lite'),
+                'placeholder' => esc_html__('If checked, will show the mouse pointer over the carousel', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Show', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'label_off' => __('Hide', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label_on' => __('Show', 'nft-marketplace-core-lite'),
+                'label_off' => __('Hide', 'nft-marketplace-core-lite'),
                 'return_value' => 'yes',
                 'default' => 'no',
                 'condition' => [
@@ -370,19 +370,19 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'effect',
             [
-                'label' => __('Carousel Effect', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'placeholder' => esc_html__("See all availavble effects on <a target='_blank' href='https://swiperjs.com/demos#effect-fade'>swiperjs.com</a>", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Carousel Effect', 'nft-marketplace-core-lite'),
+                'placeholder' => esc_html__("See all availavble effects on <a target='_blank' href='https://swiperjs.com/demos#effect-fade'>swiperjs.com</a>", 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'type' => Controls_Manager::SELECT,
                 'default' => '',
                 'options' => [
-                    '' => __('Select Option', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'creative' => __('Creative', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'cards' => __('Cards', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'coverflow' => __('Coverflow', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'cube' => __('Cube', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'fade' => __('Fade', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'flip' => __('Flip', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    '' => __('Select Option', 'nft-marketplace-core-lite'),
+                    'creative' => __('Creative', 'nft-marketplace-core-lite'),
+                    'cards' => __('Cards', 'nft-marketplace-core-lite'),
+                    'coverflow' => __('Coverflow', 'nft-marketplace-core-lite'),
+                    'cube' => __('Cube', 'nft-marketplace-core-lite'),
+                    'fade' => __('Fade', 'nft-marketplace-core-lite'),
+                    'flip' => __('Flip', 'nft-marketplace-core-lite'),
                 ],
                 'condition' => [
                     'layout' => 'carousel',
@@ -392,11 +392,11 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'infinite_loop',
             [
-                'label' => __('Infinite Loop', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'placeholder' => esc_html__('If checked, will show the numerical value of infinite loop', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Infinite Loop', 'nft-marketplace-core-lite'),
+                'placeholder' => esc_html__('If checked, will show the numerical value of infinite loop', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Show', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'label_off' => __('Hide', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label_on' => __('Show', 'nft-marketplace-core-lite'),
+                'label_off' => __('Hide', 'nft-marketplace-core-lite'),
                 'return_value' => 'yes',
                 'default' => 'no',
                 'condition' => [
@@ -407,11 +407,11 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'centered_slides',
             [
-                'label' => __('Centered Slides', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'placeholder' => esc_html__('If checked, the left side and the right side will have a partial slide visible.', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Centered Slides', 'nft-marketplace-core-lite'),
+                'placeholder' => esc_html__('If checked, the left side and the right side will have a partial slide visible.', 'nft-marketplace-core-lite'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Show', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                'label_off' => __('Hide', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label_on' => __('Show', 'nft-marketplace-core-lite'),
+                'label_off' => __('Hide', 'nft-marketplace-core-lite'),
                 'return_value' => 'yes',
                 'default' => 'no',
                 'condition' => [
@@ -422,17 +422,17 @@ class nft_collectors_group extends Widget_Base
         $this->add_control(
             'columns',
             [
-                'label' => __('Columns', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                'label' => __('Columns', 'nft-marketplace-core-lite'),
                 'label_block' => true,
                 'type' => Controls_Manager::SELECT,
                 'default' => '',
                 'options' => [
-                    '' => __('Select Option', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'col-md-12' => __('1 Column', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'col-md-6' => __('2 Columns', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'col-md-4' => __('3 Columns', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'col-md-3' => __('4 Columns', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
-                    'col-md-2' => __('6 Columns', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                    '' => __('Select Option', 'nft-marketplace-core-lite'),
+                    'col-md-12' => __('1 Column', 'nft-marketplace-core-lite'),
+                    'col-md-6' => __('2 Columns', 'nft-marketplace-core-lite'),
+                    'col-md-4' => __('3 Columns', 'nft-marketplace-core-lite'),
+                    'col-md-3' => __('4 Columns', 'nft-marketplace-core-lite'),
+                    'col-md-2' => __('6 Columns', 'nft-marketplace-core-lite'),
                 ],
                 'condition' => [
                     'layout' => 'grid',

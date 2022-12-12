@@ -9,11 +9,11 @@
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Frontend\Extras;
+namespace NFT_Marketplace_Core_Lite\Frontend\Extras;
 
 /**
  *
- * @package   NFT Marketplace Core
+ * @package   NFT Marketplace Core Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, Modeltheme, support@modeltheme.com
  * @license   GPL-3.0
@@ -36,6 +36,7 @@ class PageAuthor extends PageGlobal
         $nfts_query_arg = array(
             'post_type' => 'nft-listing',
             'author' => $author->ID,
+            'post_status' => 'publish',
             'posts_per_page'  => 8,
         );
         $nfts_query = new \WP_Query( $nfts_query_arg );

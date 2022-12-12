@@ -50,7 +50,7 @@ function nft_marketplace_core_shortcode_for_wpbakery_listings_category($params, 
         if ($read_more_btn) {
             $button_text_value = $read_more_btn;
         } else {
-            $button_text_value = esc_html__('Buy Now', NFT_MARKETPLACE_CORE_TEXTDOMAIN);
+            $button_text_value = esc_html__('Buy Now', 'nft-marketplace-core-lite');
         }
         ?>
 
@@ -97,7 +97,7 @@ function nft_marketplace_core_shortcode_for_wpbakery_listings_category($params, 
                         </div>
                         <div class="mt-addons-details-container">
                             <span class="mt-addons-reserve-text"
-                                  style="color:<?php echo esc_attr($reserve_text_color); ?>;"> <?php echo apply_filters('nft_marketplace_core_reserve_text', esc_html__('Reserve Price', NFT_MARKETPLACE_CORE_TEXTDOMAIN)); ?></span>
+                                  style="color:<?php echo esc_attr($reserve_text_color); ?>;"> <?php echo apply_filters('nft_marketplace_core_reserve_text', esc_html__('Reserve Price', 'nft-marketplace-core-lite')); ?></span>
                             <?php if (!empty($nft_marketplace_core_nft_listing_price)) { ?>
                                 <span class="mt-addons-listing-price"
                                       style="color:<?php echo esc_attr($price_color); ?>"><img
@@ -136,7 +136,7 @@ function nft_marketplace_core_shortcode_listings_ategory_vc_map()
                 "type" => "dropdown",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__("Featured Image size", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__("Featured Image size", 'nft-marketplace-core-lite'),
                 "param_name" => "featured_image_size",
                 "std" => 'full',
                 "value" => nft_marketplace_core_shortcode_image_sizes_array()
@@ -145,14 +145,14 @@ function nft_marketplace_core_shortcode_listings_ategory_vc_map()
                 "type" => "vc_number",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__("Number", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__("Number", 'nft-marketplace-core-lite'),
                 "param_name" => "number"
             ),
             array(
                 "type" => "dropdown",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__("Category", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__("Category", 'nft-marketplace-core-lite'),
                 "param_name" => "category",
                 "std" => 'Default value',
                 "value" => $product_category
@@ -161,7 +161,7 @@ function nft_marketplace_core_shortcode_listings_ategory_vc_map()
                 "type" => "dropdown",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__('Columns', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__('Columns', 'nft-marketplace-core-lite'),
                 "param_name" => "columns",
                 "value" => array(
                     'Select Option' => '',
@@ -174,7 +174,7 @@ function nft_marketplace_core_shortcode_listings_ategory_vc_map()
                 "type" => "textfield",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__("Buy Now Text", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__("Buy Now Text", 'nft-marketplace-core-lite'),
                 "param_name" => "read_more_btn"
             ),
             array(
@@ -182,7 +182,7 @@ function nft_marketplace_core_shortcode_listings_ategory_vc_map()
                 "type" => "colorpicker",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__("Title color", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__("Title color", 'nft-marketplace-core-lite'),
                 "param_name" => "text_color"
             ),
             array(
@@ -190,7 +190,7 @@ function nft_marketplace_core_shortcode_listings_ategory_vc_map()
                 "type" => "colorpicker",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__("Background Button Color", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__("Background Button Color", 'nft-marketplace-core-lite'),
                 "param_name" => "bg_btn_color"
             ),
             array(
@@ -198,7 +198,7 @@ function nft_marketplace_core_shortcode_listings_ategory_vc_map()
                 "type" => "colorpicker",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__("Button Text Color", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__("Button Text Color", 'nft-marketplace-core-lite'),
                 "param_name" => "bg_text_color"
             ),
             array(
@@ -206,7 +206,7 @@ function nft_marketplace_core_shortcode_listings_ategory_vc_map()
                 "type" => "colorpicker",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__("Reserve Text Color", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__("Reserve Text Color", 'nft-marketplace-core-lite'),
                 "param_name" => "reserve_text_color"
             ),
             array(
@@ -214,15 +214,15 @@ function nft_marketplace_core_shortcode_listings_ategory_vc_map()
                 "type" => "colorpicker",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_attr__("Price Text Color", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "heading" => esc_attr__("Price Text Color", 'nft-marketplace-core-lite'),
                 "param_name" => "price_color"
             ),
         );
         vc_map(
             array(
-                "name" => esc_attr__("NFT: Recent Category", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "name" => esc_attr__("NFT: Recent Category", 'nft-marketplace-core-lite'),
                 "base" => "mt-addons-listings-category",
-                "category" => esc_attr__('Enefti Core', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "category" => esc_attr__('Enefti Core', 'nft-marketplace-core-lite'),
                 "icon" => plugins_url('images/blog.svg', __FILE__),
                 "params" => $params,
             ));

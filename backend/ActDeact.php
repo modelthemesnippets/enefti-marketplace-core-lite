@@ -1,20 +1,20 @@
 <?php
 
 /**
- * NFT_Marketplace_Core
+ * NFT_Marketplace_Core_Lite
  *
- * @package   NFT_Marketplace_Core
+ * @package   NFT_Marketplace_Core_Lite
  * @author    ModelTheme <support@modeltheme.com>
  * @copyright Copyright (C) 2012-2022, ModelTheme, support@modeltheme.com
  * @license   GPL v3
  * @link      https://modeltheme.com
  */
 
-namespace NFT_Marketplace_Core\Backend;
+namespace NFT_Marketplace_Core_Lite\Backend;
 
-use NFT_Marketplace_Core\Engine\Base;
-use NFT_Marketplace_Core\Backend\ActDeact\DeactivatorHelper;
-use NFT_Marketplace_Core\Backend\ActDeact\ActivatorHelper;
+use NFT_Marketplace_Core_Lite\Engine\Base;
+use NFT_Marketplace_Core_Lite\Backend\ActDeact\DeactivatorHelper;
+use NFT_Marketplace_Core_Lite\Backend\ActDeact\ActivatorHelper;
 
 /**
  * Activate and deactivate method of the plugin and relates.
@@ -130,7 +130,7 @@ class ActDeact extends Base {
 
 
         \update_option( 'nft-marketplace-core-version', NFT_MARKETPLACE_CORE_VERSION );
-		\delete_option( NFT_MARKETPLACE_CORE_TEXTDOMAIN . '_fake-meta' );
+		\delete_option( 'nft-marketplace-core-lite' . '_fake-meta' );
 	}
 	// {{/if}}
 

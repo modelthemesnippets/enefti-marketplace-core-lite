@@ -49,7 +49,7 @@ function modeltheme_addons_for_wpbakery_nft_collectors_list($params, $content)
                     <div class="mt-single-category-info">
                         <a href="<?php echo get_author_posts_url($user->ID); ?>"><?php echo esc_html__($user->display_name); ?></a>
 
-                        <span style="color:<?php echo esc_attr($subtitle_color); ?>"><?php //echo count_user_posts($author[1]);?><?php // echo esc_html__('items',NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></span>
+                        <span style="color:<?php echo esc_attr($subtitle_color); ?>"><?php //echo count_user_posts($author[1]);?><?php // echo esc_html__('items','nft-marketplace-core-lite'); ?></span>
                     </div>
                     <span class="mt-count-number"><?php echo $count_number; ?></span>
                 </div>
@@ -77,23 +77,23 @@ function mt_addons_nft_collectors_list()
 
         vc_map(
             array(
-                "name" => esc_attr__("NFT: Owner Profile List", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "name" => esc_attr__("NFT: Owner Profile List", 'nft-marketplace-core-lite'),
                 "base" => "mt-addons-nft-collectors-list",
-                "category" => esc_attr__('Enefti Core', NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                "category" => esc_attr__('Enefti Core', 'nft-marketplace-core-lite'),
                 "icon" => plugins_url('images/product-list.svg', __FILE__),
                 "params" => array(
                     array(
                         "type" => "vc_number",
                         "holder" => "div",
                         "class" => "",
-                        "heading" => esc_attr__("Number", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                        "heading" => esc_attr__("Number", 'nft-marketplace-core-lite'),
                         "param_name" => "number"
                     ),
                     array(
                         "type" => "dropdown",
                         "holder" => "div",
                         "class" => "",
-                        "heading" => esc_attr__("Columns", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                        "heading" => esc_attr__("Columns", 'nft-marketplace-core-lite'),
                         "param_name" => "number_of_columns",
                         "default" => 'col-md-4',
                         "value" => array(
@@ -107,7 +107,7 @@ function mt_addons_nft_collectors_list()
                     array(
                         "group" => "Style",
                         "type" => "colorpicker",
-                        "heading" => esc_attr__("Title Color", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                        "heading" => esc_attr__("Title Color", 'nft-marketplace-core-lite'),
                         "param_name" => "title_color",
                         "std" => '',
                         "holder" => "div",
@@ -116,7 +116,7 @@ function mt_addons_nft_collectors_list()
                     array(
                         "group" => "Style",
                         "type" => "colorpicker",
-                        "heading" => esc_attr__("Subtitle Color", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                        "heading" => esc_attr__("Subtitle Color", 'nft-marketplace-core-lite'),
                         "param_name" => "subtitle_color",
                         "std" => '',
                         "holder" => "div",
@@ -125,7 +125,7 @@ function mt_addons_nft_collectors_list()
                     array(
                         "group" => "Style",
                         "type" => "colorpicker",
-                        "heading" => esc_attr__("Number Color", NFT_MARKETPLACE_CORE_TEXTDOMAIN),
+                        "heading" => esc_attr__("Number Color", 'nft-marketplace-core-lite'),
                         "param_name" => "color_number",
                         "std" => '',
                         "holder" => "div",

@@ -2,9 +2,9 @@
 /**
  * Plugin class
  **/
-namespace NFT_Marketplace_Core\Internals\TaxMeta;
+namespace NFT_Marketplace_Core_Lite\Internals\TaxMeta;
 
-use NFT_Marketplace_Core\Engine\Base;
+use NFT_Marketplace_Core_Lite\Engine\Base;
 
 
 class CUR_TAX_META extends Base
@@ -48,32 +48,32 @@ class CUR_TAX_META extends Base
     public function add_term_fields($taxonomy)
     { ?>
         <div class="form-field form-required term-slug-wrap">
-            <label for="nft_marketplace_core_taxonomy_currency_symbol"><?php esc_html_e("Symbol", NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></label>
+            <label for="nft_marketplace_core_taxonomy_currency_symbol"><?php esc_html_e("Symbol", 'nft-marketplace-core-lite') ?></label>
             <input required name="nft_marketplace_core_taxonomy_currency_symbol" id="nft_marketplace_core_taxonomy_currency_symbol" type="text" value="" />
-            <p class="description"><?php esc_html_e("Ex: BUSD, USDC, SHIB etc.", NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></p>
+            <p class="description"><?php esc_html_e("Ex: BUSD, USDC, SHIB etc.", 'nft-marketplace-core-lite') ?></p>
         </div>
 
         <div class="form-field form-required term-slug-wrap">
-            <label for="nft_marketplace_core_taxonomy_currency_contract"><?php esc_html_e("Token Address", NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></label>
+            <label for="nft_marketplace_core_taxonomy_currency_contract"><?php esc_html_e("Token Address", 'nft-marketplace-core-lite') ?></label>
             <input required name="nft_marketplace_core_taxonomy_currency_contract" id="nft_marketplace_core_taxonomy_currency_contract" type="text" value="" />
-            <p class="description"><?php esc_html_e("The address of your currency's contract you wold like to support.", NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></p>
+            <p class="description"><?php esc_html_e("The address of your currency's contract you wold like to support.", 'nft-marketplace-core-lite') ?></p>
         </div>
 
         <div class="form-field form-required term-slug-wrap">
-            <label for="nft_marketplace_core_taxonomy_currency_blockchain"><?php esc_html_e("Blockchain", NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></label>
+            <label for="nft_marketplace_core_taxonomy_currency_blockchain"><?php esc_html_e("Blockchain", 'nft-marketplace-core-lite') ?></label>
             <?php wp_dropdown_categories(["taxonomy" => "nft_listing_blockchains", "name" => "nft_marketplace_core_taxonomy_currency_blockchain"]) ?>
-            <p class="description"><?php esc_html_e("The blockchain that currency is deployed on.", NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></p>
+            <p class="description"><?php esc_html_e("The blockchain that currency is deployed on.", 'nft-marketplace-core-lite') ?></p>
         </div>
 
         <div class="form-field term-group">
-            <label for="currency-image-id"><?php esc_html_e('Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+            <label for="currency-image-id"><?php esc_html_e('Image', 'nft-marketplace-core-lite'); ?></label>
             <input type="hidden" id="currency-image-id" name="currency-image-id" class="custom_media_url" value="">
             <div id="currency-image-wrapper"></div>
             <p>
                 <input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button"
-                       name="ct_tax_media_button" value="<?php esc_html_e('Add Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                       name="ct_tax_media_button" value="<?php esc_html_e('Add Image', 'nft-marketplace-core-lite'); ?>"/>
                 <input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove"
-                       name="ct_tax_media_remove" value="<?php esc_html_e('Remove Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                       name="ct_tax_media_remove" value="<?php esc_html_e('Remove Image', 'nft-marketplace-core-lite'); ?>"/>
             </p>
         </div>
         <?php
@@ -86,7 +86,7 @@ class CUR_TAX_META extends Base
     public function save_currency($term_id, $tt_id)
     {
         if (isset($_POST['currency-image-id']) && '' !== $_POST['currency-image-id']) {
-            $image = $_POST['currency-image-id'];
+            $image = sanitize_text_field($_POST['currency-image-id']);
             add_term_meta($term_id, 'currency-image-id', $image, true);
         }
 
@@ -118,43 +118,43 @@ class CUR_TAX_META extends Base
     { ?>
         <tr class="form-field term-group-wrap">
             <th scope="row">
-                <label for="nft_marketplace_core_taxonomy_currency_symbol"><?php esc_html_e('Symbol', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+                <label for="nft_marketplace_core_taxonomy_currency_symbol"><?php esc_html_e('Symbol', 'nft-marketplace-core-lite'); ?></label>
             </th>
             <td>
                 <?php $symbol = get_term_meta($term->term_id, 'nft_marketplace_core_taxonomy_currency_symbol', true); ?>
                 <input aria-required="true" name="nft_marketplace_core_taxonomy_currency_symbol"
                        id="nft_marketplace_core_taxonomy_currency_symbol" type="text"
                        value="<?php echo esc_attr($symbol) ?>"/>
-                <p class="description"><?php esc_html_e("Ex: BUSD, USDC, SHIB etc.", NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></p>
+                <p class="description"><?php esc_html_e("Ex: BUSD, USDC, SHIB etc.", 'nft-marketplace-core-lite') ?></p>
             </td>
         </tr>
         <tr class="form-field term-group-wrap">
             <th scope="row">
-                <label for="nft_marketplace_core_taxonomy_currency_contract"><?php esc_html_e("Token Address", NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></label>
+                <label for="nft_marketplace_core_taxonomy_currency_contract"><?php esc_html_e("Token Address", 'nft-marketplace-core-lite') ?></label>
             </th>
             <td>
                 <?php $symbol = get_term_meta($term->term_id, 'nft_marketplace_core_taxonomy_currency_contract', true); ?>
                 <input aria-required="true" name="nft_marketplace_core_taxonomy_currency_contract"
                        id="nft_marketplace_core_taxonomy_currency_contract" type="text"
                        value="<?php echo esc_attr($symbol) ?>"/>
-                <p class="description"><?php esc_html_e("The address of your currency's contract you wold like to support.", NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></p>
+                <p class="description"><?php esc_html_e("The address of your currency's contract you wold like to support.", 'nft-marketplace-core-lite') ?></p>
             </td>
         </tr>
         <tr class="form-field term-group-wrap">
             <th scope="row">
-                <label for="nft_marketplace_core_taxonomy_currency_blockchain"><?php esc_html_e('Blockchain', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+                <label for="nft_marketplace_core_taxonomy_currency_blockchain"><?php esc_html_e('Blockchain', 'nft-marketplace-core-lite'); ?></label>
             </th>
             <td>
                 <?php
                 $symbol = get_term_meta($term->term_id, 'nft_marketplace_core_taxonomy_currency_blockchain', true);
                 ?>
                 <?php wp_dropdown_categories(["taxonomy" => "nft_listing_blockchains", "name" => "nft_marketplace_core_taxonomy_currency_blockchain"]) ?>
-                <p class="description"><?php esc_html_e("The blockchain that currency is deployed on.", NFT_MARKETPLACE_CORE_TEXTDOMAIN) ?></p>
+                <p class="description"><?php esc_html_e("The blockchain that currency is deployed on.", 'nft-marketplace-core-lite') ?></p>
             </td>
         </tr>
         <tr class="form-field term-group-wrap">
             <th scope="row">
-                <label for="currency-image-id"><?php esc_html_e('Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?></label>
+                <label for="currency-image-id"><?php esc_html_e('Image', 'nft-marketplace-core-lite'); ?></label>
             </th>
             <td>
                 <?php $image_id = get_term_meta($term->term_id, 'currency-image-id', true); ?>
@@ -169,10 +169,10 @@ class CUR_TAX_META extends Base
                 <p>
                     <input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button"
                            name="ct_tax_media_button"
-                           value="<?php esc_html_e('Add Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                           value="<?php esc_html_e('Add Image', 'nft-marketplace-core-lite'); ?>"/>
                     <input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove"
                            name="ct_tax_media_remove"
-                           value="<?php esc_html_e('Remove Image', NFT_MARKETPLACE_CORE_TEXTDOMAIN); ?>"/>
+                           value="<?php esc_html_e('Remove Image', 'nft-marketplace-core-lite'); ?>"/>
                 </p>
             </td>
         </tr>
@@ -188,7 +188,7 @@ class CUR_TAX_META extends Base
         global $pagenow;
 
         if (isset($_POST['currency-image-id']) && '' !== $_POST['currency-image-id']) {
-            $image = $_POST['currency-image-id'];
+            $image = sanitize_text_field($_POST['currency-image-id']);
             update_term_meta($term_id, 'currency-image-id', $image);
         } else {
             update_term_meta($term_id, 'currency-image-id', '');
@@ -199,7 +199,7 @@ class CUR_TAX_META extends Base
             'nft_marketplace_core_taxonomy_currency_symbol',
             sanitize_text_field($_POST['nft_marketplace_core_taxonomy_currency_symbol'])
         );
-        var_dump($_POST);
+
         if (is_numeric($_POST['nft_marketplace_core_taxonomy_currency_blockchain']) && term_exists(intval($_POST['nft_marketplace_core_taxonomy_currency_blockchain']), "nft_listing_blockchains")) {
             update_term_meta(
                 $term_id,
